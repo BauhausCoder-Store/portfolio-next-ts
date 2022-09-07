@@ -1,6 +1,6 @@
 import styles from '../styles/SendEmail.module.css';
 import { useEffect, useState } from 'react';
-import { send } from 'emailjs-com';
+import emailjs from '@emailjs/browser';
 
 export const SendEmail = () => {
 
@@ -21,16 +21,16 @@ export const SendEmail = () => {
         throw new Error('Undefined GMAIL Public Key')
     };
 
-    send(
+    emailjs.send(
         process.env.NEXT_PUBLIC_GMAIL_SERVICE_ID,
         process.env.NEXT_PUBLIC_GMAIL_TEMPLATE_ID,
         toSend,
         process.env.NEXT_PUBLIC_GMAIL_PUBLIC_KEY,
     )
-        .then((response) => {
+        .then((response: { status: any; text: any; }) => {
         console.log('GMAIL Send Email success...', response.status, response.text);
         })
-        .catch((err) => {
+        .catch((err: any) => {
         console.log('GMAIL Send Email failed...', err);
         });
 
