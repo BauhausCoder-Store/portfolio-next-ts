@@ -1,0 +1,294 @@
+/*#region Settings */
+
+/*? === colours === */
+$wkd-black: rgb(0, 0, 0);
+$wkd-darkgrey: rgb(29, 29, 29);
+$wkd-midgrey: rgb(61, 61, 61);
+$wkd-grey: rgb(107, 106, 106);
+$wkd-lightgrey: rgb(178, 182, 160);
+$wkd-white: rgb(255, 255, 255);
+$wkd-red: rgb(255, 0, 0);
+$wkd-green: rgb(82, 150, 34);
+$wkd-intense-blue: rgb(0, 0, 250);
+$wkd-pastell-blue: rgb(25, 145, 210);
+$wkd-torquise: rgb(8, 253, 216);
+$wkd-blueviolett: rgb(21, 23, 76);
+$wkd-yellow: rgb(255, 255, 0);
+$wkd-yellow-dark: rgb(255, 183, 0);
+$wkd-orange: rgb(255, 102, 0); /* filter: brightness(0) saturate(100%) invert(44%) sepia(24%) saturate(4068%) hue-rotate(1deg) brightness(98%) contrast(106%); */
+$wkd-grapefruit: rgb(239, 95, 87);
+$wkd-pink: rgb(255, 0, 128);
+$wkd-pinkviolett: rgb(255, 0, 255);  /* filter: brightness(0) saturate(100%) invert(19%) sepia(63%) saturate(4179%) hue-rotate(293deg) brightness(123%) contrast(136%); */
+$wkd-manner: rgb(235, 184, 173);
+
+/*? === design === */
+$main-colour: $wkd-darkgrey;
+$counter-colour: $wkd-orange;
+$design-strokes-colour: $wkd-grey;
+$design-strokes-accent-colour: $wkd-pinkviolett;
+$shadows: $wkd-white;
+
+/*? === text === */
+$text-optimal-width: clamp(45ch, 50%, 75ch);
+$text-main-colour: $wkd-black;
+$link-hover-color: $wkd-red;
+$fs-400: 1rem;
+$fs-500: 1.125rem;
+$fs-600: 1.375rem;
+$fs-700: 2rem;
+
+/*#endregion */
+
+
+
+.main {
+    padding: .5rem 1rem 1rem 1rem;
+}
+
+
+
+/*#region HEADLINE Section */
+
+.headline_section {
+    display: flex;
+}
+
+.devlogo_wrapper {
+    display: block;
+    width: 5rem;
+    height: 5rem;
+    margin-left: .5rem;
+    margin-bottom: .5rem;
+}
+
+
+.page_title {
+    color: $counter-colour;
+    margin-left: auto;
+    margin-right: .5rem;
+    margin-bottom: .5rem;
+    padding-right: 1rem;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+/*#endregion*/
+
+
+
+/*#region Content Section */
+
+.about_content {
+    display: flex;
+    margin-top: 2rem;
+
+
+    > .about_text_container {
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        padding: 1rem;
+        width: $text-optimal-width;
+
+        > h2 {
+            color: $wkd-orange;
+            font-weight: bold;
+        }
+
+        > p {
+            margin-left: 2rem;
+        }
+    }
+
+    > .about_map_container {
+        position: relative;
+
+        > .about_map_wrapper {
+            margin-top: 1rem;
+            filter: grayscale(.8);
+        }
+
+        > .about_me_img_wrapper {
+            width: clamp(100px, 30%, 25vh);
+            z-index: 1;
+            position: absolute;
+            top: 0;
+            left: 3rem;
+            clip-path: circle();
+            animation: rotate-element-animation 20s infinite linear;
+        }
+
+        > .about_me_final_text {
+            text-align: center;
+            padding: 1rem;
+
+            > h2 {
+                color: $wkd-orange;
+                font-weight: bold;
+            }
+
+            > p {
+                padding: .5rem;
+            }
+        }
+    }
+
+}
+  
+.about_outro {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: .5rem;
+}
+
+/*#endregion*/
+
+
+
+/*#region Transitions */
+
+.devlogo {
+    transition: all 1s ease;
+  }
+  
+.devlogo_wrapper:hover .devlogo {
+    filter: brightness(0) saturate(100%) invert(44%) sepia(24%) saturate(4068%) hue-rotate(1deg) brightness(98%) contrast(106%);
+}
+
+/*#endregion*/
+
+
+
+/* #region Animations */
+
+// ? image @ map animation
+
+.about_me_img_wrapper{
+    animation: rotate-element-animation 20s infinite linear;
+  }
+  
+    @keyframes rotate-element-animation {
+     0% {transform:perspective(300px) rotateY(0deg)}
+     25% {transform:perspective(300px) rotateY(90deg)}
+     50% {transform:perspective(300px) rotateY(180deg)}
+     75% {transform:perspective(300px) rotateY(270deg)}
+     100% {transform:perspective(300px) rotateY(360deg)}
+  }
+  
+
+// ? map animation
+
+.about_map_container {
+    position: relative;
+}
+
+.about_map_container::after {
+    content: "";
+    border: solid 2px red;
+    position: absolute;
+    transition: all 500ms ease;
+    top: 0;
+    right: 0;
+    width: 4rem;
+    height: 4rem;
+    border-width: 3px;
+    border-style: dashed;
+    border-radius: 50%;
+}
+
+.about_map_container:hover::after {
+    border-color: red;
+    transform: scale(2);
+    animation: map-animation 10s infinite alternate ease;
+}
+
+  @keyframes map-animation {
+    from {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: scale(1.2);
+      border-color: red;
+    }
+    to {
+      transform: rotate(360deg);
+      transform: scale(.5); 
+      border-color: red;
+    }
+  }
+  
+  /* #endregion */
+  
+
+
+/*#region Styling-Pseudoelements */
+
+//? Headline-Logo
+.devlogo_wrapper {
+    position: relative;
+}
+
+.devlogo_wrapper::before,
+.devlogo_wrapper::after {
+    content: "";
+    border: solid 2px $wkd-grey;
+    position: absolute;
+    transition: all 2s ease;
+    left: -.5rem;
+    bottom: -.5rem;
+}
+
+.devlogo_wrapper::before {
+    height: calc(100% + 1rem);
+}
+
+.devlogo_wrapper::after {
+    width: 2rem;
+}
+
+.headline_section:hover .devlogo_wrapper::before {
+    height: 3rem;
+    border-color: $wkd-pinkviolett;
+}
+
+.headline_section:hover .devlogo_wrapper::after {
+    width: 3rem;
+    border-color: $wkd-pinkviolett;
+}
+
+
+//? Headline-Text
+.page_title {
+    position: relative;
+}
+
+.page_title::before,
+.page_title::after {
+    content: "";
+    border: solid 2px $wkd-grey;
+    position: absolute;
+    transition: all 2s ease;
+    bottom: -.5rem;
+    right: -.5rem;
+}
+
+.page_title::before {
+    height: calc(2rem);
+}
+
+.page_title::after {
+    width: 50%;
+}
+
+.headline_section:hover .page_title::before {
+    height: calc(100% + 1rem);
+    border-color: $wkd-pinkviolett;
+}
+
+.headline_section:hover .page_title::after {
+    width: 2rem;
+    border-color: $wkd-pinkviolett;
+}
+
+/*#endregion*/

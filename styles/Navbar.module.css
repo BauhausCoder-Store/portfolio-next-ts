@@ -1,0 +1,19 @@
+/*? === colours === */
+/* filter: brightness(0) saturate(100%) invert(44%) sepia(24%) saturate(4068%) hue-rotate(1deg) brightness(98%) contrast(106%); */
+/* filter: brightness(0) saturate(100%) invert(19%) sepia(63%) saturate(4179%) hue-rotate(293deg) brightness(123%) contrast(136%); */
+.mynavbar {
+  position: relative; }
+
+.mynavbar::after {
+  content: "";
+  border: solid 2px #6b6a6a;
+  position: absolute;
+  transition: all 2s ease;
+  left: 1rem;
+  bottom: 0;
+  width: calc(100% - 2rem); }
+
+.mynavbar:hover::after {
+  left: 25%;
+  width: 50%;
+  border-color: magenta; }
