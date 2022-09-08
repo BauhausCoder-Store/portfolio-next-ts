@@ -1,6 +1,7 @@
 import styles from '../styles/SendEmail.module.css';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import emailjs from '@emailjs/browser';
+import Router from 'next/router'
 
 export const SendEmail = () => {
 
@@ -14,11 +15,11 @@ export const SendEmail = () => {
     e.preventDefault();
 
     if(process.env.NEXT_PUBLIC_GMAIL_SERVICE_ID === undefined){
-        throw new Error('Undefined GMAIL Service ID')
+        throw new Error('Undefined GMAIL Service ID');
     } else if(process.env.NEXT_PUBLIC_GMAIL_TEMPLATE_ID === undefined){
-        throw new Error('Undefined GMAIL Template ID')
+        throw new Error('Undefined GMAIL Template ID');
     } else if(process.env.NEXT_PUBLIC_GMAIL_PUBLIC_KEY === undefined){
-        throw new Error('Undefined GMAIL Public Key')
+        throw new Error('Undefined GMAIL Public Key');
     };
 
     emailjs.send(
@@ -29,12 +30,14 @@ export const SendEmail = () => {
     )
         .then((response: { status: any; text: any; }) => {
         console.log('GMAIL Send Email success...', response.status, response.text);
+        window.alert('Thank you for the e-mail, i`ll respond as soon as possible! You will be redirected to the home page now.'); // todo Translation needed
+        Router.push('/');
         })
         .catch((err: any) => {
         console.log('GMAIL Send Email failed...', err);
+        window.alert('Sorry, sending a e-mail is currently unavailable, but you can contact me via social media. You will be redirected to the home page now.'); // todo Translation needed
+        Router.push('/');
         });
-
-
     };
 
     const handleChange = (e: { target: { name: any; value: any; }; }) => {

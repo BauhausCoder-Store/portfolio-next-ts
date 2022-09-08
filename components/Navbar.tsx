@@ -27,9 +27,9 @@ export const Navbar = () => {
                             </a>
                             <ul className="dropdown-menu">
                                 <li><a className="dropdown-item" href="/project_top">The Odin Project</a></li>
-                                <li><a className="dropdown-item" href="/">React-Project</a></li>
-                                <li><hr className="dropdown-divider"/></li>
-                                <li><a className="dropdown-item" href="/">Something....</a></li>
+                                <li><a className="dropdown-item" href="/projects_react_nextjs">React/NextJS-Projects</a></li>
+                                {/* <li><hr className="dropdown-divider"/></li>
+                                <li><a className="dropdown-item" href="/">Something....</a></li> */}
                             </ul>
                         </li>
 

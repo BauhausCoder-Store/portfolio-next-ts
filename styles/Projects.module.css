@@ -113,29 +113,29 @@
     color: #ff6600; }
 
 /*#region Projects Section */
-.top_projects {
+.projects {
   display: flex;
   flex-direction: column;
   gap: 2rem; }
-  .top_projects > .project_container {
+  .projects > .project_container {
     display: flex;
     margin-top: 1rem;
     margin-bottom: 1rem;
     align-items: center;
     justify-content: center; }
-    .top_projects > .project_container > .project_text_wrapper {
+    .projects > .project_container > .project_text_wrapper {
       width: clamp(45ch, 50%, 75ch);
       padding: 1rem; }
-      .top_projects > .project_container > .project_text_wrapper > h2 {
+      .projects > .project_container > .project_text_wrapper > h2 {
         color: #ff6600;
         font-weight: bold; }
-      .top_projects > .project_container > .project_text_wrapper > p {
+      .projects > .project_container > .project_text_wrapper > p {
         margin-left: 2rem; }
-      .top_projects > .project_container > .project_text_wrapper > a {
+      .projects > .project_container > .project_text_wrapper > a {
         text-decoration: none;
         color: #ff6600;
         text-align: center; }
-    .top_projects > .project_container > .project_img_wrapper {
+    .projects > .project_container > .project_img_wrapper {
       padding: 1rem;
       width: 40%; }
 
@@ -185,7 +185,8 @@
   50% {
     color: red; } }
 
-.project_fourwins:hover .fourwins_a > h3 {
+.project_fourwins:hover .fourwins_a > h3,
+.project_mmcardgame:hover .mmcardgame > h3 {
   animation: a_blue_animation;
   animation-duration: 5s;
   animation-timing-function: ease-in-out;
@@ -196,7 +197,8 @@
     transform: scale(1.5);
     color: #0000fa; } }
 
-.project_fourwins:hover .project_text_wrapper > .project_h2 {
+.project_fourwins:hover .project_text_wrapper > .project_h2,
+.project.project_mmcardgame:hover .project_text_wrapper > .project_h2 {
   animation: h3_blue_animation;
   animation-duration: 5s;
   animation-timing-function: ease-in-out;

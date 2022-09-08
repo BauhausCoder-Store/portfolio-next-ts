@@ -188,7 +188,7 @@ $fs-700: 2rem;
 
 /*#region Projects Section */
 
-.top_projects {
+.projects {
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -265,7 +265,6 @@ $fs-700: 2rem;
 /*#endregion*/
 
 
-
 /*#region Animations*/
 
 //? Red colour animations
@@ -302,7 +301,8 @@ $fs-700: 2rem;
 
 //? Blue colour animations
 
-.project_fourwins:hover .fourwins_a > h3 {
+.project_fourwins:hover .fourwins_a > h3,
+.project_mmcardgame:hover .mmcardgame > h3 {
     animation: a_blue_animation;
     animation-duration: 5s;
     animation-timing-function: ease-in-out;
@@ -316,7 +316,8 @@ $fs-700: 2rem;
     }
 }
 
-.project_fourwins:hover .project_text_wrapper > .project_h2 {
+.project_fourwins:hover .project_text_wrapper > .project_h2,
+.project.project_mmcardgame:hover .project_text_wrapper > .project_h2  {
     animation: h3_blue_animation;
     animation-duration: 5s;
     animation-timing-function: ease-in-out;
