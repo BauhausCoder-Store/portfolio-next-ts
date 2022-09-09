@@ -6,10 +6,24 @@
 /*? === text === */
 /*#endregion */
 .main {
-  padding: .5rem 1rem 1rem 1rem; }
+  padding: .5rem 1rem 1rem 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "headline headline" "contentLeft map" "outro outro";
+  position: relative; }
+  .main > .about_me_img_wrapper {
+    width: clamp(100px, 30%, 25vh);
+    z-index: 1;
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    clip-path: circle();
+    animation: rotate-element-animation 20s infinite linear; }
 
 /*#region HEADLINE Section */
 .headline_section {
+  grid-area: headline;
   display: flex; }
 
 .devlogo_wrapper {
@@ -30,47 +44,50 @@
 
 /*#endregion*/
 /*#region Content Section */
-.about_content {
+.about_content_section {
+  grid-area: contentLeft;
   display: flex;
   margin-top: 2rem; }
-  .about_content > .about_text_container {
+  .about_content_section > .about_text_container {
     display: flex;
     flex-direction: column;
     gap: .5rem;
     padding: 1rem;
     width: clamp(45ch, 50%, 75ch); }
-    .about_content > .about_text_container > h2 {
+    .about_content_section > .about_text_container > h2 {
       color: #ff6600;
       font-weight: bold; }
-    .about_content > .about_text_container > p {
+    .about_content_section > .about_text_container > p {
       margin-left: 2rem; }
-  .about_content > .about_map_container {
-    position: relative; }
-    .about_content > .about_map_container > .about_map_wrapper {
-      margin-top: 1rem;
-      filter: grayscale(0.8); }
-    .about_content > .about_map_container > .about_me_img_wrapper {
-      width: clamp(100px, 30%, 25vh);
-      z-index: 1;
-      position: absolute;
-      top: 0;
-      left: 3rem;
-      clip-path: circle();
-      animation: rotate-element-animation 20s infinite linear; }
-    .about_content > .about_map_container > .about_me_final_text {
-      text-align: center;
-      padding: 1rem; }
-      .about_content > .about_map_container > .about_me_final_text > h2 {
-        color: #ff6600;
-        font-weight: bold; }
-      .about_content > .about_map_container > .about_me_final_text > p {
-        padding: .5rem; }
 
-.about_outro {
+/*#endregion*/
+/*#region Map Section */
+.about_map_section {
+  grid-area: map;
+  margin-top: 5rem; }
+  .about_map_section > .about_map_container > .about_map_wrapper {
+    filter: grayscale(0.8); }
+
+/*#endregion*/
+/*#region Outro Section */
+.about_outro_section {
+  grid-area: outro;
   display: flex;
   flex-direction: column;
   text-align: center;
   gap: .5rem; }
+  .about_outro_section > .about_me_final_text {
+    padding: 1rem; }
+    .about_outro_section > .about_me_final_text > h2 {
+      text-align: center;
+      padding-right: 5rem;
+      color: #ff6600;
+      font-weight: bold; }
+    .about_outro_section > .about_me_final_text > p {
+      text-align: center;
+      padding: .5rem; }
+  .about_outro_section > .about_signature {
+    padding: 2rem; }
 
 /*#endregion*/
 /*#region Transitions */
@@ -102,31 +119,28 @@
 
 .about_map_container::after {
   content: "";
-  border: solid 2px red;
+  border: solid 2px magenta;
   position: absolute;
   transition: all 500ms ease;
-  top: 0;
-  right: 0;
-  width: 4rem;
-  height: 4rem;
+  top: 42.5%;
+  right: 37.5%;
+  width: 2rem;
+  height: 2rem;
   border-width: 3px;
   border-style: dashed;
   border-radius: 50%; }
 
 .about_map_container:hover::after {
-  border-color: red;
-  transform: scale(2);
-  animation: map-animation 10s infinite alternate ease; }
+  animation: map-animation 10s infinite alternate ease-in-out; }
 
 @keyframes map-animation {
   from {
     transform: rotate(0deg); }
   50% {
-    transform: scale(1.2);
-    border-color: red; }
+    transform: scale(3) rotate(180deg);
+    border-color: #ff6600; }
   to {
-    transform: rotate(360deg);
-    transform: scale(0.5);
+    transform: rotate(360deg), scale(0.5);
     border-color: red; } }
 
 /* #endregion */
