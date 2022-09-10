@@ -24,11 +24,11 @@ const Contact: NextPage = () => {
 
 
       <main className={styles.main}>
-        <h1>Contact me here</h1>
+        <h1 className={styles.contact_headline}>Contact</h1>
 
         <section className={styles.social_media_section} >
 
-           <h2>| on social media |</h2>
+           <h2>on social media</h2>
            <div className={styles.social_media_container}>
 
               <div className={`${styles.social_media_logo_wrapper} ${styles.instagramSVG_wrapper}`}>
@@ -64,7 +64,7 @@ const Contact: NextPage = () => {
 
         <section className={styles.send_email_section}>
 
-          <h2>| the best way to contact me is via email |</h2>
+          <h2>the best way to contact me is via email</h2>
           <div className={styles.send_email_form_wrapper} >
             <SendEmail />
           </div>

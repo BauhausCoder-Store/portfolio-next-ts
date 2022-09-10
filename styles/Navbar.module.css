@@ -2,6 +2,87 @@
 /* filter: brightness(0) saturate(100%) invert(44%) sepia(24%) saturate(4068%) hue-rotate(1deg) brightness(98%) contrast(106%); */
 /* filter: brightness(0) saturate(100%) invert(19%) sepia(63%) saturate(4179%) hue-rotate(293deg) brightness(123%) contrast(136%); */
 .mynavbar {
+  display: flex; }
+  .mynavbar > ul {
+    list-style-type: none;
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 2rem;
+    margin-right: 2rem; }
+    .mynavbar > ul > li .nav_item_projects_dropdown_li_1,
+    .mynavbar > ul > li .nav_item_projects_dropdown_li_2 {
+      list-style-type: none;
+      text-align: center; }
+
+/*#region Navbar Dropdown*/
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden; }
+
+/* Dropdown content (hidden by default) */
+.dropdown_content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background-color: #1d1d1d;
+  padding: .5rem; }
+
+/* Links inside the dropdown */
+.dropdown_content a {
+  float: none;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  padding: .5rem; }
+
+.dropdown:hover .dropbtn {
+  transition: all .5s;
+  color: #ff6600; }
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown_content {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem; }
+
+.dropdown_content a:hover {
+  transition: all .5s;
+  color: #ff6600;
+  transform: scale(1.1); }
+
+/*#endregion*/
+/*#region Transitions */
+.nav_item_home > a:hover,
+.nav_item_projects > a:hover,
+.nav_item_about > a:hover,
+.nav_item_contact > a:hover,
+.nav_item_settings > a:hover {
+  transition: all 1s;
+  color: #ff6600; }
+
+/*#endregion*/
+/*#region Animations */
+.dropdown:hover .dropdown_content {
+  animation: dropdown_box_animation infinite 20s;
+  border: solid 2px magenta;
+  border-radius: 1rem; }
+
+@keyframes dropdown_box_animation {
+  0% {
+    border-color: magenta; }
+  25% {
+    border-color: #ff6600; }
+  50% {
+    border-color: white; }
+  75% {
+    border-color: magenta; } }
+
+/*#endregion*/
+/*#region Styling-Pseudoelements */
+.mynavbar {
   position: relative; }
 
 .mynavbar::after {
@@ -17,3 +98,5 @@
   left: 25%;
   width: 50%;
   border-color: magenta; }
+
+/*#endregion*/

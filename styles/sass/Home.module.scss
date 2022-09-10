@@ -42,7 +42,7 @@ $wkd-manner: rgb(235, 184, 173);
 
 
 .main {
-    padding: .5rem 1rem 1rem 1rem;
+    padding: .5rem 1rem 0rem 1rem;
 }
 
 
@@ -143,17 +143,32 @@ $wkd-manner: rgb(235, 184, 173);
 }
 
 .introduction_img_wrapper:hover {
-    animation: intro_img_animation linear infinite 1s;
+    animation: intro_img_animation  infinite 10s;
 }
 
 @keyframes intro_img_animation {
-    0% {filter: drop-shadow( -1rem 1rem 2rem $wkd-pinkviolett)}
-    25% {filter: drop-shadow( -1rem -1rem 2rem $wkd-pinkviolett)}
+    0% {filter: drop-shadow( -1rem 1rem 2rem white)}
+    25% {filter: drop-shadow( -1rem -1rem 2rem $wkd-orange)}
     50% {filter: drop-shadow( 1rem -1rem 2rem $wkd-pinkviolett)}
-    75% {filter: drop-shadow( 1rem 1rem 2rem $wkd-pinkviolett)}
-    100% {filter: drop-shadow( -1rem 1rem 2rem $wkd-pinkviolett)}
+    75% {filter: drop-shadow( 1rem 1rem 2rem $wkd-orange)}
  }
 
+// ? Text
+.introduction_first_h3,
+.introduction_first_p, 
+.introduction_second_h3,
+.introduction_second_p,
+.introduction_text_statement {
+    transition: color .5s;
+}
+
+.introduction_first_h3:hover,
+.introduction_first_p:hover, 
+.introduction_second_h3:hover,
+.introduction_second_p:hover,
+.introduction_text_statement:hover {
+    color: $wkd-orange;
+}
 
 /*#endregion*/
 

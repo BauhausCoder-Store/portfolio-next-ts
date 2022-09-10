@@ -2,21 +2,10 @@ import Head from "next/head";
 import type { AppProps } from "next/app";
 import "../styles/globals.css";
 
-import "bootstrap/dist/css/bootstrap.css";
-import { useEffect } from "react";
-import { useRouter } from "next/router";
 import { Navbar } from '../components/Navbar';
 
 function MyApp({ Component, pageProps }: AppProps) {
   
-  // ? Bootstrap setup
-  const router = useRouter();
-  useEffect(() => {
-    typeof document !== undefined
-      ? require("bootstrap/dist/js/bootstrap")
-      : null;
-  }, [router.events]);
-
   return (
       <>
         <Head>

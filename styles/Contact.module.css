@@ -9,9 +9,7 @@
   .main > h1 {
     margin-block: 2rem;
     font-size: 4rem;
-    font-weight: bold;
-    text-decoration: underline;
-    color: #ff6600; }
+    font-weight: bold; }
   .main > .social_media_section {
     display: flex;
     flex-direction: column;
@@ -34,6 +32,56 @@
     flex-direction: column;
     align-items: center;
     padding: .5rem;
-    border-top: solid 2px #ff6600; }
+    border-top: solid 2px #6b6a6a; }
     .main > .send_email_section > .send_email_form_wrapper {
       width: fit-content; }
+
+/*#region Transitions, Animations, Pseudoelements */
+.contact_headline {
+  color: #ff6600;
+  position: relative;
+  animation: contact_headline_animation 20s ease-in-out infinite; }
+
+.contact_headline::before {
+  content: "";
+  border: solid 2px #ff6600;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  animation: contact_headline_animation 20s ease-in-out infinite; }
+
+@keyframes contact_headline_animation {
+  0% {
+    border-color: #ff6600;
+    color: #ff6600; }
+  33% {
+    border-color: #6b6a6a;
+    color: #6b6a6a; }
+  66% {
+    border-color: magenta;
+    color: magenta; } }
+
+.social_media_section {
+  transition: all .5s ease-in-out; }
+
+.social_media_section:hover {
+  transform: scale(1.5);
+  animation: social_media_animation infinite 20s ease-in-out; }
+
+@keyframes social_media_animation {
+  0% {
+    color: #ff6600; }
+  33% {
+    color: #6b6a6a; }
+  66% {
+    color: magenta; } }
+
+.send_email_section > h2 {
+  transition: transform .5s; }
+
+.send_email_section:hover > h2 {
+  color: #ff6600;
+  transform: scale(1.3); }
+
+/*#endregion*/
