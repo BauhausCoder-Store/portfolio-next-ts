@@ -1,6 +1,7 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import Image from 'next/image'; 
+import Image from 'next/image';
+import Link from 'next/link';
 import styles from '../styles/Projects.module.css';
 
 import MyDevLogo from '../public/graphics/logos/dev_logo.png';
@@ -47,7 +48,7 @@ const Projects_react_nextjs: NextPage = () => {
               <div className={styles.project_text_wrapper}>
                 <h2 className={styles.project_h2}>Memory-Card Memo Game</h2>
                 <p>Memorize 10 cards as quickly as possible! Click on them one after the other as quickly as possible, but not twice - then you start over! My first real React project!</p>
-                <a className={styles.mmcardgame} href='https://stefanbartl.github.io/react-mmcardgame/' target='_blank' title='Click to jump to the project!'><h3>3, 2, 1 - remember and click!</h3></a>
+                <Link className={styles.mmcardgame} href='https://stefanbartl.github.io/react-mmcardgame/' target='_blank' title='Click to jump to the project!'><h3>3, 2, 1 - remember and click!</h3></Link>
               </div>
 
               <div className={styles.project_img_wrapper}>

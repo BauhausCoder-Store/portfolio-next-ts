@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import styles from '../styles/Navbar.module.css'
 
 export const Navbar = () => {
@@ -8,31 +9,31 @@ export const Navbar = () => {
 
                         {/* Home */}
                         <li className={styles.nav_item_home}>
-                            <a href="/">Home</a>
+                            <Link href="/" className={`${styles.navbar_link}`} >Home</Link>
                         </li>
                         
                         {/* Projects */}
                         <li className={styles.dropdown}>
-                            <a className={styles.dropbtn} href="/" >Projects</a>
+                            <div className={`${styles.navbar_link} ${styles.dropbtn}`} >Projects</div>
                                 <div className={styles.dropdown_content}>
-                                    <a  className={styles.nav_item_projects_dropdown_li_1} href="/project_top">"The Odin Project"</a>
-                                    <a className={styles.nav_item_projects_dropdown_li_2} href="/projects_react_nextjs">react/next.js-Projects</a>
+                                    <Link  className={`${styles.navbar_link} ${styles.nav_item_projects_dropdown_li_1}`} href="/project_top">"The Odin Project"</Link>
+                                    <Link className={`${styles.navbar_link} ${styles.nav_item_projects_dropdown_li_2}`} href="/projects_react_nextjs">react/next.js-Projects</Link>
                                 </div>
                         </li>
 
                         {/* About */}
                         <li className={styles.nav_item_about}>
-                            <a href="/about">About</a>
+                            <Link href="/about" className={`${styles.navbar_link}`} >About</Link>
                         </li>
 
                         {/* Contact */}
                         <li className={styles.nav_item_contact}>
-                            <a href="/contact">Contact</a>
+                            <Link href="/contact" className={`${styles.navbar_link}`} >Contact</Link>
                         </li>
 
                         {/* Settings */}
                         <li className={styles.nav_item_settings}>
-                            <a href="/settings">Settings</a>
+                            <Link href="/settings" className={`${styles.navbar_link}`} >Settings</Link>
                         </li>
 
                     </ul>
