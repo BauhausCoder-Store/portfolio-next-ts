@@ -80,7 +80,7 @@ const Project_top: NextPage = () => {
 
               <div className={styles.project_text_wrapper}>
                 <h2 className={styles.project_h2}>TIC-TAC-TOE</h2>
-                <p>The world-famous 'Tic-Tac-Toe' is fun to play in almost every situation and is also a good boredom breaker. Making an online version required my first exposure to programming a gaming AI that - once done - didn't seem like a lame drunk at 3am. Due to the significantly smaller number of game options, it was a very good preparation for the '4-in-a-row' project, of which it is the little sister. Especially the less high complexity and the resulting faster game can often be attractive and just the right thing! Will you be able to beat the computer ?</p>
+                <p>The world-famous &apos;Tic-Tac-Toe&apos; is fun to play in almost every situation and is also a good boredom breaker. Making an online version required my first exposure to programming a gaming AI that - once done - didn&apos;t seem like a lame drunk at 3am. Due to the significantly smaller number of game options, it was a very good preparation for the &apos;4-in-a-row&apos; project, of which it is the little sister. Especially the less high complexity and the resulting faster game can often be attractive and just the right thing! Will you be able to beat the computer ?</p>
                 <Link className={styles.tictactoe_a} href='https://stefanbartl.github.io/Tic-Tac-Toe/' target='_blank' title='Click to jump to the project!'><h3>3-in-a-row is always worth it!</h3></Link>
               </div>
 
@@ -95,8 +95,8 @@ const Project_top: NextPage = () => {
 
               <div className={styles.project_text_wrapper}>
                 <h2 className={styles.project_h2}>ROCK-PAPER-SCISSORS</h2>
-                <p>Who doesn't know it? Popular with young and old - sometimes played for fun, but sometimes also to play something important! The programming itself was totally fun and exciting, a good random algorithm was the goal and was found. Do you want to know if you know more lucky than the machine in front of you ?</p>
-                <Link className={styles.rps_a} href='https://stefanbartl.github.io/Rock-Paper-Scissor/' target='_blank' title='Click to jump to the project!'><h3>Lets give it a try!</h3></Link>
+                <p>Who doesn&apos;t know it? Popular with young and old - sometimes played for fun, but sometimes also to play something important! The programming itself was totally fun and exciting, a good random algorithm was the goal and was found. Do you want to know if you know more lucky than the machine in front of you ?</p>
+                <Link className={styles.rps_a} href='https://stefanbartl.github.io/Rock-Paper-Scissor/' target='_blank' title='Click to jump to the project!'><h3>Let&apos;s give it a try!</h3></Link>
               </div>
 
               <div className={styles.project_img_wrapper}>
