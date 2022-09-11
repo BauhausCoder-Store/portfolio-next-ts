@@ -2,7 +2,7 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
-import styles from '../styles/Contact.module.css';
+import styles from '../styles/Contact.module.scss';
 
 import facebookSVG from '../public/graphics/logos/web_plattforms/facebook-original.svg';
 import githubSVG from '../public/graphics/logos/web_plattforms/github-original.svg';

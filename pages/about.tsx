@@ -1,7 +1,7 @@
 import type { NextPage } from 'next';
 import Image from 'next/image'; 
 import Head from 'next/head';
-import styles from '../styles/About.module.css';
+import styles from '../styles/About.module.scss';
 
 import MyDevLogo from '../public/graphics/logos/dev_logo.png';
 import MySignature from '../public/graphics/images/@me/unterschrift_transparent.png';

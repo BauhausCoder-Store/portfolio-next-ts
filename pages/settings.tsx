@@ -2,7 +2,7 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import { useEffect, useState } from 'react';
 
-import styles from '../styles/Settings.module.css';
+import styles from '../styles/Settings.module.scss';
 
 import { Checkbox } from '../components/Checkbox';
 
@@ -48,9 +48,8 @@ const Settings: NextPage = () => {
         </select>
 
         <h2>Color-Theme</h2>
-        <select className={styles.settings_select_color}  id='theme_select'>
-          <option selected>Select Theme here...</option>
-          <option value="1">Dark</option>
+        <select className={styles.settings_select_color}  id='theme_select' defaultValue={1}>
+          <option value="1" >Dark</option>
           <option value="2">Light</option>
         </select>
 
