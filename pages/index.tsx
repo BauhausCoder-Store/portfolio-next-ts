@@ -25,7 +25,7 @@ const Home: NextPage = () => {
         <section className={styles.headline_section}>
 
             <div className={styles.devlogo_wrapper}>
-              <Image src={ MyDevLogo } className={styles.devlogo} />
+              <Image src={ MyDevLogo } className={styles.devlogo} alt="Stefan Bartl's Logo" />
             </div>
 
             <h1 className={styles.page_title}>front-end. web-development</h1>
@@ -39,7 +39,7 @@ const Home: NextPage = () => {
 
 
           <div className={styles.introduction_img_wrapper} id='id_intro_animation'>
-            <Image src={ MyPortrait } className={styles.introduction_img}/>
+            <Image src={ MyPortrait } className={styles.introduction_img} alt='Image of the page developer Stefan Bartl '/>
           </div>
 
           <div className={styles.introduction_text_wrapper}>

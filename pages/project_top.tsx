@@ -28,7 +28,7 @@ const Project_top: NextPage = () => {
           <section className={styles.headline_section}>
 
             <div className={styles.devlogo_wrapper}>
-              <Image src={ MyDevLogo } className={styles.devlogo} />
+              <Image src={ MyDevLogo } className={styles.devlogo} alt="Stefan Bartl's Logo" />
             </div>
 
             <h1 className={styles.page_title}>the odin project</h1>
@@ -55,7 +55,7 @@ const Project_top: NextPage = () => {
               </div>
 
               <div className={styles.project_img_wrapper}>
-                <Image src={ EtchASketchSVG} />
+                <Image src={ EtchASketchSVG}  alt="Project Logo" />
               </div>
 
             </div>
@@ -70,7 +70,7 @@ const Project_top: NextPage = () => {
               </div>
 
               <div className={styles.project_img_wrapper}>
-                <Image src={ FourWinsPNG } />
+                <Image src={ FourWinsPNG } alt="Project Logo" />
               </div>
 
             </div>
@@ -85,7 +85,7 @@ const Project_top: NextPage = () => {
               </div>
 
               <div className={styles.project_img_wrapper}>
-                <Image src={ TicTacToePNG } />
+                <Image src={ TicTacToePNG } alt="Project Logo" />
               </div>
 
             </div>
@@ -100,7 +100,7 @@ const Project_top: NextPage = () => {
               </div>
 
               <div className={styles.project_img_wrapper}>
-                <Image src={ RockPaperScissorSVG } />
+                <Image src={ RockPaperScissorSVG } alt="Project Logo" />
               </div>
 
             </div>

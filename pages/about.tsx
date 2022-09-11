@@ -59,7 +59,7 @@ const About: NextPage = () => {
             <div className={styles.about_map_container}>
               
                 <div className={styles.about_map_wrapper}>
-                  <Image src={ EuropeMap } />
+                  <Image src={ EuropeMap } alt="Map of Europe with Vienna marked" />
                 </div>
 
             </div>
@@ -73,14 +73,14 @@ const About: NextPage = () => {
             <div className={styles.about_me_final_text}>
 
               <h2>To my person</h2>
-              <p>Stefan Bartl, born in St.Pölten in 1990, lives in Vienna, Austria. Always interested in technology, my first job ended up in the construction industry. I completed an apprenticeship as a bricklayer/formwork builder and completed it with distinction. After 6 years I switched to the Austrian Trade Union Confederation to realize my socio-political interests and to do something good for those people who often cannot do it themselves and are politically underrepresented. As a trade unionist, I have been able to accumulate several years of management experience, numerous training courses, skills and abilities in the areas of rhetoric, group dynamics, personnel management, event management, budget policy, business and economics, political economy, etc. Since 2021 I have been filling all my free time with courses and my own further education in the field of web development. Since then I&apos;ve been gripped by the &apos;programmer&apos; fever and I'm totally absorbed in this challenging, creative and beautiful job.</p> 
+              <p>Stefan Bartl, born in St.Pölten in 1990, lives in Vienna, Austria. Always interested in technology, my first job ended up in the construction industry. I completed an apprenticeship as a bricklayer/formwork builder and completed it with distinction. After 6 years I switched to the Austrian Trade Union Confederation to realize my socio-political interests and to do something good for those people who often cannot do it themselves and are politically underrepresented. As a trade unionist, I have been able to accumulate several years of management experience, numerous training courses, skills and abilities in the areas of rhetoric, group dynamics, personnel management, event management, budget policy, business and economics, political economy, etc. Since 2021 I have been filling all my free time with courses and my own further education in the field of web development. Since then I&apos;ve been gripped by the &apos;programmer&apos; fever and I&aposm totally absorbed in this challenging, creative and beautiful job.</p> 
 
             </div>
 
               <h3>In short, the following three and a half words describe me: science, tech & peace(-politics) !</h3>
 
               <div className={styles.about_signature} >
-                <Image src={ MySignature } />
+                <Image src={ MySignature }  alt="Stefan Bartl's Signature " />
               </div> 
           
           </section>
@@ -88,7 +88,7 @@ const About: NextPage = () => {
           {/* Circle image */}
 
           <div className={styles.about_me_img_wrapper} >
-            <Image src={ MeDonaumarina } />
+            <Image src={ MeDonaumarina } alt="Image of Stefan Bartl" />
           </div>
 
 

@@ -25,7 +25,7 @@ const Projects_react_nextjs: NextPage = () => {
           <section className={styles.headline_section}>
 
             <div className={styles.devlogo_wrapper}>
-              <Image src={ MyDevLogo } className={styles.devlogo} />
+              <Image src={ MyDevLogo } className={styles.devlogo} alt="Stefan Bartl's Logo" />
             </div>
 
             <h1 className={styles.page_title}>React / Next.js Projects</h1>
@@ -52,7 +52,7 @@ const Projects_react_nextjs: NextPage = () => {
               </div>
 
               <div className={styles.project_img_wrapper}>
-                <Image src={ MemoryCardPNG } />
+                <Image src={ MemoryCardPNG } alt="Project Logo" />
               </div>
 
             </div>
