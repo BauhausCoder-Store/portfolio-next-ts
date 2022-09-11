@@ -38,7 +38,7 @@ const Home: NextPage = () => {
 
 
 
-          <div className={styles.introduction_img_wrapper}>
+          <div className={styles.introduction_img_wrapper} id='id_intro_animation'>
             <Image src={ MyPortrait } className={styles.introduction_img}/>
           </div>
 

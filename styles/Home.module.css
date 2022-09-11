@@ -72,7 +72,8 @@
   will-change: filter;
   filter: drop-shadow(-1rem 1rem 2rem white); }
 
-.introduction_img_wrapper:hover:not(.no_animation) {
+.introduction_img_wrapper:hover:not(.no_animations
+) {
   animation: intro_img_animation  infinite 10s; }
 
 @keyframes intro_img_animation {

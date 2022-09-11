@@ -1,6 +1,6 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import styles from '../styles/Settings.module.css';
 
@@ -8,17 +8,26 @@ import { Checkbox } from '../components/Checkbox';
 
 const Settings: NextPage = () => {
 
-
-    const [animationChecked, setAnimationChecked] = useState(false);
-    const [musicChecked, setMusicChecked] = useState(false);
+    const [musicChecked, setMusicChecked] = useState(true);
+    const [animationChecked, setAnimationChecked] = useState(true);
 
     const handleMusicChange = () => {
       setMusicChecked(!musicChecked);
+      if(musicChecked === false){
+
+      }
     };
 
     const handleAnimationChange = () => {
       setAnimationChecked(!animationChecked);
+      typeof window && animationChecked === true
+      ? document.querySelector('#id_intro_animation')?.classList.add('no_animations')
+      : document.querySelector('#id_intro_animation')?.classList.remove('no_animations');
     };
+
+  
+
+
 
   return (
     
@@ -51,7 +60,7 @@ const Settings: NextPage = () => {
         </div>
 
         <h2>Animations</h2>
-        <div className={styles.settings_switch_animations_animation}>
+        <div className={styles.settings_switch_animations_animation} id='try'>
           <Checkbox value={animationChecked} onChange={handleAnimationChange}  />
         </div>
 
