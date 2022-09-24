@@ -1,15 +1,16 @@
-import Head from "next/head";
-import type { AppProps } from "next/app";
-import "../styles/globals.scss";
+import Head from 'next/head';
+import type { AppProps } from 'next/app';
+import '../styles/globals.css';
 
 import { Navbar } from '../components/Navbar';
+import YoutubePlayer from '../components/YoutubePlayer';
 
 function MyApp({ Component, pageProps }: AppProps) {
   
   return (
       <>
         <Head>
-          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <meta name='viewport' content='width=device-width, initial-scale=1' />
           <meta name='author' content='Stefan Bartl (WKDStevie)' />
           <meta name='description' content='Web-Development Portfolio by Stefan Bartl (WKDStevie)' />
           <meta name='keywords' content='Portfolio, Web-Development, HTML, CSS, Sass, Javascript, Typescript, Node.js, React, Next.js' />
@@ -17,8 +18,14 @@ function MyApp({ Component, pageProps }: AppProps) {
           <link rel='apple-touch-icon' sizes='120x120' href='/graphics/logos/dev_logo.png' />
         </Head>
         
-        <div className="app-container">
-          <Navbar />
+        <div className='app-container'>
+          <div className='navbar-container'>
+            <Navbar />
+            <div className='recommendation-container' >
+              <YoutubePlayer/>
+            </div>
+          </div>
+
           <Component {...pageProps} />
         </div>
 

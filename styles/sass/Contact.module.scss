@@ -1,0 +1,129 @@
+@import './ColorsAndDesign.scss';
+
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+
+    > h1 {
+        margin-block: 2rem;
+        font-size: 4rem;
+        font-weight: bold;
+    }
+
+    > .social_media_section{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 1rem;
+
+        > .social_media_container {
+            display: flex;
+            gap: .5rem;
+            
+            > .social_media_logo_wrapper{
+                width: 3rem;
+                display: flex;
+                align-items: center;
+                transition: all .3s;
+            }
+
+            > .social_media_logo_wrapper:hover {
+                transform: scale(1.3);
+                margin-left: 1rem;
+                margin-right: 1rem;
+            }
+        }
+
+    }
+
+    > .send_email_section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: .5rem;
+        border-top: solid 2px $wkd-grey;
+
+        
+        > .send_email_form_wrapper {
+            width: fit-content;
+        }
+    }
+
+}
+
+
+/*#region Transitions, Animations, Pseudoelements */
+
+// ? Headline
+
+.contact_headline {
+    color: $wkd-orange;
+    position: relative;
+    animation: contact_headline_animation 20s ease-in-out infinite;
+}
+
+.contact_headline::before {
+    content: "";
+    border: solid 2px $wkd-orange;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    animation: contact_headline_animation 20s ease-in-out infinite;
+}
+
+@keyframes contact_headline_animation {
+    0%{
+        border-color: $wkd-orange;
+        color: $wkd-orange;
+    }
+    33%{
+        border-color: $wkd-grey;
+        color: $wkd-grey;
+    }
+    66%{
+        border-color: $wkd-pinkviolett;
+        color: $wkd-pinkviolett;
+    }
+}
+
+// ? Social Media
+
+.social_media_section {
+    transition: all .5s ease-in-out;
+}
+
+.social_media_section:hover {
+    transform: scale(1.5);
+    animation: social_media_animation infinite 20s ease-in-out;
+}
+
+@keyframes social_media_animation {
+    0%{
+        color: $wkd-orange;
+    }
+    33%{
+        color: $wkd-grey;
+    }
+    66%{
+        color: $wkd-pinkviolett;
+    }
+}
+
+// ? Send E-Mail
+
+.send_email_section > h2 {
+    transition: transform .5s;
+}
+
+.send_email_section:hover {
+    > h2 {
+        color: $wkd-orange;
+        transform: scale(1.3);
+    }
+}
+
+/*#endregion*/

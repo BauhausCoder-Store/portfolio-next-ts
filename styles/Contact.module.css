@@ -1,0 +1,115 @@
+/* ==================  
+?    ===  Colour-Palette  ===
+.     ================== */
+/* filter: brightness(0) saturate(100%) invert(44%) sepia(24%) saturate(4068%) hue-rotate(1deg) brightness(98%) contrast(106%); */
+/* filter: brightness(0) saturate(100%) invert(19%) sepia(63%) saturate(4179%) hue-rotate(293deg) brightness(123%) contrast(136%); */
+/*? === design === */
+/*? === text === */
+/* futura: font-family: futura-pt,sans-serif; */
+@import url("https://use.typekit.net/izw3hmc.css");
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+.main > h1 {
+  margin-block: 2rem;
+  font-size: 4rem;
+  font-weight: bold;
+}
+.main > .social_media_section {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.main > .social_media_section > .social_media_container {
+  display: flex;
+  gap: 0.5rem;
+}
+.main > .social_media_section > .social_media_container > .social_media_logo_wrapper {
+  width: 3rem;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s;
+}
+.main > .social_media_section > .social_media_container > .social_media_logo_wrapper:hover {
+  transform: scale(1.3);
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.main > .send_email_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem;
+  border-top: solid 2px rgb(107, 106, 106);
+}
+.main > .send_email_section > .send_email_form_wrapper {
+  width: fit-content;
+}
+
+/*#region Transitions, Animations, Pseudoelements */
+.contact_headline {
+  color: rgb(255, 102, 0);
+  position: relative;
+  animation: contact_headline_animation 20s ease-in-out infinite;
+}
+
+.contact_headline::before {
+  content: "";
+  border: solid 2px rgb(255, 102, 0);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  animation: contact_headline_animation 20s ease-in-out infinite;
+}
+
+@keyframes contact_headline_animation {
+  0% {
+    border-color: rgb(255, 102, 0);
+    color: rgb(255, 102, 0);
+  }
+  33% {
+    border-color: rgb(107, 106, 106);
+    color: rgb(107, 106, 106);
+  }
+  66% {
+    border-color: rgb(255, 0, 255);
+    color: rgb(255, 0, 255);
+  }
+}
+.social_media_section {
+  transition: all 0.5s ease-in-out;
+}
+
+.social_media_section:hover {
+  transform: scale(1.5);
+  animation: social_media_animation infinite 20s ease-in-out;
+}
+
+@keyframes social_media_animation {
+  0% {
+    color: rgb(255, 102, 0);
+  }
+  33% {
+    color: rgb(107, 106, 106);
+  }
+  66% {
+    color: rgb(255, 0, 255);
+  }
+}
+.send_email_section > h2 {
+  transition: transform 0.5s;
+}
+
+.send_email_section:hover > h2 {
+  color: rgb(255, 102, 0);
+  transform: scale(1.3);
+}
+
+/*#endregion*/
+
+/*# sourceMappingURL=Contact.module.css.map */

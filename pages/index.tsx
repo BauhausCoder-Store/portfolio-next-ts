@@ -1,12 +1,13 @@
 import type { NextPage } from 'next'
 import Head from 'next/head';
-import styles from '../styles/Home.module.scss';
+import styles from '../styles/Home.module.css';
 
 import Image from 'next/image'; 
 import MyDevLogo from '../public/graphics/logos/dev_logo.png';
 import MyPortrait from '../public/graphics/images/@me/sb_bank.jpg';
 
 const Home: NextPage = () => {
+
 
 
   return (

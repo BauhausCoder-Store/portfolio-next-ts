@@ -1,0 +1,269 @@
+@import './ColorsAndDesign.scss';
+
+
+.main {
+    padding: .5rem 1rem 0rem 1rem;
+}
+
+
+
+/*#region HEADLINE Section */
+
+.headline_section {
+    display: flex;
+    
+}
+
+.devlogo_wrapper {
+    display: block;
+    width: 5rem;
+    height: 5rem;
+    margin-left: .5rem;
+    margin-bottom: .5rem;
+}
+
+
+.page_title {
+    color: $counter-colour;
+    margin-left: auto;
+    margin-right: .5rem;
+    margin-bottom: .5rem;
+    padding-right: 1rem;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+/*#endregion*/
+
+
+
+/*#region Introduction Section */
+
+.introduction_section {
+    margin-top: 3rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.introduction_headline {
+    color: $counter-colour;
+}
+
+.introduction_img_wrapper {
+    display: flex;
+    align-items: center;
+    max-width: 30%;
+    aspect-ratio: 1/1;
+    margin-left: auto;
+}
+
+.introduction_img {
+    border-radius: 3rem;
+}
+
+.introduction_text_wrapper {
+    width: 40vw;
+    margin-right: auto;
+
+    > h3 {
+        font-weight: bold;
+    }
+
+    > p {
+        width: $text-optimal-width;
+        padding-left: 3rem;
+    }
+
+}
+
+.introduction_text_statement {
+    text-align: center;
+}
+
+/*#endregion*/
+
+
+
+/*#region Transitions & Animations */
+
+.devlogo and body:not(.noanimations) {
+    transition: all 1s ease;
+  }
+  
+.devlogo_wrapper:hover .devlogo {
+    filter: brightness(0) saturate(100%) invert(44%) sepia(24%) saturate(4068%) hue-rotate(1deg) brightness(98%) contrast(106%);
+}
+
+
+// ? Introduction Image shadow 
+
+.introduction_img_wrapper {
+    will-change: filter;
+    filter: drop-shadow( -1rem 1rem 2rem white);
+}
+
+.introduction_img_wrapper:hover {
+    animation: intro_img_animation  infinite 10s;
+}
+
+@keyframes intro_img_animation {
+    0% {filter: drop-shadow( -1rem 1rem 2rem white)}
+    25% {filter: drop-shadow( -1rem -1rem 2rem $wkd-orange)}
+    50% {filter: drop-shadow( 1rem -1rem 2rem $wkd-pinkviolett)}
+    75% {filter: drop-shadow( 1rem 1rem 2rem $wkd-orange)}
+ }
+
+// ? Text
+.introduction_first_h3,
+.introduction_first_p, 
+.introduction_second_h3,
+.introduction_second_p,
+.introduction_text_statement {
+    transition: color .5s;
+}
+
+.introduction_first_h3:hover,
+.introduction_first_p:hover, 
+.introduction_second_h3:hover,
+.introduction_second_p:hover,
+.introduction_text_statement:hover {
+    color: $wkd-orange;
+}
+
+/*#endregion*/
+
+
+
+/*#region Styling-Pseudoelements */
+
+//? Headline-Logo
+.devlogo_wrapper {
+    position: relative;
+}
+
+.devlogo_wrapper::before,
+.devlogo_wrapper::after {
+    content: "";
+    border: solid 2px $wkd-grey;
+    position: absolute;
+    transition: all 2s ease;
+    left: -.5rem;
+    bottom: -.5rem;
+}
+
+.devlogo_wrapper::before {
+    height: calc(100% + 1rem);
+}
+
+.devlogo_wrapper::after {
+    width: 2rem;
+}
+
+.headline_section:hover .devlogo_wrapper::before {
+    height: 3rem;
+    border-color: $wkd-pinkviolett;
+}
+
+.headline_section:hover .devlogo_wrapper::after {
+    width: 3rem;
+    border-color: $wkd-pinkviolett;
+}
+
+
+//? Headline-Text
+.page_title {
+    position: relative;
+}
+
+.page_title::before,
+.page_title::after {
+    content: "";
+    border: solid 2px $wkd-grey;
+    position: absolute;
+    transition: all 2s ease;
+    bottom: -.5rem;
+    right: -.5rem;
+}
+
+.page_title::before {
+    height: calc(2rem);
+}
+
+.page_title::after {
+    width: 50%;
+}
+
+.headline_section:hover .page_title::before {
+    height: calc(100% + 1rem);
+    border-color: $wkd-pinkviolett;
+}
+
+.headline_section:hover .page_title::after {
+    width: 2rem;
+    border-color: $wkd-pinkviolett;
+}
+
+
+// ? Introduction right-lane
+
+.introduction_section {
+    position: relative;
+}
+
+.introduction_section::before {
+    content: "";
+    border: solid 2px $wkd-grey;
+    position: absolute;
+    transition: all 2s ease;
+    right: 0;
+    top: -3rem;
+    height: calc(100% + 3rem);
+}
+
+.introduction_section:hover::before {
+    border-color: $wkd-pinkviolett;
+    top: -.5rem;
+    height: calc(100% + .5rem);
+}
+
+// ? Introduction Headline
+
+.introduction_text_wrapper {
+    position: relative;
+}
+
+.introduction_text_wrapper::before,
+.introduction_text_wrapper::after  {
+    content: "";
+    border: solid 2px $wkd-grey;
+    position: absolute;
+    transition: all 1s ease;
+}
+
+.introduction_text_wrapper::before {
+    left: -1.5rem;
+    top: -.5rem;
+    width: 2rem;
+}
+
+.introduction_text_wrapper::after {
+    left: -1rem;
+    top: -1rem;
+    height: 2rem;
+}
+
+.introduction_text_wrapper:hover::before {
+    width: 2.5rem;
+    border-color: $wkd-pinkviolett;
+}
+
+.introduction_text_wrapper:hover::after {
+    left: -1.5rem;
+    top: -.5rem;
+    height: 2.5rem;
+    border-color: $wkd-pinkviolett;
+}
+
+
+/*#endregion*/
+

@@ -2,7 +2,7 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
-import styles from '../styles/Projects.module.scss';
+import styles from '../styles/Projects.module.css';
 
 import MyDevLogo from '../public/graphics/logos/dev_logo.png';
 import MemoryCardPNG from '../public/graphics/images/project-thumnbnails/mmcardgame.png';

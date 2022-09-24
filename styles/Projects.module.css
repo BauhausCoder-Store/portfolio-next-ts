@@ -1,0 +1,282 @@
+/* ==================  
+?    ===  Colour-Palette  ===
+.     ================== */
+/* filter: brightness(0) saturate(100%) invert(44%) sepia(24%) saturate(4068%) hue-rotate(1deg) brightness(98%) contrast(106%); */
+/* filter: brightness(0) saturate(100%) invert(19%) sepia(63%) saturate(4179%) hue-rotate(293deg) brightness(123%) contrast(136%); */
+/*? === design === */
+/*? === text === */
+/* futura: font-family: futura-pt,sans-serif; */
+@import url("https://use.typekit.net/izw3hmc.css");
+/*#region Headline Section */
+.headline_section {
+  display: flex;
+  padding: 1rem;
+}
+
+.devlogo_wrapper {
+  display: block;
+  width: 5rem;
+  height: 5rem;
+  margin-left: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.page_title {
+  color: rgb(255, 102, 0);
+  margin-left: auto;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding-right: 1rem;
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.devlogo_wrapper {
+  position: relative;
+}
+
+.devlogo_wrapper::before,
+.devlogo_wrapper::after {
+  content: "";
+  border: solid 2px rgb(107, 106, 106);
+  position: absolute;
+  transition: all 2s ease;
+  left: -0.5rem;
+  bottom: -0.5rem;
+}
+
+.devlogo_wrapper::before {
+  height: calc(100% + 1rem);
+}
+
+.devlogo_wrapper::after {
+  width: 2rem;
+}
+
+.headline_section:hover .devlogo_wrapper::before {
+  height: 3rem;
+  border-color: rgb(255, 0, 255);
+}
+
+.headline_section:hover .devlogo_wrapper::after {
+  width: 3rem;
+  border-color: rgb(255, 0, 255);
+}
+
+.devlogo_wrapper {
+  position: relative;
+}
+
+.devlogo_wrapper::before,
+.devlogo_wrapper::after {
+  content: "";
+  border: solid 2px rgb(107, 106, 106);
+  position: absolute;
+  transition: all 2s ease;
+  left: -0.5rem;
+  bottom: -0.5rem;
+}
+
+.devlogo_wrapper::before {
+  height: calc(100% + 1rem);
+}
+
+.devlogo_wrapper::after {
+  width: 2rem;
+}
+
+.headline_section:hover .devlogo_wrapper::before {
+  height: 3rem;
+  border-color: rgb(255, 0, 255);
+}
+
+.headline_section:hover .devlogo_wrapper::after {
+  width: 3rem;
+  border-color: rgb(255, 0, 255);
+}
+
+.page_title {
+  position: relative;
+}
+
+.page_title::before,
+.page_title::after {
+  content: "";
+  border: solid 2px rgb(107, 106, 106);
+  position: absolute;
+  transition: all 2s ease;
+  bottom: -0.5rem;
+  right: -0.5rem;
+}
+
+.page_title::before {
+  height: 2rem;
+}
+
+.page_title::after {
+  width: 50%;
+}
+
+.headline_section:hover .page_title::before {
+  height: calc(100% + 1rem);
+  border-color: rgb(255, 0, 255);
+}
+
+.headline_section:hover .page_title::after {
+  width: 2rem;
+  border-color: rgb(255, 0, 255);
+}
+
+/*#endregion*/
+.intro {
+  padding: 1rem;
+  text-align: center;
+}
+.intro > a {
+  text-decoration: none;
+  color: rgb(255, 102, 0);
+}
+
+/*#region Projects Section */
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.projects > .project_container {
+  display: flex;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+.projects > .project_container > .project_text_wrapper {
+  width: clamp(45ch, 50%, 75ch);
+  padding: 1rem;
+}
+.projects > .project_container > .project_text_wrapper > h2 {
+  color: rgb(255, 102, 0);
+  font-weight: bold;
+}
+.projects > .project_container > .project_text_wrapper > p {
+  margin-left: 2rem;
+}
+.projects > .project_container > .project_text_wrapper > a {
+  text-decoration: none;
+  color: rgb(255, 102, 0);
+  text-align: center;
+}
+.projects > .project_container > .project_img_wrapper {
+  padding: 1rem;
+  width: 40%;
+}
+
+/*#endregion*/
+/*#region Transitions */
+.devlogo {
+  transition: all 1s ease;
+}
+
+.devlogo_wrapper:hover .devlogo {
+  filter: brightness(0) saturate(100%) invert(44%) sepia(24%) saturate(4068%) hue-rotate(1deg) brightness(98%) contrast(106%);
+}
+
+.project_etch,
+.project_fourwins,
+.project_tictactoe,
+.project_rps {
+  filter: blur(1rem);
+  transition: all 500ms;
+}
+
+.project_etch:hover,
+.project_fourwins:hover,
+.project_tictactoe:hover,
+.project_rps:hover {
+  filter: blur(0);
+}
+
+/*#endregion*/
+/*#region Animations*/
+.project_etch:hover .etch_a > h3,
+.project_tictactoe:hover .tictactoe_a > h3 {
+  animation: a_red_animation;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes a_red_animation {
+  50% {
+    transform: scale(1.5);
+    color: rgb(255, 0, 0);
+  }
+}
+.project_etch:hover .project_text_wrapper > .project_h2,
+.project_tictactoe:hover .project_text_wrapper > .project_h2 {
+  animation: h3_red_animation;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes h3_red_animation {
+  50% {
+    color: rgb(255, 0, 0);
+  }
+}
+.project_fourwins:hover .fourwins_a > h3,
+.project_mmcardgame:hover .mmcardgame > h3 {
+  animation: a_blue_animation;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes a_blue_animation {
+  50% {
+    transform: scale(1.5);
+    color: rgb(0, 0, 250);
+  }
+}
+.project_fourwins:hover .project_text_wrapper > .project_h2,
+.project.project_mmcardgame:hover .project_text_wrapper > .project_h2 {
+  animation: h3_blue_animation;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes h3_blue_animation {
+  50% {
+    color: rgb(0, 0, 250);
+  }
+}
+.project_rps:hover .rps_a > h3 {
+  animation: a_white_animation;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes a_white_animation {
+  50% {
+    transform: scale(1.5);
+    color: rgb(255, 255, 255);
+  }
+}
+.project_rps:hover .project_text_wrapper > .project_h2 {
+  animation: h3_white_animation;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes h3_white_animation {
+  50% {
+    color: rgb(255, 255, 255);
+  }
+}
+/*#endregion */
+
+/*# sourceMappingURL=Projects.module.css.map */
