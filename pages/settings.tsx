@@ -4,20 +4,7 @@ import { useEffect, useState } from "react";
 
 import styles from "../styles/Settings.module.css";
 
-import { Checkbox } from "../components/Checkbox";
-
 const Settings: NextPage = () => {
-  const [musicChecked, setMusicChecked] = useState(true);
-  const [animationChecked, setAnimationChecked] = useState(true);
-
-  const handleMusicChange = () => {
-    setMusicChecked(!musicChecked);
-    if (typeof window) {
-      musicChecked === true
-        ? document.body.classList.add("musicON")
-        : document.body.classList.remove("musicON");
-    }
-  };
 
   return (
     <div className={styles.container}>
@@ -46,11 +33,6 @@ const Settings: NextPage = () => {
           <option value="1">Dark</option>
           <option value="2">Light</option>
         </select>
-
-        <h2>Music</h2>
-        <div className={styles.settings_switch_music}>
-          <Checkbox value={musicChecked} onChange={handleMusicChange} />
-        </div>
         
       </main>
     </div>
