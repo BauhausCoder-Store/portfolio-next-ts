@@ -1,4 +1,10 @@
 {
+    "navbar_home": "Home",
+    "navbar_projects": "Projects",
+    "navbar_about": "About",
+    "navbar_contact": "Contact",
+    "navbar_eye_title": "Government is watching you... fight for free speech!",
+
     "home_head_title": "My portfolio || Stefan Bartl (WKDStevie)",
     "home_introduction_headline_2h1_first": "Welcome,",
     "home_introduction_headline_2h1_second": "my name is Stefan.",

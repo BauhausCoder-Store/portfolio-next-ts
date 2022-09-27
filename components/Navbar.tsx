@@ -1,11 +1,23 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import useTranslation from 'next-translate/useTranslation';
 import { useEffect } from 'react';
+
 import styles from '../styles/Navbar.module.css';
+
 import Eye from '../public/graphics/images/eye_cuttted.png';
 
 export const Navbar = () => {
-    
+  
+    const { t, lang } = useTranslation('common');
+    const home = t('navbar_home');
+    const projects = t('navbar_projects');
+    const about = t('navbar_about');
+    const contact = t('navbar_contact');
+    const eye_title = t('navbar_eye_title');
+
+    //#region Cyber-Eye
+
     function angle(cx: number, cy: number, ex: number, ey: number){
         const dy = ey - cy;
         const dx = ex -cx;
@@ -13,7 +25,6 @@ export const Navbar = () => {
         const deg = rad *180 / Math.PI; // rads to degs, range (180, 180)
         return deg;
     }
-
     useEffect(()=>{
         window.addEventListener('mousemove', (e)=>{
 
@@ -41,10 +52,11 @@ export const Navbar = () => {
     // https://www.youtube.com/watch?v=TGe3pS5LqEw
     }, []);
 
+    //#endregion
 
     return (
             <nav className={styles.mynavbar}>
-                <div className={styles.eye} id='anchor' title="Government is watching you. Fight for free speech.">
+                <div className={styles.eye} id='anchor' title={eye_title}>
                     <Image src={Eye} className={styles.pupil} id='pupil'>
                     </Image>
                 </div>
@@ -53,12 +65,12 @@ export const Navbar = () => {
 
                     {/* Home */}
                     <li className={styles.nav_item_home}>
-                        <Link href="/" className={`${styles.navbar_link}`} >Home</Link>
+                        <Link href="/" className={`${styles.navbar_link}`} >{home}</Link>
                     </li>
                     
                     {/* Projects */}
                     <li className={styles.dropdown}>
-                        <div className={`${styles.navbar_link} ${styles.dropbtn}`} >Projects</div>
+                        <div className={`${styles.navbar_link} ${styles.dropbtn}`} >{projects}</div>
                             <div className={styles.dropdown_content}>
                                 <Link  className={`${styles.navbar_link} ${styles.nav_item_projects_dropdown_li_1}`} href="/project_top">The Odin Project</Link>
                                 <Link className={`${styles.navbar_link} ${styles.nav_item_projects_dropdown_li_2}`} href="/projects_react_nextjs">React/Next.js-Projects</Link>
@@ -67,12 +79,12 @@ export const Navbar = () => {
 
                     {/* About */}
                     <li className={styles.nav_item_about}>
-                        <Link href="/about" className={`${styles.navbar_link}`} >About</Link>
+                        <Link href="/about" className={`${styles.navbar_link}`} >{about}</Link>
                     </li>
 
                     {/* Contact */}
                     <li className={styles.nav_item_contact}>
-                        <Link href="/contact" className={`${styles.navbar_link}`} >Contact</Link>
+                        <Link href="/contact" className={`${styles.navbar_link}`} >{contact}</Link>
                     </li>
 
                 </ul>

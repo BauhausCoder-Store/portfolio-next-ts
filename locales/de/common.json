@@ -1,4 +1,10 @@
 {
+    "navbar_home": "Home",
+    "navbar_projects": "Projekte",
+    "navbar_about": "Über",
+    "navbar_contact": "Kontakt",
+    "navbar_eye_title": "Government is watching you... kämpfe für die Meinungsfreiheit!",
+
     "home_head_title": "Mein Portfolio || Stefan Bartl (WKDStevie)",
     "home_introduction_headline_2h1_first": "Willkommen,",
     "home_introduction_headline_2h1_second": "mein Name ist Stefan.",
