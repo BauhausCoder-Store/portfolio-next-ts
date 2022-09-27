@@ -9,6 +9,26 @@
 @import url("https://use.typekit.net/izw3hmc.css");
 .mynavbar {
   display: flex;
+  position: relative;
+}
+.mynavbar > .eye {
+  position: absolute;
+  left: 50vw;
+  bottom: -0.75rem;
+  z-index: 1;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 350%;
+  background-color: rgb(107, 106, 106);
+}
+.mynavbar > .eye > .pupil {
+  width: 2px;
+  height: 2px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  bottom: 0;
+  left: 43%;
+  z-index: 1;
 }
 .mynavbar > ul {
   list-style-type: none;

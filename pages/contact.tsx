@@ -2,6 +2,8 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
+import useTranslation from 'next-translate/useTranslation';
+
 import styles from '../styles/Contact.module.css';
 
 import facebookSVG from '../public/graphics/logos/web_plattforms/facebook-original.svg';
@@ -15,21 +17,27 @@ import { SendEmail } from '../components/SendEmail';
 
 const Contact: NextPage = () => {
 
+  const { t, lang } = useTranslation('common');
+  const head_title = t('contact_head_title');
+  const contact_headline = t('contact_headline');
+  const contact_social_media_h = t('contact_social_media_h');
+  const send_email_section_h2 = t('contact_send_email_section_h2');
+
   return (
     
     <div className={styles.container}>
       
       <Head>
-        <title>My Portfolio || Contact </title>
+        <title>{head_title}</title>
       </Head>
 
 
       <main className={styles.main}>
-        <h1 className={styles.contact_headline}>Contact</h1>
+        <h1 className={styles.contact_headline}>{contact_headline}</h1>
 
-        <section className={styles.social_media_section} >
+        <section className={styles.social_media_section}>
 
-           <h2>on social media</h2>
+           <h2 className={styles.contact_social_media_h}>{contact_social_media_h}</h2>
            <div className={styles.social_media_container}>
 
               <div className={`${styles.social_media_logo_wrapper} ${styles.instagramSVG_wrapper}`}>
@@ -65,7 +73,7 @@ const Contact: NextPage = () => {
 
         <section className={styles.send_email_section}>
 
-          <h2>the best way to contact me is via email</h2>
+          <h2 className={styles.send_email_section_h2}>{send_email_section_h2}</h2>
           <div className={styles.send_email_form_wrapper} >
             <SendEmail />
           </div>

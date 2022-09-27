@@ -1,6 +1,8 @@
 import type { NextPage } from 'next';
 import Image from 'next/image'; 
 import Head from 'next/head';
+import useTranslation from 'next-translate/useTranslation';
+
 import styles from '../styles/About.module.css';
 
 import MyDevLogo from '../public/graphics/logos/dev_logo.png';
@@ -10,12 +12,24 @@ import MeDonaumarina from '../public/graphics/images/@me/sb_donaumarina.jpg';
 
 const About: NextPage = () => {
 
+  const { t, lang } = useTranslation('common');
+  const about_head_title = t('about_head_title');
+  const about_page_title = t('about_page_title');
+  const about_text_h2_first = t('about_text_h2_first');
+  const about_text_p_first = t('about_text_p_first');
+  const about_text_h2_second = t('about_text_h2_second');
+  const about_text_p_second = t('about_text_p_second');
+  const about_text_p_third = t('about_text_p_third');
+  const about_me_final_text_h = t('about_me_final_text_h');
+  const about_me_final_text_p = t('about_me_final_text_p');
+  const about_me_final_text_h3 = t('about_me_final_text_h3');
+
   return (
     
     <div className={styles.container}>
       
       <Head>
-        <title>My Portfolio || About </title>
+        <title>{about_head_title}</title>
       </Head>
 
 
@@ -29,7 +43,7 @@ const About: NextPage = () => {
                 <Image src={ MyDevLogo } className={styles.devlogo} />
               </div>
 
-              <h1 className={styles.page_title}>about me. and this site</h1>
+              <h1 className={styles.page_title}>{about_page_title}</h1>
 
             </section>
 
@@ -41,12 +55,12 @@ const About: NextPage = () => {
 
             <div className={styles.about_text_container}>
 
-              <h2>Portfolio</h2>
-              <p>This webpage is designed as a portfolio for my web development projects. It should provide an overview of my skills in the areas of HTML, CSS, Javascript & Design and also serve as a learning curve archive for myself. Please note that I do not expand older projects with newly learned skills, but - if useful - make a new project out of it. I hope you enjoy my work !</p>
+              <h2>{about_text_h2_first}</h2>
+              <p>{about_text_p_first}</p>
 
-              <h2>Thanks</h2>
-              <p>On my Github repository you can find a readme file with all the collectives, artists, developers, companies, etc... without it I wouldn&apos;t have become a web developer. On behalf of everyone, I would like to refer to the &apos;Odin project&apos; (https://www.theodinproject.com/), which I can highly recommend for all beginners, but also for more experienced web developers. In the area of ​​CSS, I would like to recommend all web content by Kevin Powell (https://www.youtube.com/kepowob), whose videos and courses have helped me a lot. Finally, I would like to say a big and heartfelt thank you to my friends and family, who always support me in my interests and motivate me new.{"\n"}
-                  Thank you all from the bottom of my heart !</p>
+              <h2>{about_text_h2_second}</h2>
+              <p>{about_text_p_second}</p>
+              <p>{about_text_p_third}</p>
 
             </div>
 
@@ -72,12 +86,12 @@ const About: NextPage = () => {
 
             <div className={styles.about_me_final_text}>
 
-              <h2>To my person</h2>
-              <p>Stefan Bartl, born in St.Pölten in 1990, lives in Vienna, Austria. Always interested in technology, my first job ended up in the construction industry. I completed an apprenticeship as a bricklayer/formwork builder and completed it with distinction. After 6 years I switched to the Austrian Trade Union Confederation to realize my socio-political interests and to do something good for those people who often cannot do it themselves and are politically underrepresented. As a trade unionist, I have been able to accumulate several years of management experience, numerous training courses, skills and abilities in the areas of rhetoric, group dynamics, personnel management, event management, budget policy, business and economics, political economy, etc. Since 2021 I have been filling all my free time with courses and my own further education in the field of web development. Since then I&apos;ve been gripped by the &apos;programmer&apos; fever and I&aposm totally absorbed in this challenging, creative and beautiful job.</p> 
+              <h2>{about_me_final_text_h}</h2>
+              <p>{about_me_final_text_p}</p> 
 
             </div>
 
-              <h3>In short, the following three and a half words describe me: science, tech & peace(-politics) !</h3>
+              <h3>{about_me_final_text_h3}</h3>
 
               <div className={styles.about_signature} >
                 <Image src={ MySignature }  alt="Stefan Bartl's Signature " />

@@ -2,6 +2,8 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image'; 
 import Link from 'next/link';
+import useTranslation from 'next-translate/useTranslation';
+
 import styles from '../styles/Projects.module.css';
 
 import MyDevLogo from '../public/graphics/logos/dev_logo.png';
@@ -12,13 +14,28 @@ import RockPaperScissorSVG from '../public/graphics/images/project-thumnbnails/r
 
 const Project_top: NextPage = () => {
 
+  const { t, lang } = useTranslation('common');
+  const head_title = t('project_top_head_title');
+  const intro = t('project_top_intro');
+  const etch_h2 = t('project_top_etch_h2');
+  const etch_p = t('project_top_etch_p');
+  const etch_link = t('project_top_etch_link');
+  const fourwins_h2 = t('project_top_fourwins_h2');
+  const fourwins_p = t('project_top_fourwins_p');
+  const fourwins_link = t('project_top_fourwins_link');
+  const tictactoe_h2 = t('project_top_tictactoe_h2');
+  const tictactoe_p = t('project_top_tictactoe_p');
+  const tictactoe_link = t('project_top_tictactoe_link');
+  const rps_h2 = t('project_top_rps_h2');
+  const rps_p = t('project_top_rps_p');
+  const rps_link = t('project_top_rps_link');
 
   return (
     
     <div className={styles.container}>
       
       <Head>
-        <title>My Portfolio || The Odin Project</title>
+        <title>{head_title}</title>
       </Head>
 
       <main className={styles.main}>
@@ -37,8 +54,7 @@ const Project_top: NextPage = () => {
 
           <p className={styles.intro}>
             <Link href='http://www.theodinproject.com'>The Odin Project (TOP) </Link>
-            is an online curriculum to learn the basics of HTML, CSS (Flexbox, Grid, ...) Javascript, React,js, Node.js, etc... The focus is strongly on the self-acquired knowledge as well as applying the skills learned through project work. TOP personally helped me a lot to work my way into software-development and architecture. Here you will find selected works of mine: I have intentionally included simple projects to illustrate the learning experience. I highly recommend everyone who wants to learn software development or just enjoys solving tasks in the field of web technologies to take a closer look at this website.
-            Hardest recommendation!
+            {intro}
           </p>
 
           {/* Projects Section */}
@@ -49,9 +65,9 @@ const Project_top: NextPage = () => {
             <div className={`${styles.project_container} ${styles.project_etch}`}>
 
               <div className={styles.project_text_wrapper}>
-                <h2 className={styles.project_h2}>Etch - a - Sketch</h2>
-                <p>Etch A Sketch™ is a variant of the magic board and was particularly popular as a toy in the 1970s. The project tries to imitate the original in such a way that it is cool to play and integrates some useful features such as a free choice of color or adjustable resolution. The project was a lot of fun in the development: Above all, dealing with CSS grid and event control with Javascript were particularly instructive !</p>
-                <Link className={styles.etch_a} href='https://stefanbartl.github.io/Etch-a-Sketch/' target='_blank' title='Click to jump to the project!'><h3>Try the magic board!</h3></Link>
+                <h2 className={styles.project_h2}>{etch_h2}</h2>
+                <p>{etch_p}</p>
+                <Link className={styles.etch_a} href='https://stefanbartl.github.io/Etch-a-Sketch/' target='_blank' title='Click to jump to the project!'><h3>{etch_link}</h3></Link>
               </div>
 
               <div className={styles.project_img_wrapper}>
@@ -64,9 +80,9 @@ const Project_top: NextPage = () => {
             <div className={`${styles.project_container} ${styles.project_fourwins}`}>
 
               <div className={styles.project_text_wrapper}>
-                <h2 className={styles.project_h2}>4-IN-A-ROW</h2>
-                <p>This was my first project for which I took the time to expand it comprehensively according to my ideas: As a user you can freely choose the size of the playing field, swap stone colors, statistics and settings such as name or language are saved, series games are possible, a winning animation is integrated and and and... In addition, it is responsive and you can also play it on mobile devices! All this required a very extensive examination of numerous front-end development topics. I would be very happy if you try it out - have fun !</p>
-                <Link className={styles.fourwins_a} href='https://stefanbartl.github.io/FourWins/' target='_blank' title='Click to jump to the project!'><h3>Wanna play a round 4-in-a-row ?</h3></Link>
+                <h2 className={styles.project_h2}>{fourwins_h2}</h2>
+                <p>{fourwins_p}</p>
+                <Link className={styles.fourwins_a} href='https://stefanbartl.github.io/FourWins/' target='_blank' title='Click to jump to the project!'><h3>{fourwins_link}</h3></Link>
               </div>
 
               <div className={styles.project_img_wrapper}>
@@ -79,9 +95,9 @@ const Project_top: NextPage = () => {
             <div className={`${styles.project_container} ${styles.project_tictactoe}`}>
 
               <div className={styles.project_text_wrapper}>
-                <h2 className={styles.project_h2}>TIC-TAC-TOE</h2>
-                <p>The world-famous &apos;Tic-Tac-Toe&apos; is fun to play in almost every situation and is also a good boredom breaker. Making an online version required my first exposure to programming a gaming AI that - once done - didn&apos;t seem like a lame drunk at 3am. Due to the significantly smaller number of game options, it was a very good preparation for the &apos;4-in-a-row&apos; project, of which it is the little sister. Especially the less high complexity and the resulting faster game can often be attractive and just the right thing! Will you be able to beat the computer ?</p>
-                <Link className={styles.tictactoe_a} href='https://stefanbartl.github.io/Tic-Tac-Toe/' target='_blank' title='Click to jump to the project!'><h3>3-in-a-row is always worth it!</h3></Link>
+                <h2 className={styles.project_h2}>{tictactoe_h2}</h2>
+                <p>{tictactoe_p}</p>
+                <Link className={styles.tictactoe_a} href='https://stefanbartl.github.io/Tic-Tac-Toe/' target='_blank' title='Click to jump to the project!'><h3>{tictactoe_link}</h3></Link>
               </div>
 
               <div className={styles.project_img_wrapper}>
@@ -94,9 +110,9 @@ const Project_top: NextPage = () => {
             <div className={`${styles.project_container} ${styles.project_rps}`}>
 
               <div className={styles.project_text_wrapper}>
-                <h2 className={styles.project_h2}>ROCK-PAPER-SCISSORS</h2>
-                <p>Who doesn&apos;t know it? Popular with young and old - sometimes played for fun, but sometimes also to play something important! The programming itself was totally fun and exciting, a good random algorithm was the goal and was found. Do you want to know if you know more lucky than the machine in front of you ?</p>
-                <Link className={styles.rps_a} href='https://stefanbartl.github.io/Rock-Paper-Scissor/' target='_blank' title='Click to jump to the project!'><h3>Let&apos;s give it a try!</h3></Link>
+                <h2 className={styles.project_h2}>{rps_h2}</h2>
+                <p>{rps_p}</p>
+                <Link className={styles.rps_a} href='https://stefanbartl.github.io/Rock-Paper-Scissor/' target='_blank' title='Click to jump to the project!'><h3>{rps_link}</h3></Link>
               </div>
 
               <div className={styles.project_img_wrapper}>
@@ -111,6 +127,7 @@ const Project_top: NextPage = () => {
 
     </div>
   )
+  
 };
 
 export default Project_top

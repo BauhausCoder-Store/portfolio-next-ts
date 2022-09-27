@@ -2,6 +2,8 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
+import useTranslation from 'next-translate/useTranslation';
+
 import styles from '../styles/Projects.module.css';
 
 import MyDevLogo from '../public/graphics/logos/dev_logo.png';
@@ -9,13 +11,20 @@ import MemoryCardPNG from '../public/graphics/images/project-thumnbnails/mmcardg
 
 const Projects_react_nextjs: NextPage = () => {
 
+  const { t, lang } = useTranslation('common');
+  const head_title = t('projects_nextjs_head_title');
+  const page_title = t('projects_nextjs_page_title');
+  const intro = t('projects_nextjs_intro');
+  const mmcardgame_project_h2 = t('projects_nextjs_mmcardgame_project_h2');
+  const mmcardgame_project_p = t('projects_nextjs_mmcardgame_project_p');
+  const mmcardgame_project_link = t('projects_nextjs_mmcardgame_project_link');
 
   return (
     
     <div className={styles.container}>
       
       <Head>
-        <title>My Portfolio || React / Next.js Projects</title>
+        <title>{head_title}</title>
       </Head>
 
       <main className={styles.main}>
@@ -28,15 +37,11 @@ const Projects_react_nextjs: NextPage = () => {
               <Image src={ MyDevLogo } className={styles.devlogo} alt="Stefan Bartl's Logo" />
             </div>
 
-            <h1 className={styles.page_title}>React / Next.js Projects</h1>
+            <h1 className={styles.page_title}>{page_title}</h1>
 
           </section>
 
-          <p className={styles.intro}>
-            Since 2022, i.e. after I got involved in web frontend and Javascript development, I started to deal intensively with baking. In the world of server-side development, countless possibilities and projects open up. Hosting, databases, Internet infrastructure, hacking or file systems are some of the terms that are involved here.
-            Since I like working with React and Next.js, I have specialized in these technologies.
-            Selected projects are presented here.
-          </p>
+          <p className={styles.intro}>{intro}</p>
 
           {/* Projects Section */}
 
@@ -46,9 +51,9 @@ const Projects_react_nextjs: NextPage = () => {
             <div className={`${styles.project_container} ${styles.project_mmcardgame}`}>
 
               <div className={styles.project_text_wrapper}>
-                <h2 className={styles.project_h2}>Memory-Card Memo Game</h2>
-                <p>Memorize 10 cards as quickly as possible! Click on them one after the other as quickly as possible, but not twice - then you start over! My first real React project!</p>
-                <Link className={styles.mmcardgame} href='https://stefanbartl.github.io/react-mmcardgame/' target='_blank' title='Click to jump to the project!'><h3>3, 2, 1 - remember and click!</h3></Link>
+                <h2 className={styles.project_h2}>{mmcardgame_project_h2}</h2>
+                <p>{mmcardgame_project_p}</p>
+                <Link className={styles.mmcardgame} href='https://stefanbartl.github.io/react-mmcardgame/' target='_blank' title='Click to jump to the project!'><h3>{mmcardgame_project_link}</h3></Link>
               </div>
 
               <div className={styles.project_img_wrapper}>

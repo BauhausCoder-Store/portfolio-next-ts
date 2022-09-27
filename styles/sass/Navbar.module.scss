@@ -7,6 +7,29 @@
 
 .mynavbar {
     display: flex;
+    position: relative;
+
+    > .eye {
+        position: absolute;
+        left: 50vw;
+        bottom: -.75rem;
+        z-index: 1;
+        width: 1rem;
+        height: 1rem;
+        border-radius: 350%;
+        background-color: $wkd-grey;
+
+        > .pupil {
+            width: 2px;
+            height: 2px;
+            background-color: $wkd-white;
+            position: absolute;
+            bottom: 0;
+            left: 43%;
+            z-index: 1;
+        }
+    }
+
     > ul {
         list-style-type: none;
         display: flex;

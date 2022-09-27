@@ -90,14 +90,15 @@ select {
   > .recommendation-container{
     display: flex;
     justify-content: center;
-    margin-top: .5rem;
+    margin-top: 1rem;
     margin-bottom: .5rem;
     opacity: 0;
     transition: all 2s;
+    z-index: -1;
   }
 
   // minus the recommendation space
-  margin-bottom: calc(-150px + -1rem);
+  margin-bottom: calc(-150px + -3rem);
 
   transition: all 1.5s;
 }
