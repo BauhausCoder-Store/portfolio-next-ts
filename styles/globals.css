@@ -87,7 +87,7 @@ select {
   transition: all 1.5s;
 }
 .navbar-container > .recommendation-container {
-  display: flex;
+  display: none;
   justify-content: center;
   margin-top: 1rem;
   margin-bottom: 0.5rem;
