@@ -20,12 +20,12 @@
         background-color: $wkd-grey;
 
         > .pupil {
-            width: 2px;
-            height: 2px;
-            background-color: $wkd-white;
+            width: 1.5rem;
+            height: 1rem;
+            border-radius: 50%;
+            background-color: $wkd-grey;
             position: absolute;
             bottom: 0;
-            left: 43%;
             z-index: 1;
         }
     }
@@ -132,6 +132,18 @@
     75% { border-color:$wkd-pinkviolett}
 }
 
+
+.eye:hover  {
+    animation: eye_pupil_animation infinite 2s ease-in-out;   
+    outline: solid 5px $wkd-red;         
+}
+
+@keyframes eye_pupil_animation {
+    0% { outline-color: $wkd-grey}
+    25% { outline-color: $wkd-red}
+    50% { outline-color: $wkd-grey}
+    75% { outline-color:$wkd-red}
+}
 
 /*#endregion*/
 

@@ -16,10 +16,10 @@
     "@emailjs/browser": "^3.7.0",
     "bootstrap-icons": "^1.9.1",
     "emailjs": "^4.0.1",
-    "next": "12.2.5",
+    "next": "^13.0.3",
     "next-translate": "^1.6.0",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-youtube": "^10.0.0"
   },
   "devDependencies": {
@@ -28,7 +28,7 @@
     "@types/react-dom": "18.0.6",
     "dart-sass": "^1.25.0",
     "eslint": "8.23.0",
-    "eslint-config-next": "12.2.5",
+    "eslint-config-next": "^13.0.3",
     "sass": "^1.54.9",
     "typescript": "4.8.2"
   }

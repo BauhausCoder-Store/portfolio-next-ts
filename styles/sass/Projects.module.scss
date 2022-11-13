@@ -89,6 +89,11 @@
     width: 2rem;
 }
 
+.devlogo {
+    width: fit-content;
+    height: fit-content;
+}
+
 .headline_section:hover .devlogo_wrapper::before {
     height: 3rem;
     border-color: $wkd-pinkviolett;
@@ -141,7 +146,13 @@
 .intro {
     padding: 1rem;
     text-align: center;
+    width: 70%;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+    margin-left: auto;
+    margin-right: auto;
     > a {
+        font-size: $fs-700;
         text-decoration: none;
         color: $wkd-orange;
     }
@@ -154,7 +165,7 @@
 .projects {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 5rem;
 
     > .project_container {
         display: flex;
@@ -162,6 +173,7 @@
         margin-bottom: 1rem;
         align-items: center;
         justify-content: center;
+        gap: 5rem;
 
         > .project_text_wrapper {
             width: $text-optimal-width;
@@ -193,25 +205,7 @@
 
 
 /*#endregion*/
-_l
-.etch_a_l,
-.fourwins_a_l,
-.tictactoe_a_l,
-.rps_a_l,
-.mmcardgame_l {
-    transition: transform 1s ease;
-}
 
-
-.etch_a_l:hover,
-.fourwins_a_l:hover,
-.tictactoe_a_l:hover,
-.rps_a_l:hover,
-.mmcardgame_l:hover {
-    cursor: pointer;
-    color: $wkd-orange;
-    transform: scale(1.3);
-}
 
 
 

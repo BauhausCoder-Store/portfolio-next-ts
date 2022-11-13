@@ -22,12 +22,12 @@
   background-color: rgb(107, 106, 106);
 }
 .mynavbar > .eye > .pupil {
-  width: 2px;
-  height: 2px;
-  background-color: rgb(255, 255, 255);
+  width: 1.5rem;
+  height: 1rem;
+  border-radius: 50%;
+  background-color: rgb(107, 106, 106);
   position: absolute;
   bottom: 0;
-  left: 43%;
   z-index: 1;
 }
 .mynavbar > ul {
@@ -119,6 +119,25 @@
   }
   75% {
     border-color: rgb(255, 0, 255);
+  }
+}
+.eye:hover {
+  animation: eye_pupil_animation infinite 2s ease-in-out;
+  outline: solid 5px rgb(255, 0, 0);
+}
+
+@keyframes eye_pupil_animation {
+  0% {
+    outline-color: rgb(107, 106, 106);
+  }
+  25% {
+    outline-color: rgb(255, 0, 0);
+  }
+  50% {
+    outline-color: rgb(107, 106, 106);
+  }
+  75% {
+    outline-color: rgb(255, 0, 0);
   }
 }
 /*#endregion*/
