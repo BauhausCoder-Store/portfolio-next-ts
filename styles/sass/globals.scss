@@ -103,10 +103,11 @@ select {
   transition: all 1.5s;
 }
 
-.navbar-container:hover {
-  margin-bottom: 0;
-}
+//! Uncomment to activate recommendation container functionality
+// .navbar-container:hover {
+//   margin-bottom: 0;
+// }
 
-.navbar-container:hover .recommendation-container{
-  opacity: 1;
-}
+// .navbar-container:hover .recommendation-container{
+//   opacity: 1;
+// }
