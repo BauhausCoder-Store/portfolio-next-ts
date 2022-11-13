@@ -40,17 +40,17 @@
 
     "project_top_head_title": "Mein Portfolio || The Odin Projekt",
     "project_top_intro": "ist ein Online-Curriculum zum Erlernen der Grundlagen von HTML, CSS (Flexbox, Grid, ...) Javascript, React,js, Node.js, etc... Der Fokus liegt stark auf dem selbst erworbenen Wissen sowie der Anwendung der durch Projektarbeit erlernte Fähigkeiten. TOP hat mir persönlich sehr geholfen, mich in die Softwareentwicklung und -architektur einzuarbeiten. Hier finden Sie ausgewählte Arbeiten von mir: Ich habe bewusst einfache Projekte eingefügt, um die Lernerfahrung zu veranschaulichen. Ich empfehle jedem, der Softwareentwicklung lernen möchte oder einfach nur Spaß daran hat, Aufgaben im Bereich Webtechnologien zu lösen, sich diese Website einmal genauer anzusehen. Schwierigste Empfehlung!",
-    "etch_h2": "Etch - a - Sketch",
-    "etch_p": "Etch A Sketch™ ist eine Variante des Zauberbretts und war besonders in den 1970er Jahren als Spielzeug beliebt. Das Projekt versucht das Original so nachzuahmen, dass es cool zu spielen ist und integriert einige nützliche Features wie eine freie Farbwahl oder einstellbare Auflösung. Das Projekt hat in der Entwicklung sehr viel Spaß gemacht: Vor allem der Umgang mit CSS-Grid und Event-Steuerung mit Javascript waren besonders lehrreich !",
-    "etch_link": "Probieren Sie das Zauberbrett aus!",
-    "fourwins_h2": "4 - Gewinnt!",
-    "fourwins_p": "Das war mein erstes Projekt, für das ich mir die Zeit genommen habe, es umfassend nach meinen Vorstellungen zu erweitern: Als Nutzer kann man die Größe des Spielfelds frei wählen, Steinfarben tauschen, Statistiken und Einstellungen wie Name oder Sprache werden gespeichert, Serien Spiele sind möglich, eine Gewinnanimation ist integriert und und und... Außerdem ist es responsiv und man kann es auch auf mobilen Geräten spielen! All dies erforderte eine sehr umfangreiche Auseinandersetzung mit zahlreichen Frontend-Entwicklungsthemen. Ich würde mich sehr freuen, wenn du es ausprobierst - viel Spaß!",
-    "fourwins_link": "Lust auf eine Runde 4-Gewinnt?",
-    "tictactoe_h2": "TIC-TAC-TOE",
-    "tictactoe_p": "Das weltberühmte &apos;Tic-Tac-Toe&apos; macht in fast jeder Situation Spaß und ist auch ein guter Langeweilebrecher. Um eine Online-Version zu erstellen, musste ich zum ersten Mal mit der Programmierung einer Gaming-KI in Berührung kommen, die – einmal fertig – um 3 Uhr morgens nicht wie ein lahmer Betrunkener aussah. Aufgrund der deutlich geringeren Anzahl an Spielmöglichkeiten war es eine sehr gute Vorbereitung auf das „4-Gewinnt“-Spiel. Projekt, dessen kleine Schwester es ist. Gerade die weniger hohe Komplexität und das daraus resultierende schnellere Spiel kann oft attraktiv und genau das Richtige sein! Werden Sie in der Lage sein, den Computer zu schlagen?",
-    "tictactoe_link": "3-Gewinnt lohnt sich immer!",
-    "rps_h2": "STEIN-SCHERE-PAPIER",
-    "rps_p": "Wer kennt es nicht? Beliebt bei Jung und Alt - mal zum Spaß gespielt, mal aber auch um etwas Wichtiges zu spielen! Das Programmieren an sich hat total Spaß gemacht und war spannend, ein guter Zufallsalgorithmus war das Ziel und wurde gefunden. Möchten Sie wissen, ob Sie mehr Glück haben als die Maschine vor Ihnen?",
-    "rps_link": "Probieren Sie es aus!"
+    "project_top_etch_h2": "Etch - a - Sketch",
+    "project_top_etch_p": "Etch A Sketch™ ist eine Variante des Zauberbretts und war besonders in den 1970er Jahren als Spielzeug beliebt. Das Projekt versucht das Original so nachzuahmen, dass es cool zu spielen ist und integriert einige nützliche Features wie eine freie Farbwahl oder einstellbare Auflösung. Das Projekt hat in der Entwicklung sehr viel Spaß gemacht: Vor allem der Umgang mit CSS-Grid und Event-Steuerung mit Javascript waren besonders lehrreich !",
+    "project_top_etch_link": "Probieren Sie das Zauberbrett aus!",
+    "project_top_fourwins_h2": "4 - Gewinnt!",
+    "project_top_fourwins_p": "Das war mein erstes Projekt, für das ich mir die Zeit genommen habe, es umfassend nach meinen Vorstellungen zu erweitern: Als Nutzer kann man die Größe des Spielfelds frei wählen, Steinfarben tauschen, Statistiken und Einstellungen wie Name oder Sprache werden gespeichert, Serien Spiele sind möglich, eine Gewinnanimation ist integriert und und und... Außerdem ist es responsiv und man kann es auch auf mobilen Geräten spielen! All dies erforderte eine sehr umfangreiche Auseinandersetzung mit zahlreichen Frontend-Entwicklungsthemen. Ich würde mich sehr freuen, wenn du es ausprobierst - viel Spaß!",
+    "project_top_fourwins_link": "Lust auf eine Runde 4-Gewinnt?",
+    "project_top_tictactoe_h2": "TIC-TAC-TOE",
+    "project_top_tictactoe_p": "Das weltberühmte &apos;Tic-Tac-Toe&apos; macht in fast jeder Situation Spaß und ist auch ein guter Langeweilebrecher. Um eine Online-Version zu erstellen, musste ich zum ersten Mal mit der Programmierung einer Gaming-KI in Berührung kommen, die – einmal fertig – um 3 Uhr morgens nicht wie ein lahmer Betrunkener aussah. Aufgrund der deutlich geringeren Anzahl an Spielmöglichkeiten war es eine sehr gute Vorbereitung auf das „4-Gewinnt“-Spiel. Projekt, dessen kleine Schwester es ist. Gerade die weniger hohe Komplexität und das daraus resultierende schnellere Spiel kann oft attraktiv und genau das Richtige sein! Werden Sie in der Lage sein, den Computer zu schlagen?",
+    "project_top_tictactoe_link": "3-Gewinnt lohnt sich immer!",
+    "project_top_rps_h2": "STEIN-SCHERE-PAPIER",
+    "project_top_rps_p": "Wer kennt es nicht? Beliebt bei Jung und Alt - mal zum Spaß gespielt, mal aber auch um etwas Wichtiges zu spielen! Das Programmieren an sich hat total Spaß gemacht und war spannend, ein guter Zufallsalgorithmus war das Ziel und wurde gefunden. Möchten Sie wissen, ob Sie mehr Glück haben als die Maschine vor Ihnen?",
+    "project_top_rps_link": "Probieren Sie es aus!"
     
 }
