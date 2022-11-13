@@ -194,6 +194,25 @@
 
 /*#endregion*/
 
+.etch_a,
+.fourwins_a,
+.tictactoe_a,
+.rps_a,
+.mmcardgame {
+    transition: transform 1s ease;
+}
+
+
+.etch_a:hover,
+.fourwins_a:hover,
+.tictactoe_a:hover,
+.rps_a:hover,
+.mmcardgame:hover {
+    cursor: pointer;
+    color: $wkd-orange;
+    transform: scale(1.3);
+}
+
 
 
 /*#region Transitions */
