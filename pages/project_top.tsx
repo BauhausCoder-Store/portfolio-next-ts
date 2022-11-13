@@ -83,7 +83,7 @@ const Project_top: NextPage = () => {
               <div className={styles.project_text_wrapper}>
                 <h2 className={styles.project_h2}>{fourwins_h2}</h2>
                 <p>{fourwins_p}</p>
-                <Link className={styles.fourwins_a} href='https://stefanbartl.github.io/FourWins/' target='_blank'><h3 className={styles.fourwins_a_l} title={fourwins_link_title}>{projects_link_title}</h3></Link>
+                <Link className={styles.fourwins_a} href='https://stefanbartl.github.io/FourWins/' target='_blank'><h3 className={styles.fourwins_a_l} title={projects_link_title}>{fourwins_link}</h3></Link>
               </div>
 
               <div className={styles.project_img_wrapper}>
