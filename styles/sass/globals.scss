@@ -98,11 +98,11 @@ select {
   }
 
   // minus the recommendation space
-  margin-bottom: calc(-150px + -3rem);
+  // margin-bottom: calc(-150px + -3rem);
 
   transition: all 1.5s;
 }
-
+                                        
 //! Uncomment to activate recommendation container functionality
 // .navbar-container:hover {
 //   margin-bottom: 0;
