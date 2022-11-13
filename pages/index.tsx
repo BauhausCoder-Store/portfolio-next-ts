@@ -61,7 +61,7 @@ const Home: NextPage = () => {
 
             <h3 className={styles.introduction_first_h3}>{introduction_first_h3}</h3>
             <p className={styles.introduction_first_p} >{introduction_first_p}</p>
-            <h3 className={styles.introduction_second_h3} >HTML, SCSS, React, Next.js, TYPESCRIPT...</h3>
+            <h3 className={styles.introduction_second_h3} >SCSS, React-Frameworks, Typescript & Cyber-Security</h3>
             <p className={styles.introduction_second_p} >{introduction_second_p}</p>
             <h3 className={styles.introduction_text_statement} >{introduction_text_statement}</h3>
           </div>
