@@ -18,6 +18,7 @@ const Projects_react_nextjs: NextPage = () => {
   const mmcardgame_project_h2 = t('projects_nextjs_mmcardgame_project_h2');
   const mmcardgame_project_p = t('projects_nextjs_mmcardgame_project_p');
   const mmcardgame_project_link = t('projects_nextjs_mmcardgame_project_link');
+  const projects_link_title = t('projects_link_title');
 
   return (
     
@@ -53,7 +54,7 @@ const Projects_react_nextjs: NextPage = () => {
               <div className={styles.project_text_wrapper}>
                 <h2 className={styles.project_h2}>{mmcardgame_project_h2}</h2>
                 <p>{mmcardgame_project_p}</p>
-                <Link className={styles.mmcardgame} href='https://stefanbartl.github.io/react-mmcardgame/' target='_blank'><h3 className={styles.mmcardgame_l} title='Click to jump to the project!'>{mmcardgame_project_link}</h3></Link>
+                <Link className={styles.mmcardgame} href='https://stefanbartl.github.io/react-mmcardgame/' target='_blank'><h3 className={styles.mmcardgame_l} title={projects_link_title}>{mmcardgame_project_link}</h3></Link>
               </div>
 
               <div className={styles.project_img_wrapper}>

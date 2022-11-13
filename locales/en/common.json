@@ -51,6 +51,8 @@
     "project_top_tictactoe_link": "3-in-a-row is always worth it!",
     "project_top_rps_h2": "ROCK-PAPER-SCISSORS",
     "project_top_rps_p": "Who doesn't know it? Popular with young and old - sometimes played for fun, but sometimes also to play something important! The programming itself was totally fun and exciting, a good random algorithm was the goal and was found. Do you want to know if you know more lucky than the machine in front of you ?",
-    "project_top_rps_link": "Let's give it a try!"
+    "project_top_rps_link": "Let's give it a try!",
+
+    "projects_link_title": "Click to jump to the project!"
 
 }
