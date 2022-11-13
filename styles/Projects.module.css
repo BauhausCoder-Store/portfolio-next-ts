@@ -10,7 +10,8 @@
 /*#region Headline Section */
 .headline_section {
   display: flex;
-  padding: 1rem;
+  padding-inline: 1rem;
+  padding-bottom: 1rem;
 }
 
 .devlogo_wrapper {
