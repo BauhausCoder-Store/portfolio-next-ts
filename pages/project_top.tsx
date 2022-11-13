@@ -67,7 +67,7 @@ const Project_top: NextPage = () => {
               <div className={styles.project_text_wrapper}>
                 <h2 className={styles.project_h2}>{etch_h2}</h2>
                 <p>{etch_p}</p>
-                <Link className={styles.etch_a} href='https://stefanbartl.github.io/Etch-a-Sketch/' target='_blank' title='Click to jump to the project!'><h3>{etch_link}</h3></Link>
+                <Link className={styles.etch_a} href='https://stefanbartl.github.io/Etch-a-Sketch/' target='_blank'><h3 className={styles.etch_a_l} title='Click to jump to the project!'>{etch_link}</h3></Link>
               </div>
 
               <div className={styles.project_img_wrapper}>
@@ -82,7 +82,7 @@ const Project_top: NextPage = () => {
               <div className={styles.project_text_wrapper}>
                 <h2 className={styles.project_h2}>{fourwins_h2}</h2>
                 <p>{fourwins_p}</p>
-                <Link className={styles.fourwins_a} href='https://stefanbartl.github.io/FourWins/' target='_blank' title='Click to jump to the project!'><h3>{fourwins_link}</h3></Link>
+                <Link className={styles.fourwins_a} href='https://stefanbartl.github.io/FourWins/' target='_blank'><h3 className={styles.fourwins_a_l} title='Click to jump to the project!'>{fourwins_link}</h3></Link>
               </div>
 
               <div className={styles.project_img_wrapper}>
@@ -97,7 +97,7 @@ const Project_top: NextPage = () => {
               <div className={styles.project_text_wrapper}>
                 <h2 className={styles.project_h2}>{tictactoe_h2}</h2>
                 <p>{tictactoe_p}</p>
-                <Link className={styles.tictactoe_a} href='https://stefanbartl.github.io/Tic-Tac-Toe/' target='_blank' title='Click to jump to the project!'><h3>{tictactoe_link}</h3></Link>
+                <Link className={styles.tictactoe_a} href='https://stefanbartl.github.io/Tic-Tac-Toe/' target='_blank'><h3 className={styles.tictactoe_a_l} title='Click to jump to the project!'>{tictactoe_link}</h3></Link>
               </div>
 
               <div className={styles.project_img_wrapper}>
@@ -112,7 +112,7 @@ const Project_top: NextPage = () => {
               <div className={styles.project_text_wrapper}>
                 <h2 className={styles.project_h2}>{rps_h2}</h2>
                 <p>{rps_p}</p>
-                <Link className={styles.rps_a} href='https://stefanbartl.github.io/Rock-Paper-Scissor/' target='_blank' title='Click to jump to the project!'><h3>{rps_link}</h3></Link>
+                <Link className={styles.rps_a} href='https://stefanbartl.github.io/Rock-Paper-Scissor/' target='_blank'><h3 className={styles.rps_a_l} title='Click to jump to the project!'>{rps_link}</h3></Link>
               </div>
 
               <div className={styles.project_img_wrapper}>

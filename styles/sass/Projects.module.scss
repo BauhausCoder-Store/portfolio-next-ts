@@ -193,21 +193,21 @@
 
 
 /*#endregion*/
-
-.etch_a,
-.fourwins_a,
-.tictactoe_a,
-.rps_a,
-.mmcardgame {
+_l
+.etch_a_l,
+.fourwins_a_l,
+.tictactoe_a_l,
+.rps_a_l,
+.mmcardgame_l {
     transition: transform 1s ease;
 }
 
 
-.etch_a:hover,
-.fourwins_a:hover,
-.tictactoe_a:hover,
-.rps_a:hover,
-.mmcardgame:hover {
+.etch_a_l:hover,
+.fourwins_a_l:hover,
+.tictactoe_a_l:hover,
+.rps_a_l:hover,
+.mmcardgame_l:hover {
     cursor: pointer;
     color: $wkd-orange;
     transform: scale(1.3);
