@@ -37,7 +37,7 @@ const Home: NextPage = () => {
         <section className={styles.headline_section}>
 
             <div className={styles.devlogo_wrapper}>
-              <Image src={ MyDevLogo } className={styles.devlogo} alt="Stefan Bartl's Logo" />
+              <Image src={ MyDevLogo } className={styles.devlogo} alt="Stefan Bartl's Logo" title='Science, Tech & Peace!' />
             </div>
 
             <h1 className={styles.page_title}>front-end. web-development</h1>

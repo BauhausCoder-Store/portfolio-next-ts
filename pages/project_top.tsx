@@ -16,6 +16,7 @@ const Project_top: NextPage = () => {
 
   const { t, lang } = useTranslation('common');
   const head_title = t('project_top_head_title');
+  const top_link_title = t('top_link_title');
   const intro = t('project_top_intro');
   const etch_h2 = t('project_top_etch_h2');
   const etch_p = t('project_top_etch_p');
@@ -46,7 +47,7 @@ const Project_top: NextPage = () => {
           <section className={styles.headline_section}>
 
             <div className={styles.devlogo_wrapper}>
-              <Image src={ MyDevLogo } className={styles.devlogo} alt="Stefan Bartl's Logo" />
+              <Image src={ MyDevLogo } className={styles.devlogo} alt="Stefan Bartl's Logo" title='Science, Tech & Peace!' />
             </div>
 
             <h1 className={styles.page_title}>the odin project</h1>
@@ -54,7 +55,7 @@ const Project_top: NextPage = () => {
           </section>
 
           <p className={styles.intro}>
-            <Link href='http://www.theodinproject.com'>The Odin Project (TOP) </Link>
+            <Link href='http://www.theodinproject.com' title={top_link_title}>The Odin Project (TOP)</Link>
             {intro}
           </p>
 
@@ -72,7 +73,7 @@ const Project_top: NextPage = () => {
               </div>
 
               <div className={styles.project_img_wrapper}>
-                <Image src={ EtchASketchSVG}  alt="Project Logo" />
+              <Link className={styles.etch_a} href='https://stefanbartl.github.io/Etch-a-Sketch/' target='_blank'><Image src={ EtchASketchSVG}  alt="Project Logo" /></Link>
               </div>
 
             </div>
@@ -87,7 +88,7 @@ const Project_top: NextPage = () => {
               </div>
 
               <div className={styles.project_img_wrapper}>
-                <Image src={ FourWinsPNG } alt="Project Logo" />
+              <Link className={styles.fourwins_a} href='https://stefanbartl.github.io/FourWins/' target='_blank'><Image src={ FourWinsPNG } alt="Project Logo" /></Link>
               </div>
 
             </div>
@@ -102,7 +103,7 @@ const Project_top: NextPage = () => {
               </div>
 
               <div className={styles.project_img_wrapper}>
-                <Image src={ TicTacToePNG } alt="Project Logo" />
+              <Link className={styles.tictactoe_a} href='https://stefanbartl.github.io/Tic-Tac-Toe/' target='_blank'><Image src={ TicTacToePNG } alt="Project Logo" /></Link>
               </div>
 
             </div>
@@ -117,7 +118,7 @@ const Project_top: NextPage = () => {
               </div>
 
               <div className={styles.project_img_wrapper}>
-                <Image src={ RockPaperScissorSVG } alt="Project Logo" />
+              <Link className={styles.rps_a} href='https://stefanbartl.github.io/Rock-Paper-Scissor/' target='_blank'><Image src={ RockPaperScissorSVG } alt="Project Logo" /></Link>
               </div>
 
             </div>

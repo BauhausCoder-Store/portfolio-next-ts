@@ -13,7 +13,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           <meta name='viewport' content='width=device-width, initial-scale=1' />
           <meta name='author' content='Stefan Bartl (WKDStevie)' />
           <meta name='description' content='Web-Development Portfolio by Stefan Bartl (WKDStevie)' />
-          <meta name='keywords' content='Portfolio, Web-Development, HTML, CSS, Sass, Javascript, Typescript, Node.js, React, Next.js' />
+          <meta name='keywords' content='Portfolio, Web-Development, HTML, CSS, Sass, Javascript, Typescript, Node.js, React, Next.js, Cyber-Security' />
           <link rel='icon' sizes='16x16' href='/graphics/logos/dev_logo.png' />
           <link rel='apple-touch-icon' sizes='120x120' href='/graphics/logos/dev_logo.png' />
         </Head>
