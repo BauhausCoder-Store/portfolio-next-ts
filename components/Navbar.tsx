@@ -16,7 +16,7 @@ export const Navbar = () => {
     const contact = t('navbar_contact');
     const eye_title = t('navbar_eye_title');
 
-    //#region Cyber-Eye
+    //#region Cyber-Eye (Inspiration & most of the code: https://www.youtube.com/watch?v=TGe3pS5LqEw)
 
     function angle(cx: number, cy: number, ex: number, ey: number){
         const dy = ey - cy;
@@ -44,12 +44,7 @@ export const Navbar = () => {
                     pupil.style.transform = `rotate(${90 + angleDeg}deg)`;
                 }
             }
-
-
-
         })
-
-    // https://www.youtube.com/watch?v=TGe3pS5LqEw
     }, []);
 
     //#endregion
