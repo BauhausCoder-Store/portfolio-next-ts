@@ -40,7 +40,7 @@ const About: NextPage = () => {
           <section className={styles.headline_section}>
 
               <div className={styles.devlogo_wrapper}>
-                <Image src={ MyDevLogo } className={styles.devlogo} title='Science, Tech & Peace!' />
+                <Image src={ MyDevLogo } className={styles.devlogo} title='Science, Tech & Peace!' alt='Developers-Logo' />
               </div>
 
               <h1 className={styles.page_title}>{about_page_title}</h1>

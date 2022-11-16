@@ -52,7 +52,7 @@ export const Navbar = () => {
     return (
             <nav className={styles.mynavbar}>
                 <div className={styles.eye} id='anchor' title={eye_title}>
-                    <Image src={Eye} className={styles.pupil} id='pupil'>
+                    <Image src={Eye} className={styles.pupil} id='pupil' alt='Gadget'>
                     </Image>
                 </div>
 
