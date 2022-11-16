@@ -69,7 +69,7 @@ const Project_top: NextPage = () => {
               <div className={styles.project_text_wrapper}>
                 <h2 className={styles.project_h2}>{etch_h2}</h2>
                 <p>{etch_p}</p>
-                <Link className={styles.etch_a} href='https://stefanbartl.github.io/Etch-a-Sketch/' target='_blank'><a><h3 className={styles.etch_a_l} title={projects_link_title}>{etch_link}</h3></a></Link>
+                <Link className={styles.etch_a} href='https://stefanbartl.github.io/Etch-a-Sketch/' target='_blank'><h3 className={styles.etch_a_l} title={projects_link_title}>{etch_link}</h3></Link>
               </div>
 
               <div className={styles.project_img_wrapper}>
