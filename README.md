@@ -5,7 +5,7 @@
      (WKDStevie)
 
 # used libraries, frameworks, etc...
-Typescript, Node.js, Next.js, Node-Sass, Email.js
+Typescript, Node.js, Next.js, Dart-Sass, Email.js
 Git & Github
 Vercel Deployment
 Visual Studio Code 
@@ -39,7 +39,7 @@ https://www.youtube.com/watch?v=TGe3pS5LqEw)
 # deutsch
 
 # verwendete Bibliotheken Frameworks, etc...
-Typescript, Node.js, Next.js, Node-Sass, Email.js
+Typescript, Node.js, Next.js, Dart-Sass, Email.js
 Git und Github
 Vercel-Deployment
 Visual Studio-Code
