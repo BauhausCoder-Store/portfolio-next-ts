@@ -56,7 +56,7 @@ const Project_top: NextPage = () => {
           </section>
 
           <p className={styles.intro}>
-            <Link href='http://www.theodinproject.com' title={top_link_title}>The Odin Project (TOP)</Link>
+            <Link href='http://www.theodinproject.com' title={top_link_title}>The Odin Project (TOP)  </Link>
             {intro}
           </p>
 
