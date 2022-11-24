@@ -31,6 +31,7 @@ const Project_top: NextPage = () => {
   const rps_p = t('project_top_rps_p');
   const rps_link = t('project_top_rps_link');
   const projects_link_title = t('projects_link_title');
+  const under_construction = t('under_construction');
 
   return (
     
@@ -95,15 +96,16 @@ const Project_top: NextPage = () => {
 
             {/* Tick-Tac-Toe */}
             <div className={`${styles.project_container} ${styles.project_tictactoe}`}>
+            <h3 className={styles.tictactoe_construction} title={under_construction}>{under_construction}</h3>
 
-              <div className={styles.project_text_wrapper}>
+              <div className={styles.project_text_wrapper} title={under_construction}>
                 <h2 className={styles.project_h2}>{tictactoe_h2}</h2>
                 <p>{tictactoe_p}</p>
-                <Link className={styles.tictactoe_a} href='https://stefanbartl.github.io/Tic-Tac-Toe/' target='_blank'><h3 className={styles.tictactoe_a_l} title={projects_link_title}>{tictactoe_link}</h3></Link>
+                <Link className={styles.tictactoe_a} href='' target='_blank'><h3 className={styles.tictactoe_a_l} title={projects_link_title}>{tictactoe_link}</h3></Link>
               </div>
 
-              <div className={styles.project_img_wrapper}>
-              <Link className={styles.tictactoe_a} href='https://stefanbartl.github.io/Tic-Tac-Toe/' target='_blank'><Image src={ TicTacToePNG } alt="Project Logo" /></Link>
+              <div className={styles.project_img_wrapper} title={under_construction}>
+              <Link className={styles.tictactoe_a} href='' target='_blank'><Image src={ TicTacToePNG } alt="Project Logo"/></Link>
               </div>
 
             </div>

@@ -7,6 +7,10 @@
 /*? === text === */
 /* futura: font-family: futura-pt,sans-serif; */
 @import url("https://use.typekit.net/izw3hmc.css");
+.nav_item_projects_dropdown_li_2 {
+  text-decoration: line-through !important;
+}
+
 .mynavbar {
   display: flex;
   position: relative;

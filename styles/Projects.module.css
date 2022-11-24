@@ -7,6 +7,18 @@
 /*? === text === */
 /* futura: font-family: futura-pt,sans-serif; */
 @import url("https://use.typekit.net/izw3hmc.css");
+.tictactoe_construction {
+  position: absolute;
+  font-size: 7rem;
+  color: rgb(82, 150, 34);
+  -webkit-transform: rotate(-10deg);
+  -moz-transform: rotate(-10deg);
+}
+
+.tictactoe_a_l {
+  visibility: hidden !important;
+}
+
 /*#region Headline Section */
 .headline_section {
   display: flex;

@@ -1,5 +1,17 @@
 @import './ColorsAndDesign.scss';
 
+// ! LÖSCHEN WENN TIC-TAC-TOE FERTIG:
+.tictactoe_construction {
+    position: absolute;
+    font-size: 7rem;
+    color: $wkd-green;
+    -webkit-transform: rotate(-10deg); 
+    -moz-transform: rotate(-10deg);    
+}
+.tictactoe_a_l{
+    visibility: hidden !important;
+}
+// !
 
 
 /*#region Headline Section */
