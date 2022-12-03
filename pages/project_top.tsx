@@ -96,16 +96,14 @@ const Project_top: NextPage = () => {
 
             {/* Tick-Tac-Toe */}
             <div className={`${styles.project_container} ${styles.project_tictactoe}`}>
-            <h3 className={styles.tictactoe_construction} title={under_construction}>{under_construction}</h3>
-
-              <div className={styles.project_text_wrapper} title={under_construction}>
+              <div className={styles.project_text_wrapper}>
                 <h2 className={styles.project_h2}>{tictactoe_h2}</h2>
                 <p>{tictactoe_p}</p>
-                <Link className={styles.tictactoe_a} href='' target='_blank'><h3 className={styles.tictactoe_a_l} title={projects_link_title}>{tictactoe_link}</h3></Link>
+                <Link className={styles.tictactoe_a} href='https://stefanbartl.github.io/Tic-Tac-Toe/' target='_blank'><h3 className={styles.tictactoe_a_l} title={projects_link_title}>{tictactoe_link}</h3></Link>
               </div>
 
               <div className={styles.project_img_wrapper} title={under_construction}>
-              <Link className={styles.tictactoe_a} href='' target='_blank'><Image src={ TicTacToePNG } alt="Project Logo"/></Link>
+              <Link className={styles.tictactoe_a} href='https://stefanbartl.github.io/Tic-Tac-Toe/' target='_blank'><Image src={ TicTacToePNG } alt="Project Logo"/></Link>
               </div>
 
             </div>
