@@ -148,7 +148,7 @@
   outline: solid 2px rgb(29, 29, 29);
   outline-offset: -0.3rem;
   transition: all 0.5s ease-in-out;
-  color: rgb(178, 182, 160);
+  color: rgb(29, 29, 29);
   font-weight: bold;
 }
 .intro > a {
