@@ -55,5 +55,6 @@
 
     "top_link_title": "Click to jump to 'The Odin Project'!",
     "projects_link_title": "Click to jump to the project!",
+    "toGithubRepository": "Click to jump to the Github-Repository of the application!",
     "under_construction": "Under construction, will be ready soon!"
 }

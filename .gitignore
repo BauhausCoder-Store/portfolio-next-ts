@@ -32,7 +32,3 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
-
-# dev-files
-devnotizen.js
-/_DEPRECATED_VERSION

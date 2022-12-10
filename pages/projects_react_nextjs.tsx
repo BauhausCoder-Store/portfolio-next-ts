@@ -19,6 +19,7 @@ const Projects_react_nextjs: NextPage = () => {
   const mmcardgame_project_p = t('projects_nextjs_mmcardgame_project_p');
   const mmcardgame_project_link = t('projects_nextjs_mmcardgame_project_link');
   const projects_link_title = t('projects_link_title');
+  const toGithubRepository = t('toGithubRepository');
 
   return (
     
@@ -58,7 +59,10 @@ const Projects_react_nextjs: NextPage = () => {
                 <h3 className={styles.mmcardgame_l} title={projects_link_title}>{mmcardgame_project_link}</h3>
               </div>
               <div className={styles.project_img_wrapper}>
-                <Image src={ MemoryCardPNG } alt="Project Logo" />
+                <Image src={ MemoryCardPNG } alt="Project Logo" title={projects_link_title} />
+                <Link href='https://github.com/wkddevelopment/Vercel_MMCardGame' target='_blank'>
+                  <p title={toGithubRepository} className={styles.githubLink}>...Repository</p>
+                </Link>
               </div>
             </div>
             </Link>
