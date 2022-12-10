@@ -49,7 +49,7 @@ const Projects_react_nextjs: NextPage = () => {
           <section className={styles.projects}>
 
             {/* Etch-a-Sketch */}
-            <Link className={styles.mmcardgame} href='https://stefanbartl.github.io/react-mmcardgame/' target='_blank'>
+            <Link className={styles.mmcardgame} href='https://vercel-mmc-ard-game.vercel.app/de' target='_blank'>
             <div className={`${styles.project_container} ${styles.project_mmcardgame}`}>
 
               <div className={styles.project_text_wrapper}>

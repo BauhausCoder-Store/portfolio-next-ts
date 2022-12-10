@@ -69,7 +69,7 @@ export const Navbar = () => {
                         <div className={`${styles.navbar_link} ${styles.dropbtn}`} >{projects}</div>
                             <div className={styles.dropdown_content}>
                                 <Link  className={`${styles.navbar_link} ${styles.nav_item_projects_dropdown_li_1}`} href="/project_top">The Odin Project</Link>
-                                <Link className={`${styles.navbar_link} ${styles.nav_item_projects_dropdown_li_2}`} href="" title={under_construction}>React/Next.js-Projects</Link>
+                                <Link className={`${styles.navbar_link} ${styles.nav_item_projects_dropdown_li_2}`} href="projects_react_nextjs">React/Next.js-Projects</Link>
                             </div>
                     </li>
 
