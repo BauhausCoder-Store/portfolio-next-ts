@@ -1,11 +1,12 @@
 @import './ColorsAndDesign.scss';
 
-html,
-.page-container {
+html {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: $wkd-darkgrey;
+
 }
 
 /* box-sizing */
@@ -68,12 +69,6 @@ select {
   }
 }
 
-//#endregion
-
-
-//#endregion
-
-
 .app-container{
   background-color: $wkd-darkgrey;
   min-height: 100vh;
@@ -84,32 +79,4 @@ select {
   font-weight: 400;
   font-style: normal; 
   font-family: $font-futura;
-
 }
-
-.navbar-container{
-
-  > .recommendation-container{
-    display: none; //!
-    justify-content: center;
-    margin-top: 1rem;
-    margin-bottom: .5rem;
-    opacity: 0;
-    transition: all 2s;
-    z-index: -1;
-  }
-
-  // minus the recommendation space
-  // margin-bottom: calc(-150px + -3rem);
-
-  transition: all 1.5s;
-}
-                                        
-//! Uncomment to activate recommendation container functionality
-// .navbar-container:hover {
-//   margin-bottom: 0;
-// }
-
-// .navbar-container:hover .recommendation-container{
-//   opacity: 1;
-// }

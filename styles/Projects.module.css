@@ -7,6 +7,192 @@
 /*? === text === */
 /* futura: font-family: futura-pt,sans-serif; */
 @import url("https://use.typekit.net/izw3hmc.css");
+.intro {
+  padding: 1rem;
+  text-align: center;
+  width: clamp(50ch, 55%, 85ch);
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(255, 102, 0);
+  border-radius: 2rem;
+  outline: solid 2px rgb(29, 29, 29);
+  outline-offset: -0.3rem;
+  transition: all 0.5s ease-in-out;
+  color: rgb(29, 29, 29);
+  font-weight: bold;
+}
+.intro > a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: rgb(29, 29, 29);
+}
+
+.intro:hover {
+  outline-offset: 0.5rem;
+  outline-color: rgb(255, 102, 0);
+}
+
+/*#region Projects Section */
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+.projects > .project_container {
+  display: flex;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+.projects > .project_container > .project_text_wrapper {
+  width: clamp(45ch, 50%, 75ch);
+  padding: 1rem;
+}
+.projects > .project_container > .project_text_wrapper > h2 {
+  color: rgb(255, 102, 0);
+  font-weight: bold;
+}
+.projects > .project_container > .project_text_wrapper > p {
+  margin-left: 2rem;
+}
+.projects > .project_container > .project_text_wrapper > a {
+  text-decoration: none;
+  color: rgb(255, 102, 0);
+  text-align: center;
+}
+.projects > .project_container > .project_img_wrapper {
+  padding: 1rem;
+  width: 40%;
+}
+
+.project_img_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.githubLink {
+  font-size: 1em;
+  color: rgb(107, 106, 106);
+}
+
+.githubLink:hover {
+  color: rgb(255, 102, 0);
+}
+
+.project_mmcardgame {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+.project_mmcardgame > .project_text_wrapper {
+  width: clamp(45ch, 50%, 75ch);
+}
+
+/*#endregion*/
+/*#region Transitions */
+.project_etch,
+.project_fourwins,
+.project_tictactoe,
+.project_rps {
+  filter: blur(1rem);
+  transition: all 500ms;
+}
+
+.project_etch:hover,
+.project_fourwins:hover,
+.project_tictactoe:hover,
+.project_rps:hover {
+  filter: blur(0);
+}
+
+/*#endregion*/
+/*#region Animations*/
+.project_etch:hover .etch_a > h3,
+.project_tictactoe:hover .tictactoe_a > h3 {
+  animation: a_red_animation;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes a_red_animation {
+  50% {
+    transform: scale(1.5);
+    color: rgb(255, 0, 0);
+  }
+}
+.project_etch:hover .project_text_wrapper > .project_h2,
+.project_tictactoe:hover .project_text_wrapper > .project_h2 {
+  animation: h3_red_animation;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes h3_red_animation {
+  50% {
+    color: rgb(255, 0, 0);
+  }
+}
+.project_fourwins:hover .fourwins_a > h3,
+.project_mmcardgame:hover .mmcardgame > h3 {
+  animation: a_blue_animation;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes a_blue_animation {
+  50% {
+    transform: scale(1.5);
+    color: rgb(0, 0, 250);
+  }
+}
+.project_fourwins:hover .project_text_wrapper > .project_h2,
+.project_mmcardgame:hover .project_text_wrapper > .project_h2 {
+  animation: h3_blue_animation;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes h3_blue_animation {
+  50% {
+    color: rgb(0, 0, 250);
+  }
+}
+.project_rps:hover .rps_a > h3 {
+  animation: a_white_animation;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes a_white_animation {
+  50% {
+    transform: scale(1.5);
+    color: rgb(255, 255, 255);
+  }
+}
+.project_rps:hover .project_text_wrapper > .project_h2 {
+  animation: h3_white_animation;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes h3_white_animation {
+  50% {
+    color: rgb(255, 255, 255);
+  }
+}
+/*#endregion */
 /*#region Headline Section */
 .headline_section {
   display: flex;
@@ -134,96 +320,6 @@
   border-color: rgb(255, 0, 255);
 }
 
-/*#endregion*/
-.intro {
-  padding: 1rem;
-  text-align: center;
-  width: clamp(50ch, 55%, 85ch);
-  margin-top: 3rem;
-  margin-bottom: 5rem;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: rgb(255, 102, 0);
-  border-radius: 2rem;
-  outline: solid 2px rgb(29, 29, 29);
-  outline-offset: -0.3rem;
-  transition: all 0.5s ease-in-out;
-  color: rgb(29, 29, 29);
-  font-weight: bold;
-}
-.intro > a {
-  font-size: 2rem;
-  text-decoration: none;
-  color: rgb(29, 29, 29);
-}
-
-.intro:hover {
-  outline-offset: 0.5rem;
-  outline-color: rgb(255, 102, 0);
-}
-
-/*#region Projects Section */
-.projects {
-  display: flex;
-  flex-direction: column;
-  gap: 5rem;
-}
-.projects > .project_container {
-  display: flex;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  align-items: center;
-  justify-content: center;
-  gap: 5rem;
-}
-.projects > .project_container > .project_text_wrapper {
-  width: clamp(45ch, 50%, 75ch);
-  padding: 1rem;
-}
-.projects > .project_container > .project_text_wrapper > h2 {
-  color: rgb(255, 102, 0);
-  font-weight: bold;
-}
-.projects > .project_container > .project_text_wrapper > p {
-  margin-left: 2rem;
-}
-.projects > .project_container > .project_text_wrapper > a {
-  text-decoration: none;
-  color: rgb(255, 102, 0);
-  text-align: center;
-}
-.projects > .project_container > .project_img_wrapper {
-  padding: 1rem;
-  width: 40%;
-}
-
-.project_img_wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-}
-
-.githubLink {
-  font-size: 1em;
-  color: rgb(107, 106, 106);
-}
-
-.githubLink:hover {
-  color: rgb(255, 102, 0);
-}
-
-.project_mmcardgame {
-  padding: 1rem;
-  display: flex;
-  justify-content: space-around;
-}
-.project_mmcardgame > .project_text_wrapper {
-  width: clamp(45ch, 50%, 75ch);
-}
-
-/*#endregion*/
-/*#region Transitions */
 .devlogo {
   transition: all 1s ease;
 }
@@ -232,102 +328,12 @@
   filter: brightness(0) saturate(100%) invert(44%) sepia(24%) saturate(4068%) hue-rotate(1deg) brightness(98%) contrast(106%);
 }
 
-.project_etch,
-.project_fourwins,
-.project_tictactoe,
-.project_rps {
-  filter: blur(1rem);
-  transition: all 500ms;
+.devlogo and body:not(.noanimations) {
+  transition: all 1s ease;
 }
 
-.project_etch:hover,
-.project_fourwins:hover,
-.project_tictactoe:hover,
-.project_rps:hover {
-  filter: blur(0);
+.devlogo_wrapper:hover .devlogo {
+  filter: brightness(0) saturate(100%) invert(44%) sepia(24%) saturate(4068%) hue-rotate(1deg) brightness(98%) contrast(106%);
 }
-
-/*#endregion*/
-/*#region Animations*/
-.project_etch:hover .etch_a > h3,
-.project_tictactoe:hover .tictactoe_a > h3 {
-  animation: a_red_animation;
-  animation-duration: 5s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-}
-
-@keyframes a_red_animation {
-  50% {
-    transform: scale(1.5);
-    color: rgb(255, 0, 0);
-  }
-}
-.project_etch:hover .project_text_wrapper > .project_h2,
-.project_tictactoe:hover .project_text_wrapper > .project_h2 {
-  animation: h3_red_animation;
-  animation-duration: 5s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-}
-
-@keyframes h3_red_animation {
-  50% {
-    color: rgb(255, 0, 0);
-  }
-}
-.project_fourwins:hover .fourwins_a > h3,
-.project_mmcardgame:hover .mmcardgame > h3 {
-  animation: a_blue_animation;
-  animation-duration: 5s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-}
-
-@keyframes a_blue_animation {
-  50% {
-    transform: scale(1.5);
-    color: rgb(0, 0, 250);
-  }
-}
-.project_fourwins:hover .project_text_wrapper > .project_h2,
-.project_mmcardgame:hover .project_text_wrapper > .project_h2 {
-  animation: h3_blue_animation;
-  animation-duration: 5s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-}
-
-@keyframes h3_blue_animation {
-  50% {
-    color: rgb(0, 0, 250);
-  }
-}
-.project_rps:hover .rps_a > h3 {
-  animation: a_white_animation;
-  animation-duration: 5s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-}
-
-@keyframes a_white_animation {
-  50% {
-    transform: scale(1.5);
-    color: rgb(255, 255, 255);
-  }
-}
-.project_rps:hover .project_text_wrapper > .project_h2 {
-  animation: h3_white_animation;
-  animation-duration: 5s;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-}
-
-@keyframes h3_white_animation {
-  50% {
-    color: rgb(255, 255, 255);
-  }
-}
-/*#endregion */
 
 /*# sourceMappingURL=Projects.module.css.map */

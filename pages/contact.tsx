@@ -5,7 +5,9 @@ import Link from 'next/link';
 import useTranslation from 'next-translate/useTranslation';
 
 import styles from '../styles/Contact.module.css';
+import page_bar_styles from '../styles/page_bar.module.css';
 
+import MyDevLogo from '../public/graphics/logos/dev_logo.png';
 import facebookSVG from '../public/graphics/logos/web_plattforms/facebook-original.svg';
 import githubSVG from '../public/graphics/logos/web_plattforms/github-original.svg';
 import instagramSVG from '../public/graphics/logos/web_plattforms/instagram.svg';
@@ -18,8 +20,8 @@ import { SendEmail } from '../components/SendEmail';
 const Contact: NextPage = () => {
 
   const { t, lang } = useTranslation('common');
-  const head_title = t('contact_head_title');
-  const contact_headline = t('contact_headline');
+  const contact_head_title = t('contact_head_title');
+  const page_title = t('contact_page_title');
   const contact_social_media_h = t('contact_social_media_h');
   const send_email_section_h2 = t('contact_send_email_section_h2');
 
@@ -28,12 +30,23 @@ const Contact: NextPage = () => {
     <div className={styles.container}>
       
       <Head>
-        <title>{head_title}</title>
+        <title>{contact_head_title}</title>
       </Head>
+
+      {/* Headline Section */}
+
+      <section className={page_bar_styles.headline_section}>
+
+          <div className={page_bar_styles.devlogo_wrapper}>
+            <Image src={ MyDevLogo } className={page_bar_styles.devlogo} title='Science, Tech & Peace!' alt='Developers-Logo' />
+          </div>
+
+          <h1 className={page_bar_styles.page_title}>{page_title}</h1>
+
+       </section>
 
 
       <main className={styles.main}>
-        <h1 className={styles.contact_headline}>{contact_headline}</h1>
 
         <section className={styles.social_media_section}>
 

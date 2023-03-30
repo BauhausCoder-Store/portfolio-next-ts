@@ -7,11 +7,11 @@
 /*? === text === */
 /* futura: font-family: futura-pt,sans-serif; */
 @import url("https://use.typekit.net/izw3hmc.css");
-html,
-.page-container {
+html {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: rgb(29, 29, 29);
 }
 
 /* box-sizing */
@@ -83,19 +83,6 @@ select {
   font-weight: 400;
   font-style: normal;
   font-family: futura-pt, sans-serif;
-}
-
-.navbar-container {
-  transition: all 1.5s;
-}
-.navbar-container > .recommendation-container {
-  display: none;
-  justify-content: center;
-  margin-top: 1rem;
-  margin-bottom: 0.5rem;
-  opacity: 0;
-  transition: all 2s;
-  z-index: -1;
 }
 
 /*# sourceMappingURL=globals.css.map */

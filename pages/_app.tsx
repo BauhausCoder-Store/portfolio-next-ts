@@ -21,9 +21,6 @@ function MyApp({ Component, pageProps }: AppProps) {
         <div className='app-container'>
           <div className='navbar-container'>
             <Navbar />
-            {/* <div className='recommendation-container' >
-              <YoutubePlayer/>
-            </div> */}
           </div>
 
           <Component {...pageProps} />

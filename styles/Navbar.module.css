@@ -9,7 +9,7 @@
 @import url("https://use.typekit.net/izw3hmc.css");
 .mynavbar {
   display: flex;
-  position: relative;
+  padding-right: 1rem;
 }
 .mynavbar > .eye {
   position: absolute;
@@ -32,12 +32,15 @@
 }
 .mynavbar > ul {
   list-style-type: none;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   width: 100vw;
-  align-items: center;
-  justify-content: space-between;
-  margin-left: 2rem;
-  margin-right: 2rem;
+}
+.mynavbar > ul > li {
+  display: flex;
+  justify-content: center;
+  font-size: larger;
+  font-weight: bold;
 }
 .mynavbar > ul > li .nav_item_projects_dropdown_li_1,
 .mynavbar > ul > li .nav_item_projects_dropdown_li_2 {
@@ -99,33 +102,24 @@
   color: rgb(255, 102, 0);
 }
 
-/*#endregion*/
-/*#region Animations */
-.dropdown:hover .dropdown_content {
-  animation: dropdown_box_animation infinite 20s;
-  border: solid 2px rgb(255, 0, 255);
-  border-radius: 1rem;
-}
-
-@keyframes dropdown_box_animation {
-  0% {
-    border-color: rgb(255, 0, 255);
-  }
-  25% {
-    border-color: rgb(255, 102, 0);
-  }
-  50% {
-    border-color: white;
-  }
-  75% {
-    border-color: rgb(255, 0, 255);
-  }
-}
 .eye:hover {
   animation: eye_pupil_animation infinite 2s ease-in-out;
   outline: solid 5px rgb(255, 0, 0);
 }
 
+/*#endregion*/
+/*#region Animations */
+.dropdown:hover .dropdown_content {
+  animation: dropdown_box_animation infinite 5s;
+  border: solid 4px rgb(255, 0, 255);
+  border-radius: 1rem;
+}
+
+@keyframes dropdown_box_animation {
+  50% {
+    border-color: rgb(255, 102, 0);
+  }
+}
 @keyframes eye_pupil_animation {
   0% {
     outline-color: rgb(107, 106, 106);
@@ -163,5 +157,10 @@
 }
 
 /*#endregion*/
+@media (max-width: 500px) {
+  .mynavbar {
+    padding-right: 0rem;
+  }
+}
 
 /*# sourceMappingURL=Navbar.module.css.map */

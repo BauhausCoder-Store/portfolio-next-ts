@@ -2,9 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import useTranslation from 'next-translate/useTranslation';
 import { useEffect } from 'react';
-
 import styles from '../styles/Navbar.module.css';
-
 import Eye from '../public/graphics/images/eye_cuttted.png';
 
 export const Navbar = () => {
@@ -15,7 +13,7 @@ export const Navbar = () => {
     const about = t('navbar_about');
     const contact = t('navbar_contact');
     const eye_title = t('navbar_eye_title');
-    const under_construction = t('under_construction');
+    // Sconst under_construction = t('under_construction');
 
     //#region Cyber-Eye (Inspiration & most of the code: https://www.youtube.com/watch?v=TGe3pS5LqEw)
 
@@ -52,11 +50,12 @@ export const Navbar = () => {
 
     return (
             <nav className={styles.mynavbar}>
-                <div className={styles.eye} id='anchor' title={eye_title}>
-                    <Image src={Eye} className={styles.pupil} id='pupil' alt='Gadget'>
-                    </Image>
-                </div>
-
+                    <div className={styles.eye} id='anchor' title={eye_title}>
+                        <a target="_blank" href="https://netzpolitik.org/2023/europaweiter-protest-petition-gegen-chatkontrolle-gestartet/">
+                            <Image src={Eye} className={styles.pupil} id='pupil' alt='Gadget' />
+                        </a>
+                    </div>
+                
                 <ul>
 
                     {/* Home */}

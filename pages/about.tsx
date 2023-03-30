@@ -4,6 +4,7 @@ import Head from 'next/head';
 import useTranslation from 'next-translate/useTranslation';
 
 import styles from '../styles/About.module.css';
+import page_bar_styles from '../styles/page_bar.module.css';
 
 import MyDevLogo from '../public/graphics/logos/dev_logo.png';
 import MySignature from '../public/graphics/images/@me/unterschrift_transparent.png';
@@ -32,20 +33,20 @@ const About: NextPage = () => {
         <title>{about_head_title}</title>
       </Head>
 
+      {/* Headline Section */}
+
+      <section className={page_bar_styles.headline_section}>
+
+          <div className={page_bar_styles.devlogo_wrapper}>
+            <Image src={ MyDevLogo } className={page_bar_styles.devlogo} title='Science, Tech & Peace!' alt='Developers-Logo' />
+          </div>
+
+          <h1 className={page_bar_styles.page_title}>{about_page_title}</h1>
+
+      </section>
+
 
       <main className={styles.main}>
-
-          {/* Headline Section */}
-
-          <section className={styles.headline_section}>
-
-              <div className={styles.devlogo_wrapper}>
-                <Image src={ MyDevLogo } className={styles.devlogo} title='Science, Tech & Peace!' alt='Developers-Logo' />
-              </div>
-
-              <h1 className={styles.page_title}>{about_page_title}</h1>
-
-            </section>
 
           {/* Content (Section */}
 

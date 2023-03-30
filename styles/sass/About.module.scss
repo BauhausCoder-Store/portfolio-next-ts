@@ -24,43 +24,6 @@
     }
 }
 
-
-
-/*#region HEADLINE Section */
-
-.headline_section {
-    grid-area: headline;
-    display: flex;
-}
-
-.devlogo_wrapper {
-    display: block;
-    width: 5rem;
-    height: 5rem;
-    margin-left: .5rem;
-    margin-bottom: .5rem;
-}
-
-.devlogo {
-    width: fit-content;
-    height: fit-content;
-}
-
-
-.page_title {
-    color: $counter-colour;
-    margin-left: auto;
-    margin-right: .5rem;
-    margin-bottom: .5rem;
-    padding-right: 1rem;
-    font-size: 4rem;
-    font-weight: bold;
-}
-
-/*#endregion*/
-
-
-
 /*#region Content Section */
 
 .about_content_section {
@@ -148,19 +111,6 @@
 
 
 
-/*#region Transitions */
-
-.devlogo {
-    transition: all 1s ease;
-  }
-  
-.devlogo_wrapper:hover .devlogo {
-    filter: brightness(0) saturate(100%) invert(44%) sepia(24%) saturate(4068%) hue-rotate(1deg) brightness(98%) contrast(106%);
-}
-
-/*#endregion*/
-
-
 
 /* #region Animations */
 
@@ -218,10 +168,50 @@
   }
   
   /* #endregion */
-  
 
 
-/*#region Styling-Pseudoelements */
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*#region Headline Section */
+
+.headline_section {
+    display: flex;
+    padding-inline: 1rem;
+    padding-top: .5rem;
+    padding-bottom: 1rem;
+}
+
+.devlogo_wrapper {
+    display: block;
+    width: 5rem;
+    height: 5rem;
+    margin-left: .5rem;
+    margin-bottom: .5rem;
+}
+
+
+.page_title {
+    color: $counter-colour;
+    margin-left: auto;
+    margin-right: .5rem;
+    margin-bottom: .5rem;
+    padding-right: 1rem;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+
 
 //? Headline-Logo
 .devlogo_wrapper {
@@ -244,6 +234,45 @@
 
 .devlogo_wrapper::after {
     width: 2rem;
+}
+
+.headline_section:hover .devlogo_wrapper::before {
+    height: 3rem;
+    border-color: $wkd-pinkviolett;
+}
+
+.headline_section:hover .devlogo_wrapper::after {
+    width: 3rem;
+    border-color: $wkd-pinkviolett;
+}
+
+
+//? Headline-Logo
+.devlogo_wrapper {
+    position: relative;
+}
+
+.devlogo_wrapper::before,
+.devlogo_wrapper::after {
+    content: "";
+    border: solid 2px $wkd-grey;
+    position: absolute;
+    transition: all 2s ease;
+    left: -.5rem;
+    bottom: -.5rem;
+}
+
+.devlogo_wrapper::before {
+    height: calc(100% + 1rem);
+}
+
+.devlogo_wrapper::after {
+    width: 2rem;
+}
+
+.devlogo {
+    width: fit-content;
+    height: fit-content;
 }
 
 .headline_section:hover .devlogo_wrapper::before {
@@ -290,4 +319,23 @@
     border-color: $wkd-pinkviolett;
 }
 
-/*#endregion*/
+
+
+//? Devlogo transition
+
+.devlogo {
+    transition: all 1s ease;
+}
+  
+.devlogo_wrapper:hover .devlogo {
+    filter: brightness(0) saturate(100%) invert(44%) sepia(24%) saturate(4068%) hue-rotate(1deg) brightness(98%) contrast(106%);
+}
+
+
+.devlogo and body:not(.noanimations) {
+    transition: all 1s ease;
+  }
+  
+.devlogo_wrapper:hover .devlogo {
+    filter: brightness(0) saturate(100%) invert(44%) sepia(24%) saturate(4068%) hue-rotate(1deg) brightness(98%) contrast(106%);
+}

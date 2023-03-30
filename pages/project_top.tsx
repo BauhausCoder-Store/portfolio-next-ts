@@ -5,6 +5,7 @@ import Link from 'next/link';
 import useTranslation from 'next-translate/useTranslation';
 
 import styles from '../styles/Projects.module.css';
+import page_bar_styles from '../styles/page_bar.module.css';
 
 import MyDevLogo from '../public/graphics/logos/dev_logo.png';
 import EtchASketchSVG from '../public/graphics/images/project-thumnbnails/etchasketch.svg';
@@ -43,19 +44,19 @@ const Project_top: NextPage = () => {
         <title>{head_title}</title>
       </Head>
 
+      {/* HEADLINE Section */}
+
+      <section className={page_bar_styles.headline_section}>
+
+        <div className={page_bar_styles.devlogo_wrapper}>
+          <Image src={ MyDevLogo } className={page_bar_styles.devlogo} alt="Stefan Bartl's Logo" title='Science, Tech & Peace!' />
+        </div>
+
+        <h1 className={page_bar_styles.page_title}>the odin project</h1>
+
+      </section>
+
       <main className={styles.main}>
-
-          {/* HEADLINE Section */}
-
-          <section className={styles.headline_section}>
-
-            <div className={styles.devlogo_wrapper}>
-              <Image src={ MyDevLogo } className={styles.devlogo} alt="Stefan Bartl's Logo" title='Science, Tech & Peace!' />
-            </div>
-
-            <h1 className={styles.page_title}>the odin project</h1>
-
-          </section>
 
           <p className={styles.intro}>
             <Link href='http://www.theodinproject.com' title={top_link_title}>The Odin Project (TOP)  </Link>

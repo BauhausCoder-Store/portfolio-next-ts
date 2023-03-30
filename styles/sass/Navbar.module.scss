@@ -1,8 +1,9 @@
 @import './ColorsAndDesign.scss';
 
 .mynavbar {
+
     display: flex;
-    position: relative;
+    padding-right: 1rem;
 
     > .eye {
         position: absolute;
@@ -27,13 +28,17 @@
 
     > ul {
         list-style-type: none;
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
         width: 100vw;
-        align-items: center;
-        justify-content: space-between;
-        margin-left: 2rem;
-        margin-right: 2rem;
+
         > li {
+
+            display: flex;
+            justify-content: center;
+            font-size: larger;
+            font-weight: bold;
+            
             .nav_item_projects_dropdown_li_1,
             .nav_item_projects_dropdown_li_2 {
                 list-style-type: none;
@@ -100,11 +105,15 @@
 .nav_item_contact,
 .nav_item_settings {
     > a:hover {
-        transition: all 1s;
+        transition: all 1s ;
         color: $wkd-orange;
     }
 }
 
+.eye:hover  {
+    animation: eye_pupil_animation infinite 2s ease-in-out;   
+    outline: solid 5px $wkd-red;         
+}
 
 /*#endregion*/
 
@@ -115,22 +124,13 @@
 // ? Dropdown-Box animation
 
 .dropdown:hover .dropdown_content {
-    animation: dropdown_box_animation infinite 20s;
-    border: solid 2px $wkd-pinkviolett;
+    animation: dropdown_box_animation infinite 5s;
+    border: solid 4px $wkd-pinkviolett;
     border-radius: 1rem;
 }
 
 @keyframes dropdown_box_animation {
-    0% { border-color: $wkd-pinkviolett}
-    25% { border-color: $wkd-orange}
-    50% { border-color: white}
-    75% { border-color:$wkd-pinkviolett}
-}
-
-
-.eye:hover  {
-    animation: eye_pupil_animation infinite 2s ease-in-out;   
-    outline: solid 5px $wkd-red;         
+    50% { border-color: $wkd-orange}
 }
 
 @keyframes eye_pupil_animation {
@@ -167,3 +167,10 @@
 }
 
 /*#endregion*/
+
+
+@media (max-width: 500px) {
+    .mynavbar {
+        padding-right: 0rem;
+    }
+}
