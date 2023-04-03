@@ -77,10 +77,7 @@ const Project_top: NextPage = () => {
               </div>
 
               <div className={styles.project_img_wrapper}>
-                <Link className={styles.etch_a} href='https://stefanbartl.github.io/Etch-a-Sketch/' target='_blank'><Image src={ EtchASketchSVG}  alt="Project Logo" /></Link>
-                <Link href='https://github.com/StefanBartl/Etch-a-Sketch' target='_blank'>
-                  <p title={toGithubRepository} className={styles.githubLink}>...Repository</p>
-                </Link>
+                <Link className={styles.etch_a} href='https://github.com/StefanBartl/Etch-a-Sketch' target='_blank' title={toGithubRepository}><Image src={ EtchASketchSVG}  alt="Project Logo" /></Link>
               </div>
 
             </div>
@@ -91,14 +88,11 @@ const Project_top: NextPage = () => {
               <div className={styles.project_text_wrapper}>
                 <h2 className={styles.project_h2}>{fourwins_h2}</h2>
                 <p>{fourwins_p}</p>
-                <Link className={styles.fourwins_a} href='https://stefanbartl.github.io/FourWins/' target='_blank'><h3 className={styles.fourwins_a_l} title={projects_link_title}>{fourwins_link}</h3></Link>
+                <Link className={styles.fourwins_a} href='https://stefanbartl.github.io/FourWins/' target='_blank'><h3 className={styles.fourwins_a_l}>{fourwins_link}</h3></Link>
               </div>
 
               <div className={styles.project_img_wrapper}>
-                <Link className={styles.fourwins_a} href='https://stefanbartl.github.io/FourWins/' target='_blank'><Image src={ FourWinsPNG } alt="Project Logo" /></Link>
-                <Link href='https://github.com/StefanBartl/FourWins' target='_blank'>
-                  <p title={toGithubRepository} className={styles.githubLink}>...Repository</p>
-                </Link>
+                <Link className={styles.fourwins_a} href='https://github.com/StefanBartl/FourWins' target='_blank' title={toGithubRepository}><Image src={ FourWinsPNG } alt="Project Logo" /></Link>
               </div>
 
             </div>
@@ -113,10 +107,7 @@ const Project_top: NextPage = () => {
               </div>
 
               <div className={styles.project_img_wrapper}>
-                <Link className={styles.tictactoe_a} href='https://stefanbartl.github.io/Tic-Tac-Toe/' target='_blank'><Image src={ TicTacToePNG } alt="Project Logo"/></Link>
-                <Link href='https://github.com/StefanBartl/Tic-Tac-Toe' target='_blank'>
-                  <p title={toGithubRepository} className={styles.githubLink}>...Repository</p>
-                </Link>
+                <Link className={styles.tictactoe_a} href='https://github.com/StefanBartl/Tic-Tac-Toe' target='_blank' title={toGithubRepository}><Image src={ TicTacToePNG } alt="Project Logo"/></Link>
               </div>
 
             </div>
@@ -131,10 +122,7 @@ const Project_top: NextPage = () => {
               </div>
 
               <div className={styles.project_img_wrapper}>
-                <Link className={styles.rps_a} href='https://stefanbartl.github.io/Rock-Paper-Scissor/' target='_blank'><Image src={ RockPaperScissorSVG } alt="Project Logo" /></Link>
-                <Link href='https://github.com/StefanBartl/Rock-Paper-Scissor' target='_blank'>
-                    <p title={toGithubRepository} className={styles.githubLink}>...Repository</p>
-                  </Link>
+                <Link className={styles.rps_a} href='https://github.com/StefanBartl/Rock-Paper-Scissor'target='_blank' title={toGithubRepository}><Image src={ RockPaperScissorSVG } alt="Project Logo" /></Link>
               </div>
 
             </div>

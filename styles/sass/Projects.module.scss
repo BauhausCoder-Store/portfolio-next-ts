@@ -31,21 +31,25 @@
 /*#region Projects Section */
 
 .projects {
-    display: flex;
-    flex-direction: column;
-    gap: 5rem;
+    display: grid;
+    gap: 6rem;
+    margin-bottom: 6rem;
 
     > .project_container {
         display: flex;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
+        flex-wrap: wrap;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        padding: 5%;
+        gap: 10%;
         align-items: center;
         justify-content: center;
-        gap: 5rem;
 
         > .project_text_wrapper {
             width: $text-optimal-width;
             padding: 1rem;
+
+            font-size: large;
 
             > h2 {
                 color: $wkd-orange;
@@ -64,6 +68,7 @@
         }
 
         > .project_img_wrapper {
+            justify-self: start;
             padding: 1rem;
             width: 40%;
         }
@@ -72,31 +77,24 @@
 }
 
 .project_img_wrapper{
-    display: flex;
+    display: grid;
     align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
-}
-
-
-.githubLink {
-    font-size: 1em;
-    color: $wkd-grey;
-}
-
-.githubLink:hover {
-    color: $wkd-orange;
 }
 
 .project_mmcardgame{
-    padding: 1rem;
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 5%;
+    gap: 10%;
+    align-items: center;
+    justify-content: center;
 
     > .project_text_wrapper{
         width: $text-optimal-width;
     }
-
+    
 }
 
 /*#endregion*/
@@ -164,8 +162,7 @@
 
 //? Blue colour animations
 
-.project_fourwins:hover .fourwins_a > h3,
-.project_mmcardgame:hover .mmcardgame > h3 {
+.project_fourwins:hover .fourwins_a > h3 {
     animation: a_blue_animation;
     animation-duration: 5s;
     animation-timing-function: ease-in-out;
@@ -180,7 +177,8 @@
 }
 
 .project_fourwins:hover .project_text_wrapper > .project_h2,
-.project_mmcardgame:hover .project_text_wrapper > .project_h2  {
+.project_mmcardgame:hover .project_text_wrapper > .project_h2,
+.project_mmcardgame:hover .mmcardgame_l  {
     animation: h3_blue_animation;
     animation-duration: 5s;
     animation-timing-function: ease-in-out;

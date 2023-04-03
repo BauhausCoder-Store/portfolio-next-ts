@@ -50,7 +50,7 @@ const Projects_react_nextjs: NextPage = () => {
 
           <section className={styles.projects}>
 
-            {/* Etch-a-Sketch */}
+            {/* -Memry Card Game */}
             <Link className={styles.mmcardgame} href='https://vercel-mmc-ard-game.vercel.app/de' target='_blank'>
             <div className={`${styles.project_container} ${styles.project_mmcardgame}`}>
 
@@ -60,9 +60,8 @@ const Projects_react_nextjs: NextPage = () => {
                 <h3 className={styles.mmcardgame_l} title={projects_link_title}>{mmcardgame_project_link}</h3>
               </div>
               <div className={styles.project_img_wrapper}>
-                <Image src={ MemoryCardPNG } alt="Project Logo" title={projects_link_title} />
-                <Link href='https://github.com/wkddevelopment/Vercel_MMCardGame' target='_blank'>
-                  <p title={toGithubRepository} className={styles.githubLink}>...Repository</p>
+                <Link href='https://github.com/wkddevelopment/Vercel_MMCardGame' target='_blank' title={toGithubRepository}>
+                  <Image src={ MemoryCardPNG } className={styles.mmcardgame_img} alt="Project Logo" />
                 </Link>
               </div>
             </div>
