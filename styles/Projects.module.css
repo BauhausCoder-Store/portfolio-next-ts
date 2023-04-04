@@ -1,16 +1,15 @@
-/* ==================  
-?    ===  Colour-Palette  ===
-.     ================== */
+/* === Colour-Palette === */
 /* filter: brightness(0) saturate(100%) invert(44%) sepia(24%) saturate(4068%) hue-rotate(1deg) brightness(98%) contrast(106%); */
 /* filter: brightness(0) saturate(100%) invert(19%) sepia(63%) saturate(4179%) hue-rotate(293deg) brightness(123%) contrast(136%); */
 /*? === design === */
 /*? === text === */
 /* futura: font-family: futura-pt,sans-serif; */
 @import url("https://use.typekit.net/izw3hmc.css");
+/*#region Projects Section */
 .intro {
   padding: 1rem;
   text-align: center;
-  width: clamp(50ch, 55%, 85ch);
+  width: clamp(300px, 55%, 85ch);
   margin-top: 3rem;
   margin-bottom: 5rem;
   margin-left: auto;
@@ -34,6 +33,7 @@
   outline-color: rgb(255, 102, 0);
 }
 
+/*#endregion */
 /*#region Projects Section */
 .projects {
   display: grid;
@@ -239,38 +239,6 @@
   width: 2rem;
 }
 
-.headline_section:hover .devlogo_wrapper::before {
-  height: 3rem;
-  border-color: rgb(255, 0, 255);
-}
-
-.headline_section:hover .devlogo_wrapper::after {
-  width: 3rem;
-  border-color: rgb(255, 0, 255);
-}
-
-.devlogo_wrapper {
-  position: relative;
-}
-
-.devlogo_wrapper::before,
-.devlogo_wrapper::after {
-  content: "";
-  border: solid 2px rgb(107, 106, 106);
-  position: absolute;
-  transition: all 2s ease;
-  left: -0.5rem;
-  bottom: -0.5rem;
-}
-
-.devlogo_wrapper::before {
-  height: calc(100% + 1rem);
-}
-
-.devlogo_wrapper::after {
-  width: 2rem;
-}
-
 .devlogo {
   width: fit-content;
   height: fit-content;
@@ -333,5 +301,7 @@
 .devlogo_wrapper:hover .devlogo {
   filter: brightness(0) saturate(100%) invert(44%) sepia(24%) saturate(4068%) hue-rotate(1deg) brightness(98%) contrast(106%);
 }
+
+/*#endregion */
 
 /*# sourceMappingURL=Projects.module.css.map */

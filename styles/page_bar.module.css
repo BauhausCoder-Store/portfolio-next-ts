@@ -1,6 +1,4 @@
-/* ==================  
-?    ===  Colour-Palette  ===
-.     ================== */
+/* === Colour-Palette === */
 /* filter: brightness(0) saturate(100%) invert(44%) sepia(24%) saturate(4068%) hue-rotate(1deg) brightness(98%) contrast(106%); */
 /* filter: brightness(0) saturate(100%) invert(19%) sepia(63%) saturate(4179%) hue-rotate(293deg) brightness(123%) contrast(136%); */
 /*? === design === */
@@ -13,14 +11,7 @@
   padding-inline: 1rem;
   padding-top: 0.5rem;
   padding-bottom: 1rem;
-}
-
-.devlogo_wrapper {
-  display: block;
-  width: 80px;
-  height: 80px;
-  margin-left: 0.5rem;
-  margin-bottom: 0.5rem;
+  position: relative;
 }
 
 .page_title {
@@ -31,8 +22,46 @@
   padding-right: 1rem;
   font-size: 4rem;
   font-weight: bold;
+  text-align: center;
 }
 
+.devlogo_wrapper {
+  display: block;
+  width: 80px;
+  height: 80px;
+  margin-left: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.devlogo {
+  aspect-ratio: 1/1;
+  min-width: 80px;
+}
+
+.page_title {
+  position: relative;
+}
+
+/*#endregion */
+/*#region Transition */
+.devlogo {
+  transition: all 1s ease;
+}
+
+.devlogo and body:not(.noanimations) {
+  transition: all 1s ease;
+}
+
+.devlogo_wrapper:hover .devlogo {
+  filter: brightness(0) saturate(100%) invert(44%) sepia(24%) saturate(4068%) hue-rotate(1deg) brightness(98%) contrast(106%);
+}
+
+.devlogo_wrapper:hover .devlogo {
+  filter: brightness(0) saturate(100%) invert(44%) sepia(24%) saturate(4068%) hue-rotate(1deg) brightness(98%) contrast(106%);
+}
+
+/*#endregion */
+/*#region Pseudoelements */
 .devlogo_wrapper {
   position: relative;
 }
@@ -55,11 +84,6 @@
   width: 2rem;
 }
 
-.devlogo {
-  aspect-ratio: 1/1;
-  min-width: 80px;
-}
-
 .headline_section:hover .devlogo_wrapper::before {
   height: 3rem;
   border-color: rgb(255, 0, 255);
@@ -68,10 +92,6 @@
 .headline_section:hover .devlogo_wrapper::after {
   width: 3rem;
   border-color: rgb(255, 0, 255);
-}
-
-.page_title {
-  position: relative;
 }
 
 .page_title::before,
@@ -102,30 +122,24 @@
   border-color: rgb(255, 0, 255);
 }
 
-.devlogo {
-  transition: all 1s ease;
-}
-
-.devlogo_wrapper:hover .devlogo {
-  filter: brightness(0) saturate(100%) invert(44%) sepia(24%) saturate(4068%) hue-rotate(1deg) brightness(98%) contrast(106%);
-}
-
-.devlogo and body:not(.noanimations) {
-  transition: all 1s ease;
-}
-
-.devlogo_wrapper:hover .devlogo {
-  filter: brightness(0) saturate(100%) invert(44%) sepia(24%) saturate(4068%) hue-rotate(1deg) brightness(98%) contrast(106%);
-}
-
+/*#endregion */
+/*#region Medie Queries */
 @media (max-width: 500px) {
   .devlogo_wrapper {
     display: none;
   }
   .page_title {
-    margin: 5% 10% 0% 10%;
-    padding-bottom: 5%;
+    margin: 5% 0% 0% 0%;
+    padding-bottom: 2.5%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .page_title::before,
+  .page_title::after {
+    display: none;
   }
 }
+/*#endregion */
 
 /*# sourceMappingURL=page_bar.module.css.map */

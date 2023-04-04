@@ -1,16 +1,15 @@
-/* ==================  
-?    ===  Colour-Palette  ===
-.     ================== */
+/* === Colour-Palette === */
 /* filter: brightness(0) saturate(100%) invert(44%) sepia(24%) saturate(4068%) hue-rotate(1deg) brightness(98%) contrast(106%); */
 /* filter: brightness(0) saturate(100%) invert(19%) sepia(63%) saturate(4179%) hue-rotate(293deg) brightness(123%) contrast(136%); */
 /*? === design === */
 /*? === text === */
 /* futura: font-family: futura-pt,sans-serif; */
 @import url("https://use.typekit.net/izw3hmc.css");
+/*#region About Page Layout */
 .main {
   padding: 0.5rem 1rem 1rem 1rem;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fill, 1fr);
   grid-template-rows: auto;
   grid-template-areas: "headline headline" "contentLeft map" "outro outro";
   position: relative;
@@ -25,6 +24,7 @@
   animation: rotate-element-animation 20s infinite linear;
 }
 
+/*#endregion */
 /*#region Content Section */
 .about_content_section {
   grid-area: contentLeft;
@@ -84,6 +84,16 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 2rem;
+  pointer-events: none;
+}
+.about_outro_section > .infobox {
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+  width: 80%;
+  border: solid 2px rgb(255, 102, 0);
+  border-radius: 1rem;
 }
 
 /*#endregion*/
@@ -171,38 +181,8 @@
   font-weight: bold;
 }
 
-.devlogo_wrapper {
-  position: relative;
-}
-
-.devlogo_wrapper::before,
-.devlogo_wrapper::after {
-  content: "";
-  border: solid 2px rgb(107, 106, 106);
-  position: absolute;
-  transition: all 2s ease;
-  left: -0.5rem;
-  bottom: -0.5rem;
-}
-
-.devlogo_wrapper::before {
-  height: calc(100% + 1rem);
-}
-
-.devlogo_wrapper::after {
-  width: 2rem;
-}
-
-.headline_section:hover .devlogo_wrapper::before {
-  height: 3rem;
-  border-color: rgb(255, 0, 255);
-}
-
-.headline_section:hover .devlogo_wrapper::after {
-  width: 3rem;
-  border-color: rgb(255, 0, 255);
-}
-
+/*#endregion */
+/*#region Pseudoelements */
 .devlogo_wrapper {
   position: relative;
 }
@@ -272,6 +252,8 @@
   border-color: rgb(255, 0, 255);
 }
 
+/*#endregion */
+/*#region Transitions */
 .devlogo {
   transition: all 1s ease;
 }
@@ -287,5 +269,32 @@
 .devlogo_wrapper:hover .devlogo {
   filter: brightness(0) saturate(100%) invert(44%) sepia(24%) saturate(4068%) hue-rotate(1deg) brightness(98%) contrast(106%);
 }
+
+/*#endregion */
+/*#region Media Queries */
+@media (max-width: 900px) {
+  .main {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .main > .about_me_img_wrapper {
+    display: none;
+  }
+  .about_content_section {
+    margin-top: 1rem;
+  }
+  .about_content_section > .about_text_container {
+    text-align: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    width: fit-content;
+  }
+  .about_map_section {
+    margin-top: 1rem;
+    align-items: center;
+  }
+}
+/*#endregion */
 
 /*# sourceMappingURL=About.module.css.map */

@@ -10,6 +10,7 @@ import MyDevLogo from '../public/graphics/logos/dev_logo.png';
 import MySignature from '../public/graphics/images/@me/unterschrift_transparent.png';
 import EuropeMap from '../public/graphics/images/google_maps_europa_edited.png';
 import MeDonaumarina from '../public/graphics/images/@me/sb_donaumarina.jpg';
+import Link from 'next/link';
 
 const About: NextPage = () => {
 
@@ -24,6 +25,9 @@ const About: NextPage = () => {
   const about_me_final_text_h = t('about_me_final_text_h');
   const about_me_final_text_p = t('about_me_final_text_p');
   const about_me_final_text_h3 = t('about_me_final_text_h3');
+  const github_link_title_portfolio_nextjs = t('github_link_title_portfolio_nextjs');
+  const about_me_infobox = t('about_me_infobox');
+  const about_me_infobox_2 = t('about_me_infobox_2');
 
   return (
     
@@ -32,6 +36,9 @@ const About: NextPage = () => {
       <Head>
         <title>{about_head_title}</title>
       </Head>
+
+
+
 
       {/* Headline Section */}
 
@@ -42,6 +49,7 @@ const About: NextPage = () => {
           </div>
 
           <h1 className={page_bar_styles.page_title}>{about_page_title}</h1>
+
 
       </section>
 
@@ -56,7 +64,7 @@ const About: NextPage = () => {
 
             <div className={styles.about_text_container}>
 
-              <h2>{about_text_h2_first}</h2>
+              <h2 className={styles.portfolio_h2}>{about_text_h2_first}</h2>
               <p>{about_text_p_first}</p>
 
               <h2>{about_text_h2_second}</h2>
@@ -97,6 +105,14 @@ const About: NextPage = () => {
               <div className={styles.about_signature} >
                 <Image src={ MySignature }  alt="Stefan Bartl's Signature " />
               </div> 
+
+
+            <div className={styles.infobox}>
+              <Link href='https://github.com/wkddevelopment/portfolio-next-ts' target='_blank' title={github_link_title_portfolio_nextjs} >
+                <h4>{about_me_infobox}</h4>
+                <p>{about_me_infobox_2}</p>
+              </Link>
+            </div>
           
           </section>
 

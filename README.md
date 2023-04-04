@@ -4,8 +4,11 @@
     Stefan  Bartl
      (WKDStevie)
 
+# link to page: 
+https://stefanbartl.vercel.app
+
 # used libraries, frameworks, etc...
-Typescript, Node.js, Next.js, Dart-Sass, Email.js
+Typescript, Node.js, Next.js, Sass, Email.js
 Git & Github
 Vercel Deployment
 Visual Studio Code 
@@ -31,12 +34,14 @@ There is a small gadget built into the website that I call "Cyber-Eye" (based on
 https://www.youtube.com/watch?v=TGe3pS5LqEw)
 
 
-# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
-# HTML Cyber-Security Linux CSS Privacy Science Development Learning Javascript Hacking React.js Typescript Tech Radiowaves TCP/IP Peace Authorization Data #
-# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
 
-# deutsch
+# # # HTML Cyber-Security Linux CSS Privacy Science Development Learning Javascript Hacking React.js Typescript Tech Radiowaves TCP/IP Peace Authorization Data # # # 
+
+
+
+
+# README Deutsch
 
 # verwendete Bibliotheken Frameworks, etc...
 Typescript, Node.js, Next.js, Dart-Sass, Email.js
@@ -60,6 +65,6 @@ https://fireship.io/ & ihren Youtube-Channel: https://www.youtube.com/c/Fireship
 # respekt
 Um Respekt vor Menschen zu zeigen, die aus gesundheitlichen Gründen keine Animationen ansehen können, habe ich im Code dafür gesorgt, dass auf dieser Seite keine Animationen abgespielt werden sofern Sie Animationen in Ihrem Browser deaktiviert haben. In Firefox & Windows 10 gelangen Sie über „Einstellungen“ -> „Bedienhilfen“ -> „Anzeige“ zu diesen Einstellungen. Soweit ich weiß, können Sie diese Einstellung in Chrome nicht ausgewählt werdeb. Daher empfehle ich in diesem Fall Firefox.
 
-# cyber-ey
+# cyber-eye
 Auf der Website ist ein kleines Gadget eingebaut das ich "Cyber-Eye" nenne (Anlehnung an die "5 Eyes": https://en.wikipedia.org/wiki/Five_Eyes ). Solltest du interessiert sein, wie dieser "Maus-Tracker" funktioniert, welche mathematischen Überlegungen dahinter stecken, hier der Link zu meiner Inspiration:
 https://www.youtube.com/watch?v=TGe3pS5LqEw)

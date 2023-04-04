@@ -23,14 +23,16 @@
     "about_head_title": "My Portfolio || About",
     "about_page_title": "about me. and this site",
     "about_text_h2_first": "Portfolio",
-    "about_text_p_first": "This webpage is designed as a portfolio for my web development projects. It should provide an overview of my skills in the areas of SCSS, Java/Type-script & Cyber-Security, offer a contact and information opportunity for those who are interested and also serve as a learning curve archive for myself. Please note that I do not expand older projects with newly learned skills, but - if useful - make a new project out of it. I hope you enjoy my work !",
+    "about_text_p_first": "This website is designed as a portfolio for my web development projects. It should give an overview of my skills in the areas of CSS/Sass, JavaScript/TypeScript (incl. frameworks like NextJS) & cyber security, offer a contact and information opportunity for interested parties and also serve as a learning curve archive for myself. Please note that I do not expand older projects with newly learned skills, but - if useful - make a new project out of it. At the moment I'm working intensively on Rust, corresponding projects will follow. I hope you enjoy my work!",
     "about_text_h2_second": "Thanks",
     "about_text_p_second": "On my Github repository you will find a readme file with all the collectives, artists, developers, companies etc... without which I would not have become a web developer. On behalf of this I would like to refer to the 'Odin project'(https://www.theodinproject.com/), which I can highly recommend to all beginners, but also to more experienced web developers and which was a great help to me. In the CSS area, I would like to recommend all web content by Kevin Powell (https://www.youtube.com/kepowob) whose videos and courses have also helped me a lot. Finally, I would like to thank my friends and family, who always support me in my interests and motivate me again and again.",
     "about_text_p_third": "Thank you all from the bottom of my heart !",
     "about_me_final_text_h": "To my person",
     "about_me_final_text_p": "Stefan Bartl, born in St.Pölten in 1990, lives in Vienna, Austria. Always interested in technology, my first job ended up in the construction industry. I completed an apprenticeship as a bricklayer/formwork builder and completed it with distinction. After 6 years I switched to the Austrian Trade Union Confederation to realize my socio-political interests and to do something good for those people who often cannot do it themselves and are politically underrepresented. As a trade unionist, I have been able to accumulate several years of management experience, numerous training courses, skills and abilities in the areas of rhetoric, group dynamics, personnel management, event management, budget policy, business and economics, political economy, etc. Since 2021 I have been filling all my free time with courses and my own further education in the field of web development. Since then I've been gripped by the 'developer'-fever and I'm totally into challenging problems and there creative solutions.",
     "about_me_final_text_h3": "In short, the following three and a half words describe me: science, tech & peace(-politics) !",
-
+    "about_me_infobox": "Interested in the code of this website? Click on this text here and you will jump to the Github repository!",
+    "about_me_infobox_2": "This website was created using the following web techniques, among others: Github, TypeScript in a functional programming manner, Next.js Framework including specially created components and integration of external components such as the contact option via email.js, full language translation into German/English , CSS/Sass in the responsive flexbox and grid layout (including the use of media queries, transitions, animations, pseudo elements,... the 'user-following navbar eye' should be mentioned as a particularly creative design element), complete backend configuration , hosting and deployment via Vercel.",
+    
     "projects_nextjs_head_title": "My Portfolio || React / Next.js Projects",
     "projects_nextjs_page_title": "React / Next.js Projects",
     "projects_nextjs_intro": "Since 2022, after I got involved in web frontend and Javascript development, I started to deal intensively with the back-end. In the world of server-side development, countless possibilities and projects open up. Hosting, Databases, Internet infrastructure or file systems are some of the terms that are involved here. Since I like working with React and Next.js, I have specialized in these technologies. Selected projects are presented here.",
@@ -56,5 +58,6 @@
     "top_link_title": "Click to jump to 'The Odin Project'!",
     "projects_link_title": "Click to jump to the project!",
     "toGithubRepository": "Click to jump to the Github-Repository of the application!",
+    "github_link_title_portfolio_nextjs": "Click to jump to the Github-Repository of the Portfolio-Website!",
     "under_construction": "Under construction, will be ready soon!"
 }

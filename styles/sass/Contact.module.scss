@@ -1,159 +1,107 @@
 @import './ColorsAndDesign.scss';
 
 
+
+/*#region contact page layout */
+
 .main {
+
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 5rem;
     gap: .5rem;
 
-    > h1 {
+    .social_media_section h2,
+    .send_email_section h2 {
+
         margin-block: 2rem;
-        font-size: 4rem;
+        font-size: 3rem;
         font-weight: bold;
+        text-align: center;
+
     }
 
     > .social_media_section{
+
         display: flex;
         flex-direction: column;
-        text-align: center;
-        margin-bottom: 1rem;
+        margin-bottom: 5vh;
 
         > .social_media_container {
+
             display: flex;
-            gap: .5rem;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
             
             > .social_media_logo_wrapper{
+
                 width: 3rem;
                 display: flex;
+                margin-left: auto;
+                margin-right: auto;
                 align-items: center;
                 transition: all .3s;
+
             }
 
             > .social_media_logo_wrapper:hover {
+
                 transform: scale(1.3);
-                margin-left: 1rem;
-                margin-right: 1rem;
+
             }
+
         }
 
     }
 
     > .send_email_section {
+
         display: flex;
         flex-direction: column;
         align-items: center;
         padding: .5rem;
+        margin-top: 1rem;
         border-top: solid 2px $wkd-grey;
-
-        
+                
         > .send_email_form_wrapper {
-            width: fit-content;
+
+            width: clamp(100px, 50vw, 300px);
+
         }
+
     }
 
 }
 
-
-/*#region Transitions, Animations, Pseudoelements */
-
-// ? Headline
-
-.contact_headline {
-    color: $wkd-orange;
-    position: relative;
-    animation: contact_headline_animation 20s ease-in-out infinite;
-}
-
-.contact_headline::before {
-    content: "";
-    border: solid 2px $wkd-orange;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    animation: contact_headline_animation 20s ease-in-out infinite;
-}
-
-@keyframes contact_headline_animation {
-    0%{
-        border-color: $wkd-orange;
-        color: $wkd-orange;
-    }
-    33%{
-        border-color: $wkd-grey;
-        color: $wkd-grey;
-    }
-    66%{
-        border-color: $wkd-pinkviolett;
-        color: $wkd-pinkviolett;
-    }
-}
-
-// ? Social Media
-
-.social_media_section {
-    transition: all .5s ease-in-out;
-}
-
-.social_media_section:hover {
-    transform: scale(1.5);
-    animation: social_media_animation infinite 20s ease-in-out;
-}
-
-@keyframes social_media_animation {
-    0%{
-        color: $wkd-orange;
-    }
-    33%{
-        color: $wkd-grey;
-    }
-    66%{
-        color: $wkd-pinkviolett;
-    }
-}
-
-// ? Send E-Mail
-
-.send_email_section > h2 {
-    transition: transform .5s;
-}
-
-.send_email_section:hover {
-    > h2 {
-        color: $wkd-orange;
-        transform: scale(1.3);
-    }
-}
-
-/*#endregion*/
-
-
-
-
+/*#endregion */
 
 
 
 /*#region Headline Section */
 
 .headline_section {
+
     display: flex;
     padding-inline: 1rem;
     padding-top: .5rem;
     padding-bottom: 1rem;
+
 }
 
 .devlogo_wrapper {
+
     display: block;
     width: 5rem;
     height: 5rem;
     margin-left: .5rem;
     margin-bottom: .5rem;
+
 }
 
-
 .page_title {
+
     color: $counter-colour;
     margin-left: auto;
     margin-right: .5rem;
@@ -161,133 +109,211 @@
     padding-right: 1rem;
     font-size: 4rem;
     font-weight: bold;
+
 }
-
-
 
 //? Headline-Logo
+
 .devlogo_wrapper {
+
     position: relative;
+
 }
-
-.devlogo_wrapper::before,
-.devlogo_wrapper::after {
-    content: "";
-    border: solid 2px $wkd-grey;
-    position: absolute;
-    transition: all 2s ease;
-    left: -.5rem;
-    bottom: -.5rem;
-}
-
-.devlogo_wrapper::before {
-    height: calc(100% + 1rem);
-}
-
-.devlogo_wrapper::after {
-    width: 2rem;
-}
-
-.headline_section:hover .devlogo_wrapper::before {
-    height: 3rem;
-    border-color: $wkd-pinkviolett;
-}
-
-.headline_section:hover .devlogo_wrapper::after {
-    width: 3rem;
-    border-color: $wkd-pinkviolett;
-}
-
-
-//? Headline-Logo
-.devlogo_wrapper {
-    position: relative;
-}
-
-.devlogo_wrapper::before,
-.devlogo_wrapper::after {
-    content: "";
-    border: solid 2px $wkd-grey;
-    position: absolute;
-    transition: all 2s ease;
-    left: -.5rem;
-    bottom: -.5rem;
-}
-
-.devlogo_wrapper::before {
-    height: calc(100% + 1rem);
-}
-
-.devlogo_wrapper::after {
-    width: 2rem;
-}
-
-.devlogo {
-    width: fit-content;
-    height: fit-content;
-}
-
-.headline_section:hover .devlogo_wrapper::before {
-    height: 3rem;
-    border-color: $wkd-pinkviolett;
-}
-
-.headline_section:hover .devlogo_wrapper::after {
-    width: 3rem;
-    border-color: $wkd-pinkviolett;
-}
-
 
 //? Headline-Text
+
 .page_title {
+
     position: relative;
+
+}
+
+/*#endregion*/
+
+
+
+/*#region Transitions, Animations */
+
+//? Devlogo transition
+
+.devlogo {
+
+    transition: all 1s ease;
+
+}
+  
+.devlogo_wrapper:hover .devlogo {
+
+    filter: brightness(0) saturate(100%) invert(44%) sepia(24%) saturate(4068%) hue-rotate(1deg) brightness(98%) contrast(106%);
+
+}
+
+
+.devlogo and body:not(.noanimations) {
+
+    transition: all 1s ease;
+
+}
+  
+.devlogo_wrapper:hover .devlogo {
+
+    filter: brightness(0) saturate(100%) invert(44%) sepia(24%) saturate(4068%) hue-rotate(1deg) brightness(98%) contrast(106%);
+
+}
+
+// ? Social Media
+
+.social_media_section {
+
+    transition: all .5s ease-in-out;
+
+}
+
+.social_media_section:hover {
+
+    transform: scale(1.3);
+    animation: social_media_animation infinite 20s ease-in-out;
+
+}
+
+@keyframes social_media_animation {
+
+    0%{
+
+        color: $wkd-orange;
+
+    }
+
+    33%{
+
+        color: $wkd-grey;
+
+    }
+
+    66%{
+
+        color: $wkd-pinkviolett;
+
+    }
+
+}
+
+// ? Send E-Mail
+
+.send_email_section > h2 {
+
+    transition: transform .5s;
+
+}
+
+.send_email_section:hover {
+
+    > h2 {
+
+        color: $wkd-orange;
+        transform: scale(1.3);
+
+    }
+
+}
+
+/*#endregion*/
+
+
+
+/*#region Pseudoelements */
+
+.devlogo_wrapper::before,
+.devlogo_wrapper::after {
+
+    content: "";
+    border: solid 2px $wkd-grey;
+    position: absolute;
+    transition: all 2s ease;
+    left: -.5rem;
+    bottom: -.5rem;
+
+}
+
+.devlogo_wrapper::before {
+
+    height: calc(100% + 1rem);
+
+}
+
+.devlogo_wrapper::after {
+
+    width: 2rem;
+
+}
+
+.headline_section:hover .devlogo_wrapper::before {
+
+    height: 3rem;
+    border-color: $wkd-pinkviolett;
+
+}
+
+.headline_section:hover .devlogo_wrapper::after {
+
+    width: 3rem;
+    border-color: $wkd-pinkviolett;
+    
 }
 
 .page_title::before,
 .page_title::after {
+
     content: "";
     border: solid 2px $wkd-grey;
     position: absolute;
     transition: all 2s ease;
     bottom: -.5rem;
     right: -.5rem;
+
 }
 
 .page_title::before {
+
     height: calc(2rem);
+
 }
 
 .page_title::after {
+
     width: 50%;
+
 }
 
 .headline_section:hover .page_title::before {
+
     height: calc(100% + 1rem);
     border-color: $wkd-pinkviolett;
+
 }
 
 .headline_section:hover .page_title::after {
+
     width: 2rem;
     border-color: $wkd-pinkviolett;
+
 }
 
+/*#endregion */
 
 
-//? Devlogo transition
 
-.devlogo {
-    transition: all 1s ease;
+/*#region Media Queries */
+
+@media (max-width: 500px){ 
+
+    .main {
+
+        margin-top: 0;
+
+    }
+
 }
-  
-.devlogo_wrapper:hover .devlogo {
-    filter: brightness(0) saturate(100%) invert(44%) sepia(24%) saturate(4068%) hue-rotate(1deg) brightness(98%) contrast(106%);
-}
 
+/*#endregion */
 
-.devlogo and body:not(.noanimations) {
-    transition: all 1s ease;
-  }
-  
-.devlogo_wrapper:hover .devlogo {
-    filter: brightness(0) saturate(100%) invert(44%) sepia(24%) saturate(4068%) hue-rotate(1deg) brightness(98%) contrast(106%);
-}
