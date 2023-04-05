@@ -51,7 +51,7 @@ export const Navbar = () => {
     return (
             <nav className={styles.mynavbar}>
                     <div className={styles.eye} id='anchor' title={eye_title}>
-                        <a target="_blank" href="https://netzpolitik.org/2023/europaweiter-protest-petition-gegen-chatkontrolle-gestartet/">
+                        <a target="_blank" rel="noopener noreferrer prefetch" href="https://netzpolitik.org/2023/europaweiter-protest-petition-gegen-chatkontrolle-gestartet/">
                             <Image src={Eye} className={styles.pupil} id='pupil' alt='Gadget' />
                         </a>
                     </div>

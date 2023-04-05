@@ -56,12 +56,12 @@ const Projects_react_nextjs: NextPage = () => {
               <div className={styles.project_text_wrapper}>
                 <h2 className={styles.project_h2}>{mmcardgame_project_h2}</h2>
                 <p>{mmcardgame_project_p}</p>
-                <Link className={styles.mmcardgame} href='https://vercel-mmc-ard-game.vercel.app/de' target='_blank'>
+                <Link className={styles.mmcardgame} rel="noopener noreferrer prefetch" href='https://vercel-mmc-ard-game.vercel.app/de' target='_blank'>
                    <h3 className={styles.mmcardgame_l} title={projects_link_title}>{mmcardgame_project_link}</h3>
                 </Link>
               </div>
               <div className={styles.project_img_wrapper}>
-                <Link href='https://github.com/wkddevelopment/Vercel_MMCardGame' target='_blank' title={toGithubRepository}>
+                <Link rel="noopener noreferrer prefetch" href='https://github.com/wkddevelopment/Vercel_MMCardGame' target='_blank' title={toGithubRepository}>
                   <Image src={ MemoryCardPNG } className={styles.mmcardgame_img} alt="Project Logo" />
                 </Link>
               </div>
