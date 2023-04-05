@@ -108,7 +108,7 @@ const About: NextPage = () => {
 
 
             <div className={styles.infobox}>
-              <Link href='https://github.com/wkddevelopment/portfolio-next-ts' target='_blank' rel="noopener noreferrer prefetch" title={github_link_title_portfolio_nextjs} >
+              <Link href='https://github.com/wkddevelopment/portfolio-next-ts' target='_blank' rel="noreferrer prefetch" title={github_link_title_portfolio_nextjs} >
                 <h4>{about_me_infobox}</h4>
                 <p>{about_me_infobox_2}</p>
               </Link>

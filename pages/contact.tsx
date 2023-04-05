@@ -54,27 +54,27 @@ const Contact: NextPage = () => {
            <div className={styles.social_media_container}>
 
               <div className={`${styles.social_media_logo_wrapper} ${styles.instagramSVG_wrapper}`}>
-                <Link href='https://www.instagram.com/_steve_vie/' target='_blank' rel="noopener noreferrer prefetch" ><Image src={ instagramSVG } className={`${styles.social_media} ${styles.instagramSVG}`} alt='Instagram-Logo' /></Link>
+                <Link href='https://www.instagram.com/_steve_vie/' target='_blank' rel="noreferrer prefetch" ><Image src={ instagramSVG } className={`${styles.social_media} ${styles.instagramSVG}`} alt='Instagram-Logo' /></Link>
               </div>
 
               <div className={`${styles.social_media_logo_wrapper} ${styles.facebookSVG_wrapper}`}>
-                <Link href='https://www.facebook.com/barstevie/' target='_blank' rel="noopener noreferrer prefetch" ><Image src={ facebookSVG } className={`${styles.social_media} ${styles.facebookSVG}`} alt='Facebook-Logo' /></Link>
+                <Link href='https://www.facebook.com/barstevie/' target='_blank' rel="noreferrer prefetch" ><Image src={ facebookSVG } className={`${styles.social_media} ${styles.facebookSVG}`} alt='Facebook-Logo' /></Link>
               </div>
 
               <div className={`${styles.social_media_logo_wrapper} ${styles.githubSVG_wrapper}`}>
-                <Link href='https://github.com/wkddevelopment' target='_blank' rel="noopener noreferrer prefetch" ><Image src={ githubSVG } className={`${styles.social_media} ${styles.githubSVG}`} alt='Github-Logo' /></Link>
+                <Link href='https://github.com/wkddevelopment' target='_blank' rel="noreferrer prefetch" ><Image src={ githubSVG } className={`${styles.social_media} ${styles.githubSVG}`} alt='Github-Logo' /></Link>
               </div>
 
               <div className={`${styles.social_media_logo_wrapper} ${styles.linkedinSVG_wrapper}`}>
-                <Link href='https://www.linkedin.com/in/stefan-bartl-660556112/' target='_blank' rel="noopener noreferrer prefetch" ><Image src={ linkedinSVG } className={`${styles.social_media} ${styles.linkedinSVG}`} alt='LinkedIn-Logo' /></Link>
+                <Link href='https://www.linkedin.com/in/stefan-bartl-660556112/' target='_blank' rel="noreferrer prefetch" ><Image src={ linkedinSVG } className={`${styles.social_media} ${styles.linkedinSVG}`} alt='LinkedIn-Logo' /></Link>
               </div>
 
               <div className={`${styles.social_media_logo_wrapper} ${styles.twitterSVG_wrapper}`}>
-                <Link href='https://twitter.com/stevVIEsprotest/' target='_blank' rel="noopener noreferrer prefetch" ><Image src={ twitterSVG } className={`${styles.social_media} ${styles.twitterSVG}`} alt='Twitter-Logo' /></Link>
+                <Link href='https://twitter.com/stevVIEsprotest/' target='_blank' rel="noreferrer prefetch" ><Image src={ twitterSVG } className={`${styles.social_media} ${styles.twitterSVG}`} alt='Twitter-Logo' /></Link>
               </div>
 
               <div className={`${styles.social_media_logo_wrapper} ${styles.youtubeSVG_wrapper}`}>
-                <Link href='https://www.youtube.com/channel/UCVUfjupaBJzqm4JfgWllumQ/about' target='_blank' rel="noopener noreferrer prefetch" ><Image src={ youtubeSVG } className={`${styles.social_media} ${styles.youtubeSVG}`} alt='Youtube-Logo' /></Link>
+                <Link href='https://www.youtube.com/channel/UCVUfjupaBJzqm4JfgWllumQ/about' target='_blank' rel="noreferrer prefetch" ><Image src={ youtubeSVG } className={`${styles.social_media} ${styles.youtubeSVG}`} alt='Youtube-Logo' /></Link>
               </div>
 
            </div>

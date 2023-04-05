@@ -59,7 +59,7 @@ const Project_top: NextPage = () => {
       <main className={styles.main}>
 
           <p className={styles.intro}>
-            <Link rel="noopener noreferrer prefetch" href='http://www.theodinproject.com' title={top_link_title}>The Odin Project (TOP)  </Link>
+            <Link rel="noreferrer prefetch" href='http://www.theodinproject.com' title={top_link_title}>The Odin Project (TOP)  </Link>
             {intro}
           </p>
 
@@ -73,11 +73,11 @@ const Project_top: NextPage = () => {
               <div className={styles.project_text_wrapper}>
                 <h2 className={styles.project_h2}>{etch_h2}</h2>
                 <p>{etch_p}</p>
-                <Link className={styles.etch_a} rel="noopener noreferrer prefetch" href='https://stefanbartl.github.io/Etch-a-Sketch/' target='_blank'><h3 className={styles.etch_a_l} title={projects_link_title}>{etch_link}</h3></Link>
+                <Link className={styles.etch_a} rel="noreferrer prefetch" href='https://stefanbartl.github.io/Etch-a-Sketch/' target='_blank'><h3 className={styles.etch_a_l} title={projects_link_title}>{etch_link}</h3></Link>
               </div>
 
               <div className={styles.project_img_wrapper}>
-                <Link className={styles.etch_a} rel="noopener noreferrer prefetch" href='https://github.com/StefanBartl/Etch-a-Sketch' target='_blank' title={toGithubRepository}><Image src={ EtchASketchSVG}  alt="Project Logo" /></Link>
+                <Link className={styles.etch_a} rel="noreferrer prefetch" href='https://github.com/StefanBartl/Etch-a-Sketch' target='_blank' title={toGithubRepository}><Image src={ EtchASketchSVG}  alt="Project Logo" /></Link>
               </div>
 
             </div>
@@ -88,11 +88,11 @@ const Project_top: NextPage = () => {
               <div className={styles.project_text_wrapper}>
                 <h2 className={styles.project_h2}>{fourwins_h2}</h2>
                 <p>{fourwins_p}</p>
-                <Link className={styles.fourwins_a} rel="noopener noreferrer prefetch" href='https://stefanbartl.github.io/FourWins/' target='_blank'><h3 className={styles.fourwins_a_l} title={projects_link_title}>{fourwins_link}</h3></Link>
+                <Link className={styles.fourwins_a} rel="noreferrer prefetch" href='https://stefanbartl.github.io/FourWins/' target='_blank'><h3 className={styles.fourwins_a_l} title={projects_link_title}>{fourwins_link}</h3></Link>
               </div>
 
               <div className={styles.project_img_wrapper}>
-                <Link className={styles.fourwins_a} rel="noopener noreferrer prefetch" href='https://github.com/StefanBartl/FourWins' target='_blank' title={toGithubRepository}><Image src={ FourWinsPNG } alt="Project Logo" /></Link>
+                <Link className={styles.fourwins_a} rel="noreferrer prefetch" href='https://github.com/StefanBartl/FourWins' target='_blank' title={toGithubRepository}><Image src={ FourWinsPNG } alt="Project Logo" /></Link>
               </div>
 
             </div>
@@ -103,11 +103,11 @@ const Project_top: NextPage = () => {
               <div className={styles.project_text_wrapper}>
                 <h2 className={styles.project_h2}>{tictactoe_h2}</h2>
                 <p>{tictactoe_p}</p>
-                <Link className={styles.tictactoe_a} rel="noopener noreferrer prefetch" href='https://stefanbartl.github.io/Tic-Tac-Toe/' target='_blank'><h3 className={styles.tictactoe_a_l} title={projects_link_title}>{tictactoe_link}</h3></Link>
+                <Link className={styles.tictactoe_a} rel="noreferrer prefetch" href='https://stefanbartl.github.io/Tic-Tac-Toe/' target='_blank'><h3 className={styles.tictactoe_a_l} title={projects_link_title}>{tictactoe_link}</h3></Link>
               </div>
 
               <div className={styles.project_img_wrapper}>
-                <Link className={styles.tictactoe_a} rel="noopener noreferrer prefetch" href='https://github.com/StefanBartl/Tic-Tac-Toe' target='_blank' title={toGithubRepository}><Image src={ TicTacToePNG } alt="Project Logo"/></Link>
+                <Link className={styles.tictactoe_a} rel="noreferrer prefetch" href='https://github.com/StefanBartl/Tic-Tac-Toe' target='_blank' title={toGithubRepository}><Image src={ TicTacToePNG } alt="Project Logo"/></Link>
               </div>
 
             </div>
@@ -118,11 +118,11 @@ const Project_top: NextPage = () => {
               <div className={styles.project_text_wrapper}>
                 <h2 className={styles.project_h2}>{rps_h2}</h2>
                 <p>{rps_p}</p>
-                <Link className={styles.rps_a} rel="noopener noreferrer prefetch" href='https://stefanbartl.github.io/Rock-Paper-Scissor/' target='_blank'><h3 className={styles.rps_a_l} title={projects_link_title}>{rps_link}</h3></Link>
+                <Link className={styles.rps_a} rel="noreferrer prefetch" href='https://stefanbartl.github.io/Rock-Paper-Scissor/' target='_blank'><h3 className={styles.rps_a_l} title={projects_link_title}>{rps_link}</h3></Link>
               </div>
 
               <div className={styles.project_img_wrapper}>
-                <Link className={styles.rps_a} rel="noopener noreferrer prefetch" href='https://github.com/StefanBartl/Rock-Paper-Scissor'target='_blank' title={toGithubRepository}><Image src={ RockPaperScissorSVG } alt="Project Logo" /></Link>
+                <Link className={styles.rps_a} rel="noreferrer prefetch" href='https://github.com/StefanBartl/Rock-Paper-Scissor'target='_blank' title={toGithubRepository}><Image src={ RockPaperScissorSVG } alt="Project Logo" /></Link>
               </div>
 
             </div>
