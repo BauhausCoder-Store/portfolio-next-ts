@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["sass/ColorsAndDesign.scss","sass/SendEmail.module.scss"],"names":[],"mappings":"AAAA;AAgB+B;AAGM;AAIrC;AAOA;AAUA;AACQ;ACrCR;EACI;EACA;EACA;EACA;EACA","file":"SendEmail.module.css"}
+{"version":3,"sourceRoot":"","sources":["sass/ColorsAndDesign.scss","sass/SendEmail.module.scss"],"names":[],"mappings":"AAAA;AAgB+B;AAGM;AAIrC;AAOA;AAUA;AACQ;AAGR;AASA;;AAAA;AAAA;AAAA;AAAA;;AAAA;ACjDA;EACI;EACA;EACA;EACA;EACA","file":"SendEmail.module.css"}

@@ -3,13 +3,11 @@
 
 
 html {
-
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   background-color: $wkd-darkgrey;
-
 }
 
 /* box-sizing */
@@ -17,24 +15,18 @@ html {
 *,
 *::before,
 *::after {
-
   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
   -moz-box-sizing: border-box; /* Firefox, other Gecko */
   box-sizing: border-box; /* Opera/IE 8+ */
-
 }
 
 a {
-
   color: inherit;
   text-decoration: none;
-
 }
 
 * {
-
   box-sizing: border-box;
-
 }
 
 /* margins */
@@ -48,21 +40,17 @@ h5,
 h6,
 figure,
 picture {
-
   margin: 0;
-
 }
 
 /* make images easier to work with */
 
 img,
 picture {
-
   max-width: 100%;
   width: 100%;
   height: 100%;
   display: block;
-
 }
 
 /* make form elements easier to work with */
@@ -71,9 +59,7 @@ input,
 button,
 textarea,
 select {
-
   font: inherit;
-
 }
 
 /* remove animations for people who turned them off*/
@@ -83,18 +69,14 @@ select {
   *,
   *::before,
   *::after {
-
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
-
   }
-
 }
 
 .app-container{
-
   background-color: $wkd-darkgrey;
   min-height: 100vh;
   line-height: 1.5;
@@ -104,5 +86,4 @@ select {
   font-weight: 400;
   font-style: normal; 
   font-family: $font-futura;
-  
 }

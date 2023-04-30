@@ -163,26 +163,20 @@
 //? Dropdown-Box animation
 
 .dropdown:hover .dropdown_content {
-
     animation: dropdown_box_animation infinite 5s;
     border: solid 4px $wkd-pinkviolett;
     border-radius: 1rem;
-
 }
 
 @keyframes dropdown_box_animation {
-
     50% { border-color: $wkd-orange}
-
 }
 
 @keyframes eye_pupil_animation {
-
     0% { outline-color: $wkd-grey}
     25% { outline-color: $wkd-red}
     50% { outline-color: $wkd-grey}
     75% { outline-color:$wkd-red}
-
 }
 
 /*#endregion*/
@@ -192,13 +186,10 @@
 /*#region Styling-Pseudoelements */
 
 .mynavbar {
-
     position: relative;
-
 }
 
 .mynavbar::after {
-
     content: "";
     border: solid 2px $wkd-grey;
     position: absolute;
@@ -206,15 +197,12 @@
     left: 1rem;
     bottom: 0;
     width: calc(100% - 2rem);
-
 }
 
 .mynavbar:hover::after {
-
     left: 25%;
     width: 50%;
     border-color: $wkd-pinkviolett;
-
 }
 
 /*#endregion*/
@@ -226,19 +214,14 @@
 @media (max-width: 500px) {
 
     .mynavbar {
-
         padding-right: 0rem;
         
         > ul {
-
             display: flex;
             flex-direction: column;
             gap: .5rem;
-
         }
-
     }
-
 }
 
 /*#endregion */

@@ -40,3 +40,22 @@ $fs-700: 2rem;
 
 /* futura: font-family: futura-pt,sans-serif; */
 @import url("https://use.typekit.net/izw3hmc.css");
+
+
+/* Mixins */
+
+@mixin box-shadow($x, $y, $blur, $color){ 
+    -webkit-box-shadow: $x $y $blur $color;
+    -moz-box-shadow: $x $y $blur $color;
+    -ms-box-shadow: $x $y $blur $color;
+    box-shadow: $x $y $blur $color;
+}
+
+/*
+
+@mixin drop-shadow($y, $y, $z, $color){
+    -webkit-filter: drop-shadow($x $y $z $color);
+    filter: drop-shadow($x $y $z $color);
+}
+
+*/

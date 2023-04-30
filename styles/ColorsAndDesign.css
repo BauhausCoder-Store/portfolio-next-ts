@@ -5,5 +5,14 @@
 /*? === text === */
 /* futura: font-family: futura-pt,sans-serif; */
 @import url("https://use.typekit.net/izw3hmc.css");
+/* Mixins */
+/*
+
+@mixin drop-shadow($y, $y, $z, $color){
+    -webkit-filter: drop-shadow($x $y $z $color);
+    filter: drop-shadow($x $y $z $color);
+}
+
+*/
 
 /*# sourceMappingURL=ColorsAndDesign.css.map */
