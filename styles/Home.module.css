@@ -6,14 +6,6 @@
 /* futura: font-family: futura-pt,sans-serif; */
 @import url("https://use.typekit.net/izw3hmc.css");
 /* Mixins */
-/*
-
-@mixin drop-shadow($y, $y, $z, $color){
-    -webkit-filter: drop-shadow($x $y $z $color);
-    filter: drop-shadow($x $y $z $color);
-}
-
-*/
 /*#region page containers */
 .container {
   display: grid;
@@ -33,7 +25,8 @@
 .introduction_img_wrapper {
   padding: 20% 20% 20% 20%;
   aspect-ratio: 1/1;
-  filter: drop-shadow(-1rem 1rem 2rem white);
+  -webkit-filter: drop-shadow(-1rem 1rem 2rem rgb(255, 255, 255));
+  filter: drop-shadow(-1rem 1rem 2rem rgb(255, 255, 255));
 }
 
 .introduction_img {
@@ -63,15 +56,19 @@
 
 @keyframes intro_img_animation {
   0% {
-    filter: drop-shadow(-1rem 1rem 2rem white);
+    -webkit-filter: drop-shadow(-1rem 1rem 2rem rgb(255, 255, 255));
+    filter: drop-shadow(-1rem 1rem 2rem rgb(255, 255, 255));
   }
   25% {
+    -webkit-filter: drop-shadow(-1rem -1rem 2rem rgb(255, 102, 0));
     filter: drop-shadow(-1rem -1rem 2rem rgb(255, 102, 0));
   }
   50% {
+    -webkit-filter: drop-shadow(1rem -1rem 2rem rgb(255, 0, 255));
     filter: drop-shadow(1rem -1rem 2rem rgb(255, 0, 255));
   }
   75% {
+    -webkit-filter: drop-shadow(1rem 1rem 2rem rgb(255, 102, 0));
     filter: drop-shadow(1rem 1rem 2rem rgb(255, 102, 0));
   }
 }

@@ -26,7 +26,7 @@
 .introduction_img_wrapper {
     padding: 20% 20% 20% 20%;
     aspect-ratio: 1/1;
-    filter: drop-shadow( -1rem 1rem 2rem white);
+    @include drop-shadow(-1rem, 1rem, 2rem, $wkd-white) ;
 }
 
 .introduction_img {
@@ -61,10 +61,10 @@
 }
 
 @keyframes intro_img_animation {
-    0% {filter: drop-shadow( -1rem 1rem 2rem white)}
-    25% {filter: drop-shadow( -1rem -1rem 2rem $wkd-orange)}
-    50% {filter: drop-shadow( 1rem -1rem 2rem $wkd-pinkviolett)}
-    75% {filter: drop-shadow( 1rem 1rem 2rem $wkd-orange)}
+    0% {@include drop-shadow(-1rem, 1rem, 2rem, $wkd-white)}
+    25% {@include drop-shadow(-1rem, -1rem, 2rem, $wkd-orange)}
+    50% {@include drop-shadow(1rem, -1rem, 2rem, $wkd-pinkviolett)}
+    75% {@include drop-shadow(1rem, 1rem, 2rem, $wkd-orange)}
  }
 
 // ? Text
@@ -97,10 +97,7 @@
 }
 
 .introduction_section::before {
-    content: "";
-    border: solid 2px $wkd-grey;
-    position: absolute;
-    transition: all 2s ease;
+    @include pseudo-element(2s, $wkd-grey);
     right: 0;
     top: -1rem;
     height: 100%;
@@ -120,10 +117,7 @@
 
 .introduction_text_wrapper::before,
 .introduction_text_wrapper::after  {
-    content: "";
-    border: solid 2px $wkd-grey;
-    position: absolute;
-    transition: all 1s ease;
+    @include pseudo-element(1s, $wkd-grey);
 }
 
 .introduction_text_wrapper::before {

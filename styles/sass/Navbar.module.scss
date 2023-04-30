@@ -190,10 +190,7 @@
 }
 
 .mynavbar::after {
-    content: "";
-    border: solid 2px $wkd-grey;
-    position: absolute;
-    transition: all 2s ease;
+    @include pseudo-element(2s, $wkd-grey);
     left: 1rem;
     bottom: 0;
     width: calc(100% - 2rem);

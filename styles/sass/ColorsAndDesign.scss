@@ -51,11 +51,14 @@ $fs-700: 2rem;
     box-shadow: $x $y $blur $color;
 }
 
-/*
-
-@mixin drop-shadow($y, $y, $z, $color){
+@mixin drop-shadow($x, $y, $z, $color){
     -webkit-filter: drop-shadow($x $y $z $color);
     filter: drop-shadow($x $y $z $color);
 }
 
-*/
+@mixin pseudo-element($x, $color){
+    content: "";
+    border: solid 2px $color;
+    position: absolute;
+    transition: all $x ease;
+}

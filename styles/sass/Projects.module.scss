@@ -262,10 +262,7 @@
 
 .devlogo_wrapper::before,
 .devlogo_wrapper::after {
-    content: "";
-    border: solid 2px $wkd-grey;
-    position: absolute;
-    transition: all 2s ease;
+    @include pseudo-element(2s, $wkd-grey);
     left: -.5rem;
     bottom: -.5rem;
 }
@@ -301,10 +298,7 @@
 
 .page_title::before,
 .page_title::after {
-    content: "";
-    border: solid 2px $wkd-grey;
-    position: absolute;
-    transition: all 2s ease;
+    @include pseudo-element(2s, $wkd-grey);
     bottom: -.5rem;
     right: -.5rem;
 }
