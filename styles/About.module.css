@@ -273,7 +273,7 @@
 
 /*#endregion */
 /*#region Media Queries */
-@media (max-width: 900px) {
+@media (max-width: 1600px) {
   .main {
     padding: 1rem;
     display: flex;
@@ -286,14 +286,34 @@
     margin-top: 1rem;
   }
   .about_content_section > .about_text_container {
-    text-align: center;
     gap: 0.5rem;
     padding: 1rem;
     width: fit-content;
   }
+  .about_content_section > .about_text_container > .about_thanks {
+    text-align: center;
+    font-size: larger;
+    font-weight: bolder;
+    color: rgb(255, 102, 0);
+  }
   .about_map_section {
     margin-top: 1rem;
     align-items: center;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .about_outro_section {
+    margin-top: 2rem;
+  }
+  .about_outro_section > .about_me_final_text h2 {
+    text-align: left;
+  }
+  .about_outro_section > .about_me_final_text p {
+    text-align: left;
+  }
+  .about_outro_section > .infobox {
+    margin-top: 2rem;
   }
 }
 /*#endregion */

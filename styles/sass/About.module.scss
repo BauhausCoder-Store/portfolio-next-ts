@@ -364,7 +364,7 @@
 
 /*#region Media Queries */
 
-@media (max-width: 900px) {
+@media (max-width: 1600px) {
 
     .main {
         padding: 1rem;
@@ -380,17 +380,46 @@
         margin-top: 1rem;
     
         > .about_text_container {
-            text-align: center;
             gap: .5rem;
             padding: 1rem;
             width: fit-content;
+
+            > .about_thanks {
+                text-align: center;
+                font-size: larger;
+                font-weight: bolder;
+                color: $wkd-orange;
+            }
         }
     }
+
 
     .about_map_section {
         margin-top: 1rem;
         align-items: center;
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
     }
+
+    .about_outro_section {
+        margin-top: 2rem;
+
+        > .about_me_final_text h2 {
+            text-align: left;
+        }
+
+        > .about_me_final_text p {
+            text-align: left;
+        }
+
+        > .infobox {
+            margin-top:2rem;
+        }
+    }
+
+
+
 }
 
 /*#endregion */

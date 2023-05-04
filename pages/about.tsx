@@ -69,7 +69,7 @@ const About: NextPage = () => {
 
               <h2>{about_text_h2_second}</h2>
               <p>{about_text_p_second}</p>
-              <p>{about_text_p_third}</p>
+              <p className={styles.about_thanks}>{about_text_p_third}</p>
 
             </div>
 
