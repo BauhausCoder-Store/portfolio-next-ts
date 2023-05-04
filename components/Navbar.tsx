@@ -13,7 +13,7 @@ export const Navbar = () => {
     const about = t('navbar_about');
     const contact = t('navbar_contact');
     const eye_title = t('navbar_eye_title');
-    // Sconst under_construction = t('under_construction');
+    // const under_construction = t('under_construction');
 
     //#region Cyber-Eye (Inspiration & most of the code: https://www.youtube.com/watch?v=TGe3pS5LqEw)
 
