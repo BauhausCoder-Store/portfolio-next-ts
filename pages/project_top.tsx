@@ -12,6 +12,7 @@ import EtchASketchSVG from '../public/graphics/images/project-thumnbnails/etchas
 import FourWinsPNG from '../public/graphics/images/project-thumnbnails/Connect4_Wins.png';
 import TicTacToePNG from '../public/graphics/images/project-thumnbnails/Tic_tac_toe.png';
 import RockPaperScissorSVG from '../public/graphics/images/project-thumnbnails/rockpaperscissors.svg';
+import { useEffect } from 'react';
 
 const Project_top: NextPage = () => {
 
@@ -98,15 +99,15 @@ const Project_top: NextPage = () => {
             </div>
 
             {/* Tick-Tac-Toe */}
-            <div className={`${styles.project_container} ${styles.project_tictactoe}`}>
+            <div className={`${styles.project_container} ${styles.project_tictactoe}`} title= {under_construction}>
 
-              <div className={styles.project_text_wrapper}>
+              <div className={`${styles.project_text_wrapper} ${styles.under_construction}`}>
                 <h2 className={styles.project_h2}>{tictactoe_h2}</h2>
                 <p>{tictactoe_p}</p>
                 <Link className={styles.tictactoe_a} rel="noreferrer prefetch" href='https://stefanbartl.github.io/Tic-Tac-Toe/' target='_blank'><h3 className={styles.tictactoe_a_l} title={projects_link_title}>{tictactoe_link}</h3></Link>
               </div>
 
-              <div className={styles.project_img_wrapper}>
+              <div className={`${styles.project_img_wrapper} ${styles.under_construction}`}>
                 <Link className={styles.tictactoe_a} rel="noreferrer prefetch" href='https://github.com/StefanBartl/Tic-Tac-Toe' target='_blank' title={toGithubRepository}><Image src={ TicTacToePNG } alt="Project Logo"/></Link>
               </div>
 

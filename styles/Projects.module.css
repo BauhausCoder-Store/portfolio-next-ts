@@ -35,7 +35,7 @@
 }
 
 /*#endregion */
-/*#region Projects Section */
+/*#region App-Projects Section */
 .projects {
   display: grid;
   gap: 6rem;
@@ -91,6 +91,11 @@
 }
 .project_mmcardgame > .project_text_wrapper {
   width: clamp(45ch, 50%, 75ch);
+}
+
+.under_construction {
+  pointer-events: none;
+  filter: blur(1rem);
 }
 
 /*#endregion*/

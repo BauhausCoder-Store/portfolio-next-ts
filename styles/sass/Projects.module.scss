@@ -35,7 +35,7 @@
 
 
 
-/*#region Projects Section */
+/*#region App-Projects Section */
 
 .projects {
     display: grid;
@@ -99,6 +99,11 @@
     > .project_text_wrapper{
         width: $text-optimal-width;
     } 
+}
+
+.under_construction{
+    pointer-events: none;
+    filter: blur(1rem);
 }
 
 /*#endregion*/
