@@ -1,3 +1,12 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# WKD-Ignoring
+*:Zone.Identifie
+*:Zone.Identifier
+*:Zone.*
+dist/
+.vscode/
+
 # dependencies
 /node_modules
 /.pnp
@@ -9,6 +18,10 @@
 # next.js
 /.next/
 /out/
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
 
 # production
 /build
@@ -25,10 +38,11 @@ yarn-error.log*
 
 # local env files
 .env*.local
+.env.development.local
+.env.test.local
+.env.production.local
 
 # vercel
 .vercel
 
-# typescript
-*.tsbuildinfo
-next-env.d.ts
+*.csv
