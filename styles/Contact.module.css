@@ -203,5 +203,8 @@
   }
 }
 /*#endregion */
+.githubSVG_wrapper {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(260deg) brightness(102%) contrast(103%);
+}
 
 /*# sourceMappingURL=Contact.module.css.map */

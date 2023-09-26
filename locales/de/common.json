@@ -11,7 +11,7 @@
     "home_introduction_headline_2h2_first": "Ich ",
     "home_introduction_headline_2h2_second": "entwickle Web-Applikationen.",
     "home_introduction_first_h3": "PURER ENTHUSIASMUS",
-    "home_introduction_first_p": "Auf dieser Portfolio-Seite gebe ich einen Einblick in abgeschlossene, solide Webentwicklungsprojekte. Als ich 2020 mit dem Programmieren anfing, konnte ich mir nicht vorstellen, wie viel Spaß und Leidenschaft dieses breite Feld in mir auslösen würde. Immer auf der Suche nach neuen Herausforderungen und deren Lösung, ist Webentwicklung für mich Technikbegeisterung getragen von Ehrgeiz und Leidenschaft.",
+    "home_introduction_first_p": "Auf dieser Portfolio-Seite gebe ich einen Einblick in abgeschlossene Webentwicklungsprojekte. Als ich 2020 mit dem Programmieren anfing, konnte ich mir nicht vorstellen, wie viel Spaß und Leidenschaft dieses breite Feld in mir auslösen würde. Immer auf der Suche nach neuen Herausforderungen und deren Lösung, ist Webentwicklung für mich Technikbegeisterung getragen von Ehrgeiz und Leidenschaft.",
     "home_introduction_second_p": "Aktuell liegt mein Fokus auf CSS/Sass, JavaScript/TypeScript & Cyber-Security, spezialisiert auf Fullstack-Webentwicklung. Daher verweise ich hier vordergründig auf Projekte, die sich mit diesen drei 'Werkzeugen' beschäftigen. Teils rein spielerisch, teils mit praktischem Nutzen. Die Sprache Rust und Cyber-Security sind meine nächsten großen Themenbereiche.",
     "home_introduction_text_statement": "WITH LOVE FOR SCIENCE, TECHNOLOGY AND PEACE!",
 
@@ -35,7 +35,7 @@
     
     "projects_nextjs_head_title": "Mein Portfolio || React / Next.js Projekte",
     "projects_nextjs_page_title": "React / Next.js Projekte",
-    "projects_nextjs_intro": "Seit 2022, also nachdem ich in die Webfrontend- und Javascript-Entwicklung eingestiegen bin, habe ich begonnen, mich intensiv mit dem Back-End zu beschäftigen. In der Welt der serverseitigen Entwicklung eröffnen sich unzählige Möglichkeiten und Projekte. Hosting, Datenbanken, Internetinfrastruktur oder Dateisysteme sind einige Begriffe um die es hier geht. Da ich gerne mit React und Next.js arbeite, habe ich mich auf diese Technologien spezialisiert. Ausgewählte Projekte werden hier vorgestellt.",
+    "projects_nextjs_intro": "(INFO: BIS ENDE OKTOBER SIND DIE MEISTEN PROJEKTE AUFGRUND VON WARTUNGSARBEITEN OFFLINE.) Seit 2022, also nachdem ich in die Webfrontend- und Javascript-Entwicklung eingestiegen bin, habe ich begonnen, mich intensiv mit dem Back-End zu beschäftigen. In der Welt der serverseitigen Entwicklung eröffnen sich unzählige Möglichkeiten und Projekte. Hosting, Datenbanken, Internetinfrastruktur oder Dateisysteme sind einige Begriffe um die es hier geht. Da ich gerne mit React und Next.js arbeite, habe ich mich auf diese Technologien spezialisiert. Ausgewählte Projekte werden hier vorgestellt.",
     "projects_nextjs_mmcardgame_project_h2": "Memory-Card Memo Game",
     "projects_nextjs_mmcardgame_project_p": "Lerne so schnell wie möglich 10 Karten auswendig! Klicke sie diese so schnell wie möglich nacheinander an, aber nicht zweimal, denn beginnt man wieder von vrone! Mein erstes richtiges React-Projekt!",
     "projects_nextjs_mmcardgame_project_link": "3, 2, 1 - merken und klicken!",
@@ -59,7 +59,7 @@
     "projects_link_title": "Klicke um zum Projekt zu springen!",
     "toGithubRepository": "Klicke um zum Github-Repository der Anwendung zu springen!",
     "github_link_title_portfolio_nextjs": "Klicke um zum Github-Repository der Portfolio-Website zu springen!",
-    "under_construction": "In kürze verfügbar!"
+    "under_construction": "INFO: BIS ENDE OKTOBER SIND DIE MEISTEN PROJEKTE AUFGRUND VON WARTUNGSARBEITEN OFFLINE."
 
     
 }

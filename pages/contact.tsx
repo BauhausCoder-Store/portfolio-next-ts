@@ -62,15 +62,11 @@ const Contact: NextPage = () => {
               </div>
 
               <div className={`${styles.social_media_logo_wrapper} ${styles.githubSVG_wrapper}`}>
-                <Link href='https://github.com/wkddevelopment' target='_blank' rel="noreferrer prefetch" ><Image src={ githubSVG } className={`${styles.social_media} ${styles.githubSVG}`} alt='Github-Logo' /></Link>
+                <Link href='https://github.com/StefanBartl' target='_blank' rel="noreferrer prefetch" ><Image src={ githubSVG } className={`${styles.social_media} ${styles.githubSVG}`} alt='Github-Logo' /></Link>
               </div>
 
               <div className={`${styles.social_media_logo_wrapper} ${styles.linkedinSVG_wrapper}`}>
                 <Link href='https://www.linkedin.com/in/stefan-bartl-660556112/' target='_blank' rel="noreferrer prefetch" ><Image src={ linkedinSVG } className={`${styles.social_media} ${styles.linkedinSVG}`} alt='LinkedIn-Logo' /></Link>
-              </div>
-
-              <div className={`${styles.social_media_logo_wrapper} ${styles.twitterSVG_wrapper}`}>
-                <Link href='https://twitter.com/stevVIEsprotest/' target='_blank' rel="noreferrer prefetch" ><Image src={ twitterSVG } className={`${styles.social_media} ${styles.twitterSVG}`} alt='Twitter-Logo' /></Link>
               </div>
 
               <div className={`${styles.social_media_logo_wrapper} ${styles.youtubeSVG_wrapper}`}>
@@ -81,9 +77,6 @@ const Contact: NextPage = () => {
 
         </section>
         
-
-
-
         <section className={styles.send_email_section}>
 
           <h2 className={styles.send_email_section_h2}>{send_email_section_h2}</h2>
@@ -92,8 +85,6 @@ const Contact: NextPage = () => {
           </div>
 
         </section>
-
-
 
       </main>
 
